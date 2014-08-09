@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="es"
+>
+<head>
+    <title>Entorno de desarrollo de software mínimo (I) - Introducción - Angel Llosá</title>
+    <!-- Using the latest rendering mode for IE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+<link rel="canonical" href="/entorno-de-desarrollo-de-software-minimo-i-introduccion.html">
+
+        <meta name="author" content="Angel Llosá" />
+        <meta name="keywords" content="ágil,gestión de proyectos,desarrollo,management" />
+        <meta name="description" content="Alguna vez nos hemos visto en la tesitura de implantar una metodología de desarrollo en sitios donde nunca se ha trabajado con ninguna. En esos momentos, para cumplir el objetivo de manera poco traumática para nadie (incluyéndonos a nosotros mismos) es necesario tener en cuenta a la gente que va ..." />
+
+
+
+    <!-- Bootstrap -->
+        <link rel="stylesheet" href="/theme/css/bootstrap.min.css" type="text/css"/>
+    <link href="/theme/css/font-awesome.min.css" rel="stylesheet">
+
+    <link href="/theme/css/pygments/native.css" rel="stylesheet">
+    <link rel="stylesheet" href="/theme/css/style.css" type="text/css"/>
+
+
+</head>
+<body>
+
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="/" class="navbar-brand">
+Angel Llosá            </a>
+        </div>
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav">
+                        <li >
+                            <a href="/category/big-data.html">Big data</a>
+                        </li>
+                        <li class="active">
+                            <a href="/category/desarrollo.html">Desarrollo</a>
+                        </li>
+                        <li >
+                            <a href="/category/management.html">Management</a>
+                        </li>
+                        <li >
+                            <a href="/category/misc.html">Misc</a>
+                        </li>
+                        <li >
+                            <a href="/category/mundoreal.html">Mundoreal</a>
+                        </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="/archives.html"><i class="fa fa-th-list"></i><span class="icon-label">Archives</span></a></li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+</div> <!-- /.navbar -->
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-9">
+
+    <section id="content">
+        <article>
+            <header class="page-header">
+                <h1>
+                    <a href="/entorno-de-desarrollo-de-software-minimo-i-introduccion.html"
+                       rel="bookmark"
+                       title="Permalink to Entorno de desarrollo de software mínimo (I) - Introducción">
+                        Entorno de desarrollo de software mínimo (I) - Introducción
+                    </a>
+                </h1>
+            </header>
+            <div class="entry-content">
+                <div class="panel">
+                    <div class="panel-body">
+<footer class="post-info">
+    <span class="label label-default">Date</span>
+    <span class="published">
+        <i class="fa fa-calendar"></i><time datetime="2012-05-08T15:07:00"> mar 08 mayo 2012</time>
+    </span>
+
+
+
+<span class="label label-default">Tags</span>
+	<a href="/tag/agil.html">ágil</a>
+        /
+	<a href="/tag/gestion-de-proyectos.html">gestión de proyectos</a>
+        /
+	<a href="/tag/desarrollo.html">desarrollo</a>
+        /
+	<a href="/tag/management.html">management</a>
+    
+</footer><!-- /.post-info -->                    </div>
+                </div>
+                <p>Alguna vez nos hemos visto en la tesitura de implantar una metodología
+de desarrollo en&nbsp;sitios&nbsp;donde nunca se ha trabajado con ninguna. En esos
+momentos, para cumplir el objetivo de manera poco traumática para nadie
+(incluyéndonos a nosotros mismos) es necesario <strong>tener en cuenta a la
+gente que va a utilizar esta metodología</strong>.</p>
+<div style="text-align: center;"><p><a class="reference external" href="http://www.flickr.com/photos/marekj/3196036311/"><img alt="Reading now" src="http://farm4.staticflickr.com/3114/3196036311_462abc7678.jpg" /></a></p>
+</div><p>No es buena idea entrar a una empresa o un entorno de trabajo pensando
+que lo que vamos a implantar va a solucionar la vida de la gente porque
+con nosotros ha funcionado. De esta manera lo único que conseguimos es
+<strong>cerrarnos a cualquier tipo de feedback</strong> y hacer caso omiso a su
+realidad.</p>
+<p>Es un poco drástico empezar con metodologías muy pesadas como <a class="reference external" href="http://es.wikipedia.org/wiki/RUP#Artefactos_xxx">RUP y
+sus artefactos</a> o ágiles como <a class="reference external" href="http://es.wikipedia.org/wiki/Scrum">Scrum</a> en sitios donde no utilizaban
+ninguna. Para realizar este tipo de acciones se ha de dedicar mucho
+esfuerzo a tener la disciplina necesaria para poder llevarla a cabo.</p>
+<p>Por eso es necesario contemplar un planteamiento más <strong>minimalista</strong>,
+haciendo caso al <a class="reference external" href="http://es.wikipedia.org/wiki/Lean_software_development#Eliminar_los_desperdicios">primer principio de &quot;Lean software development&quot;</a>, e
+ir trabajándolo de manera iterativa. Primero implantamos
+una <strong>metodología mínima de desarrollo</strong>, un conjunto de <strong>buenas
+prácticas</strong> y vamos <strong>iterando</strong> para ir adaptándola a las necesidades
+del cliente y vamos añadiendo lo que veamos que sea necesario y
+eliminando lo que no aporte valor.</p>
+<p>Por ello, y para quien le pueda interesar, he preparado dos posts que
+publicaré más adelante donde trataré los dos aspectos fundamentales de
+un entorno de desarrollo: la <strong>metodología</strong> y las <strong>herramientas</strong>.</p>
+<p>Cómo no, espero que no dudéis en preguntar, comentar o aportar nuevas
+ideas a estos.</p>
+<p><em>Actualización:</em></p>
+<p>Siguientes posts:</p>
+<ul class="simple">
+<li><a class="reference external" href="/entorno-de-desarrollo-de-software-minimo-ii-documentacion-y-metodologia.html">Entorno de desarrollo de software mínimo (II) - Documentación y
+Metodología</a></li>
+<li><a class="reference external" href="/entorno-de-desarrollo-de-software-minimo-iii-software-y-herramientas.html">Entorno de desarrollo de software mínimo (III) - Software y
+herramientas</a></li>
+</ul>
+<p>Foto: <a class="reference external" href="http://www.flickr.com/photos/marekj/3196036311/">marekj</a></p>
+
+            </div>
+            <!-- /.entry-content -->
+        </article>
+    </section>
+
+        </div>
+        <div class="col-sm-3 well well-sm" id="sidebar">
+
+<aside>
+    <section>
+        <ul class="list-group list-group-flush">
+                <li class="list-group-item"><h4><i class="fa fa-home fa-lg"></i><span class="icon-label">Social</span></h4>
+                  <ul class="list-group" id="social">
+                    <li class="list-group-item"><a href="https://twitter.com/terrimyu"><i class="fa fa-twitter-square fa-lg"></i> Twitter</a></li>
+                    <li class="list-group-item"><a href="https://linkedin.com/in/terriyu"><i class="fa fa-linkedin-square fa-lg"></i> Linkedin</a></li>
+                  </ul>
+                </li>
+
+
+
+                <li class="list-group-item"><a href="/"><h4><i class="fa fa-tags fa-lg"></i><span class="icon-label">Tags</span></h4></a>
+                    <ul class="list-group " id="tags">
+                        <li class="list-group-item tag-1">
+                            <a href="/tag/gestion-de-proyectos.html">
+                                gestión de proyectos
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-1">
+                            <a href="/tag/desarrollo.html">
+                                desarrollo
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-2">
+                            <a href="/tag/cloud.html">
+                                cloud
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-2">
+                            <a href="/tag/hadoop.html">
+                                hadoop
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-2">
+                            <a href="/tag/agil.html">
+                                ágil
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-2">
+                            <a href="/tag/management.html">
+                                management
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-2">
+                            <a href="/tag/facebook.html">
+                                facebook
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-3">
+                            <a href="/tag/tutorial-hadoop.html">
+                                tutorial hadoop
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-3">
+                            <a href="/tag/pig.html">
+                                pig
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-3">
+                            <a href="/tag/ubuntu.html">
+                                Ubuntu
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-3">
+                            <a href="/tag/escalar.html">
+                                escalar
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-3">
+                            <a href="/tag/reflexiones.html">
+                                reflexiones
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-4">
+                            <a href="/tag/hive.html">
+                                hive
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-4">
+                            <a href="/tag/scrum.html">
+                                scrum
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-4">
+                            <a href="/tag/startup.html">
+                                startup
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-4">
+                            <a href="/tag/bigdata.html">
+                                bigdata
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-4">
+                            <a href="/tag/data-analysis.html">
+                                data analysis
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-4">
+                            <a href="/tag/mysql.html">
+                                mysql
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-4">
+                            <a href="/tag/linux.html">
+                                Linux
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-4">
+                            <a href="/tag/php.html">
+                                php
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-4">
+                            <a href="/tag/post.html">
+                                post
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-4">
+                            <a href="/tag/data-science.html">
+                                data science
+                            </a>
+                        </li>
+                    </ul>
+                </li>    
+    <li class="list-group-item"><h4><i class="fa fa-external-link-square fa-lg"></i><span class="icon-label">Links</span></h4>
+      <ul class="list-group" id="links">
+        <li class="list-group-item">
+            <a href="http://getpelican.com/" target="_blank">
+                Pelican
+            </a>
+        </li>
+        <li class="list-group-item">
+            <a href="http://python.org/" target="_blank">
+                Python.org
+            </a>
+        </li>
+        <li class="list-group-item">
+            <a href="http://jinja.pocoo.org/" target="_blank">
+                Jinja2
+            </a>
+        </li>
+        <li class="list-group-item">
+            <a href="#" target="_blank">
+                You can modify those links in your config file
+            </a>
+        </li>
+      </ul>
+    </li>
+
+        </ul>
+    </section>
+
+</aside>        </div>
+    </div>
+</div>
+<footer>
+   <div class="container">
+      <hr>
+      <div class="row">
+         <div class="col-xs-10">&copy; 2013 Angel Llosá
+            &middot; Powered by <a href="https://github.com/DandyDev/pelican-bootstrap3" target="_blank">pelican-bootstrap3</a>,
+            <a href="http://docs.getpelican.com/" target="_blank">Pelican</a>,
+            <a href="http://getbootstrap.com" target="_blank">Bootstrap</a>         </div>
+         <div class="col-xs-2"><p class="pull-right"><i class="fa fa-arrow-up"></i> <a href="#">Back to top</a></p></div>
+      </div>
+   </div>
+</footer>
+<script src="/theme/js/jquery.min.js"></script>
+
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="/theme/js/bootstrap.min.js"></script>
+
+<!-- Enable responsive features in IE8 with Respond.js (https://github.com/scottjehl/Respond) -->
+<script src="/theme/js/respond.min.js"></script>
+
+</body>
+</html>

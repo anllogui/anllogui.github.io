@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="es"
+>
+<head>
+    <title>instalar Pig (de Hadoop) en ubuntu en modo multi-cluster - Angel Llosá</title>
+    <!-- Using the latest rendering mode for IE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+<link rel="canonical" href="/instalar-pig-de-hadoop-en-ubuntu-en-modo-multi-cluster.html">
+
+        <meta name="author" content="Angel Llosá" />
+        <meta name="keywords" content="tutorial hadoop,pig,Ubuntu,hadoop" />
+        <meta name="description" content="Introducción Apache Pig es una plataforma para análisis de datos que se ejecuta sobre Hadoop. Pig tiene un compilador con el cual genera secuencias de programas con MapReduce, los cuales se ejecutan de forma paralela sobre la infraestructura en la que estemos ejecutando Hadoop. Para verlo más claro, tenemos el ..." />
+
+
+
+    <!-- Bootstrap -->
+        <link rel="stylesheet" href="/theme/css/bootstrap.min.css" type="text/css"/>
+    <link href="/theme/css/font-awesome.min.css" rel="stylesheet">
+
+    <link href="/theme/css/pygments/native.css" rel="stylesheet">
+    <link rel="stylesheet" href="/theme/css/style.css" type="text/css"/>
+
+
+</head>
+<body>
+
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="/" class="navbar-brand">
+Angel Llosá            </a>
+        </div>
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav">
+                        <li class="active">
+                            <a href="/category/big-data.html">Big data</a>
+                        </li>
+                        <li >
+                            <a href="/category/desarrollo.html">Desarrollo</a>
+                        </li>
+                        <li >
+                            <a href="/category/management.html">Management</a>
+                        </li>
+                        <li >
+                            <a href="/category/misc.html">Misc</a>
+                        </li>
+                        <li >
+                            <a href="/category/mundoreal.html">Mundoreal</a>
+                        </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="/archives.html"><i class="fa fa-th-list"></i><span class="icon-label">Archives</span></a></li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+</div> <!-- /.navbar -->
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-9">
+
+    <section id="content">
+        <article>
+            <header class="page-header">
+                <h1>
+                    <a href="/instalar-pig-de-hadoop-en-ubuntu-en-modo-multi-cluster.html"
+                       rel="bookmark"
+                       title="Permalink to instalar Pig (de Hadoop) en ubuntu en modo multi-cluster">
+                        instalar Pig (de Hadoop) en ubuntu en modo multi-cluster
+                    </a>
+                </h1>
+            </header>
+            <div class="entry-content">
+                <div class="panel">
+                    <div class="panel-body">
+<footer class="post-info">
+    <span class="label label-default">Date</span>
+    <span class="published">
+        <i class="fa fa-calendar"></i><time datetime="2012-11-20T16:51:00"> mar 20 noviembre 2012</time>
+    </span>
+
+
+
+<span class="label label-default">Tags</span>
+	<a href="/tag/tutorial-hadoop.html">tutorial hadoop</a>
+        /
+	<a href="/tag/pig.html">pig</a>
+        /
+	<a href="/tag/ubuntu.html">Ubuntu</a>
+        /
+	<a href="/tag/hadoop.html">hadoop</a>
+    
+</footer><!-- /.post-info -->                    </div>
+                </div>
+                <p><strong>Introducción</strong>
+<a class="reference external" href="http://pig.apache.org/">Apache Pig</a> es una plataforma para análisis de datos que se ejecuta
+sobre <a class="reference external" href="http://hadoop.apache.org/">Hadoop</a>. Pig tiene un compilador con el cual genera secuencias
+de programas con MapReduce, los cuales se ejecutan de forma paralela
+sobre la infraestructura en la que estemos ejecutando Hadoop.</p>
+<p>Para verlo más claro, tenemos el siguiente ejemplo escrito en <a class="reference external" href="http://pig.apache.org/docs/r0.8.0/piglatin_ref1.html">Pig
+Latin</a> y ejecutado sobre la consola <a class="reference external" href="http://pig.apache.org/docs/r0.8.0/piglatin_ref2.html#run">grunt</a>:</p>
+<div class="highlight"><pre>grunt&gt; <span class="nv">A</span> <span class="o">=</span> load <span class="s1">&#39;passwd&#39;</span> using PigStorage<span class="o">(</span><span class="s1">&#39;:&#39;</span><span class="o">)</span>;
+grunt&gt; <span class="nv">B</span> <span class="o">=</span> foreach A generate <span class="nv">$0</span> as id;
+grunt&gt; dump B;
+</pre></div>
+<p>Ejecutando el código anterior por consola, lo que hacemos es:</p>
+<ol class="arabic simple">
+<li>Cargamos el fichero guardado llamado &quot;passwd&quot; (en este caso es un
+fichero típico de linux /etc/passwd) y cargamos su contenido en A,
+diferenciando los campos con el caracter &quot;:&quot; (PigStorage(':')).</li>
+<li>Para cada línea de A, volcamos el primer campo en B y lo llamamos
+&quot;id&quot;.</li>
+<li>Mostramos por pantalla el resultado.</li>
+</ol>
+<p>Es posible utilizar cualquier función de tratamiento de datos
+realizada por nosotros en java y empaquetada en un jar (siempre
+siguiendo las especificaciones, claro) y utilizarla como en este caso se
+ha utilizado <em>PigStorage</em>. De esta manera, podemos diseñar cualquier
+tipo de tratamiento que no se utilice en Pig Latin.</p>
+<p><strong>Instalación</strong>
+Se supone que ya hemos seguido los pasos de&nbsp;<a class="reference external" href="http://www.michael-noll.com/tutorials/running-hadoop-on-ubuntu-linux-multi-node-cluster/">cómo instalar hadoop en
+Ubuntu (modo multi-node)</a>. Una vez hecho esto nos descargaremos la
+última versión de <a class="reference external" href="http://hadoop.apache.org/pig/releases.html">Pig desde la página de apache</a>.</p>
+<p>Lo descomprimiremos donde queramos (a partir de ahora <em>/path/pig</em>) y
+añadiremos al path del usuario hadoop el directorio de binarios
+/path/pig/bin:
+<tt class="docutils literal">export <span class="pre">PATH=/&lt;my-path-to-pig&gt;/pig-n.n.n/bin:$PATH</span></tt></p>
+<p>Una vez realizado esto, añadiremos las siguientes variables locales al
+fichero .bashrc necesarias para la ejecución de Pig. Entre ellas están
+las necesarias para que sepa donde está instalado hadoop:</p>
+<div class="highlight"><pre><span class="nb">export </span><span class="nv">HADOOP_HOME</span><span class="o">=</span>/usr/local/hadoop
+<span class="nb">export </span><span class="nv">HADOOP_SLAVES</span><span class="o">=</span><span class="k">${</span><span class="nv">HADOOP_HOME</span><span class="k">}</span>/conf/slaves
+<span class="nb">export </span><span class="nv">HADOOP_CONF_DIR</span><span class="o">=</span><span class="k">${</span><span class="nv">HADOOP_HOME</span><span class="k">}</span>/conf
+<span class="nb">export </span><span class="nv">PATH</span><span class="o">=</span>/path/pig/bin/:/usr/local/hadoop/bin/:<span class="nv">$PATH</span>
+<span class="nb">export </span><span class="nv">PIG_CLASSPATH</span><span class="o">=</span>/usr/local/hadoop/conf
+</pre></div>
+<p><strong>Ejecución por consola</strong>
+Existen 2 modos de ejecución, en modo local o mapreduce (cluster).
+Para ejecutar en modo local ejecutamos lo siguiente sobre la linea de
+comandos:</p>
+<p><tt class="docutils literal">pig <span class="pre">-x</span> local</tt></p>
+<p>Y para el modo distribuido:</p>
+<p><tt class="docutils literal">pig</tt>
+o
+<tt class="docutils literal">pig <span class="pre">-x</span> mapreduce</tt></p>
+<p><strong>Ejemplo</strong></p>
+<p>Para ver un ejemplo de ejecución y comprobar que todo funciona
+correctamente, ejecutaremos lo siguiente sobre la consola grunt:</p>
+<div class="highlight"><pre>grunt&gt; <span class="nv">A</span> <span class="o">=</span> load <span class="s1">&#39;passwd&#39;</span> using PigStorage<span class="o">(</span><span class="s1">&#39;:&#39;</span><span class="o">)</span>;
+grunt&gt; <span class="nv">B</span> <span class="o">=</span> foreach A generate <span class="nv">$0</span> as id;
+grunt&gt; dump B;
+</pre></div>
+<p><strong>Ejecución por script</strong>
+Para lanzar scripts sin la ayuda de la consola, guardaremos el código
+anterior en un fichero llamado (por ejemplo) <strong>id.pig</strong>. Lo lanzaremos
+en modo local de la siguiente manera:
+<tt class="docutils literal">pig <span class="pre">-x</span> local id.pig</tt></p>
+<p>Y para el modo distribuido:
+<tt class="docutils literal">pig id.pig</tt>
+o
+<tt class="docutils literal">pig <span class="pre">-x</span> mapreduce id.pig</tt></p>
+<p>Y poco más. Para más información sobre Pig, podemos ir al <a class="reference external" href="http://pig.apache.org/docs/r0.8.0/index.html">sitio
+oficial</a> donde tenemos más información sobre el lenguaje <a class="reference external" href="http://pig.apache.org/docs/r0.8.0/piglatin_ref1.html">Pig Latin</a> o
+modos de <a class="reference external" href="http://pig.apache.org/docs/r0.8.0/cookbook.html">optimizar la paralelización del código que desarrollemos</a>.</p>
+</p>
+            </div>
+            <!-- /.entry-content -->
+        </article>
+    </section>
+
+        </div>
+        <div class="col-sm-3 well well-sm" id="sidebar">
+
+<aside>
+    <section>
+        <ul class="list-group list-group-flush">
+                <li class="list-group-item"><h4><i class="fa fa-home fa-lg"></i><span class="icon-label">Social</span></h4>
+                  <ul class="list-group" id="social">
+                    <li class="list-group-item"><a href="https://twitter.com/terrimyu"><i class="fa fa-twitter-square fa-lg"></i> Twitter</a></li>
+                    <li class="list-group-item"><a href="https://linkedin.com/in/terriyu"><i class="fa fa-linkedin-square fa-lg"></i> Linkedin</a></li>
+                  </ul>
+                </li>
+
+
+
+                <li class="list-group-item"><a href="/"><h4><i class="fa fa-tags fa-lg"></i><span class="icon-label">Tags</span></h4></a>
+                    <ul class="list-group " id="tags">
+                        <li class="list-group-item tag-1">
+                            <a href="/tag/gestion-de-proyectos.html">
+                                gestión de proyectos
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-1">
+                            <a href="/tag/desarrollo.html">
+                                desarrollo
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-2">
+                            <a href="/tag/cloud.html">
+                                cloud
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-2">
+                            <a href="/tag/hadoop.html">
+                                hadoop
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-2">
+                            <a href="/tag/agil.html">
+                                ágil
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-2">
+                            <a href="/tag/management.html">
+                                management
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-2">
+                            <a href="/tag/facebook.html">
+                                facebook
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-3">
+                            <a href="/tag/tutorial-hadoop.html">
+                                tutorial hadoop
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-3">
+                            <a href="/tag/pig.html">
+                                pig
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-3">
+                            <a href="/tag/ubuntu.html">
+                                Ubuntu
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-3">
+                            <a href="/tag/escalar.html">
+                                escalar
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-3">
+                            <a href="/tag/reflexiones.html">
+                                reflexiones
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-4">
+                            <a href="/tag/hive.html">
+                                hive
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-4">
+                            <a href="/tag/scrum.html">
+                                scrum
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-4">
+                            <a href="/tag/startup.html">
+                                startup
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-4">
+                            <a href="/tag/bigdata.html">
+                                bigdata
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-4">
+                            <a href="/tag/data-analysis.html">
+                                data analysis
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-4">
+                            <a href="/tag/mysql.html">
+                                mysql
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-4">
+                            <a href="/tag/linux.html">
+                                Linux
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-4">
+                            <a href="/tag/php.html">
+                                php
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-4">
+                            <a href="/tag/post.html">
+                                post
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-4">
+                            <a href="/tag/data-science.html">
+                                data science
+                            </a>
+                        </li>
+                    </ul>
+                </li>    
+    <li class="list-group-item"><h4><i class="fa fa-external-link-square fa-lg"></i><span class="icon-label">Links</span></h4>
+      <ul class="list-group" id="links">
+        <li class="list-group-item">
+            <a href="http://getpelican.com/" target="_blank">
+                Pelican
+            </a>
+        </li>
+        <li class="list-group-item">
+            <a href="http://python.org/" target="_blank">
+                Python.org
+            </a>
+        </li>
+        <li class="list-group-item">
+            <a href="http://jinja.pocoo.org/" target="_blank">
+                Jinja2
+            </a>
+        </li>
+        <li class="list-group-item">
+            <a href="#" target="_blank">
+                You can modify those links in your config file
+            </a>
+        </li>
+      </ul>
+    </li>
+
+        </ul>
+    </section>
+
+</aside>        </div>
+    </div>
+</div>
+<footer>
+   <div class="container">
+      <hr>
+      <div class="row">
+         <div class="col-xs-10">&copy; 2013 Angel Llosá
+            &middot; Powered by <a href="https://github.com/DandyDev/pelican-bootstrap3" target="_blank">pelican-bootstrap3</a>,
+            <a href="http://docs.getpelican.com/" target="_blank">Pelican</a>,
+            <a href="http://getbootstrap.com" target="_blank">Bootstrap</a>         </div>
+         <div class="col-xs-2"><p class="pull-right"><i class="fa fa-arrow-up"></i> <a href="#">Back to top</a></p></div>
+      </div>
+   </div>
+</footer>
+<script src="/theme/js/jquery.min.js"></script>
+
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="/theme/js/bootstrap.min.js"></script>
+
+<!-- Enable responsive features in IE8 with Respond.js (https://github.com/scottjehl/Respond) -->
+<script src="/theme/js/respond.min.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="es"
+>
+<head>
+    <title>ejecutar un trabajo en hadoop (single-node) - Angel Llosá</title>
+    <!-- Using the latest rendering mode for IE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+<link rel="canonical" href="/ejecutar-un-trabajo-en-hadoop-single-node.html">
+
+        <meta name="author" content="Angel Llosá" />
+        <meta name="keywords" content="tutorial hadoop,cloud,Linux,Ubuntu,hadoop" />
+        <meta name="description" content="Ya vimos como instalar y configurar hadoop en nuestra máquina. Ahora toca ejecutar algo para ver cómo funciona. Para ello, vamos a probar uno de los ejemplos que vienen en hadoop, el cual nos calcula las veces que aparece una palabra en los textos que le pasamos. Para ello, primero ..." />
+
+
+
+    <!-- Bootstrap -->
+        <link rel="stylesheet" href="/theme/css/bootstrap.min.css" type="text/css"/>
+    <link href="/theme/css/font-awesome.min.css" rel="stylesheet">
+
+    <link href="/theme/css/pygments/native.css" rel="stylesheet">
+    <link rel="stylesheet" href="/theme/css/style.css" type="text/css"/>
+
+
+</head>
+<body>
+
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="/" class="navbar-brand">
+Angel Llosá            </a>
+        </div>
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav">
+                        <li class="active">
+                            <a href="/category/big-data.html">Big data</a>
+                        </li>
+                        <li >
+                            <a href="/category/desarrollo.html">Desarrollo</a>
+                        </li>
+                        <li >
+                            <a href="/category/management.html">Management</a>
+                        </li>
+                        <li >
+                            <a href="/category/misc.html">Misc</a>
+                        </li>
+                        <li >
+                            <a href="/category/mundoreal.html">Mundoreal</a>
+                        </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="/archives.html"><i class="fa fa-th-list"></i><span class="icon-label">Archives</span></a></li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+</div> <!-- /.navbar -->
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-9">
+
+    <section id="content">
+        <article>
+            <header class="page-header">
+                <h1>
+                    <a href="/ejecutar-un-trabajo-en-hadoop-single-node.html"
+                       rel="bookmark"
+                       title="Permalink to ejecutar un trabajo en hadoop (single-node)">
+                        ejecutar un trabajo en hadoop (single-node)
+                    </a>
+                </h1>
+            </header>
+            <div class="entry-content">
+                <div class="panel">
+                    <div class="panel-body">
+<footer class="post-info">
+    <span class="label label-default">Date</span>
+    <span class="published">
+        <i class="fa fa-calendar"></i><time datetime="2011-02-15T10:42:00"> mar 15 febrero 2011</time>
+    </span>
+
+
+
+<span class="label label-default">Tags</span>
+	<a href="/tag/tutorial-hadoop.html">tutorial hadoop</a>
+        /
+	<a href="/tag/cloud.html">cloud</a>
+        /
+	<a href="/tag/linux.html">Linux</a>
+        /
+	<a href="/tag/ubuntu.html">Ubuntu</a>
+        /
+	<a href="/tag/hadoop.html">hadoop</a>
+    
+</footer><!-- /.post-info -->                    </div>
+                </div>
+                <p>Ya vimos como <a class="reference external" href="http://binaridev.es/2010/12/como-instalar-hadoop-en-ubuntu-modo-single-node/">instalar y configurar hadoop en nuestra máquina</a>.
+Ahora toca ejecutar algo para ver cómo funciona. Para ello, vamos a
+probar uno de los <a class="reference external" href="http://wiki.apache.org/hadoop/WordCount">ejemplos que vienen en hadoop</a>, el cual nos calcula
+las veces que aparece una palabra en los textos que le pasamos.</p>
+<p>Para ello, primero nos bajaremos los ficheros que vamos a tratar:</p>
+<ul class="simple">
+<li><a class="reference external" href="http://www.gutenberg.org/etext/20417">The Outline of Science, Vol. 1 (of 4) by J. Arthur Thomson</a></li>
+<li><a class="reference external" href="http://www.gutenberg.org/etext/5000">The Notebooks of Leonardo Da Vinci</a></li>
+<li><a class="reference external" href="http://www.gutenberg.org/etext/4300">Ulysses by James Joyce</a></li>
+</ul>
+<p>Nos bajamos los ficheros y los guardamos, por ejemplo, en
+<tt class="docutils literal">/tmp/gutenberg</tt>:</p>
+<div class="highlight"><pre>hadoop@ubuntu:~<span class="nv">$ </span>ls -l /tmp/gutenberg/
+total 3592
+-rw-r--r-- 1 hadoop hadoop 674425 2007-01-22 12:56 20417-8.txt
+-rw-r--r-- 1 hadoop hadoop 1423808 2006-08-03 16:36 7ldvc10.txt
+-rw-r--r-- 1 hadoop hadoop 1561677 2004-11-26 09:48 ulyss12.txt
+hadoop@ubuntu:~<span class="err">$</span>
+</pre></div>
+<p>Si no teníamos arrancado hadoop, lo arrancamos
+<tt class="docutils literal">con <span class="pre">bin/start-all.sh</span></tt>. Una vez arrancado, vamos a copiar los ficheros
+descargados a nuestro sistema HDFS, para que pueda ser tratado por
+hadoop:</p>
+<div class="highlight"><pre>bin/hadoop dfs -copyFromLocal /tmp/gutenberg gutenberg
+bin/hadoop dfs -ls
+</pre></div>
+<p>Ahora, ejecutaremos el trabajo:</p>
+<div class="highlight"><pre>jar hadoop-0.20.2-examples.jar wordcount gutenberg gutenberg-output
+</pre></div>
+<p>Comprobamos que nos ha guardado el resultado en el directorio en HDFS
+<tt class="docutils literal"><span class="pre">gutenberg-output</span></tt>:</p>
+<div class="highlight"><pre>bin/hadoop dfs -ls
+</pre></div>
+<p>Para ver que hay dentro de los ficheros que nos ha generado podemos
+ejecutar lo siguiente:</p>
+<div class="highlight"><pre>bin/hadoop dfs -cat gutenberg-output/part-r-00000
+</pre></div>
+<p>Si queremos verlo desde local, primero lo copiaremos a algún destino
+de nuestro sistema de ficheros:</p>
+<div class="highlight"><pre>mkdir /tmp/gutenberg-output
+bin/hadoop dfs -getmerge gutenberg-output /tmp/gutenberg-output
+head /tmp/gutenberg-output/gutenberg-output
+</pre></div>
+<p><strong>Interfaz Web</strong></p>
+<p>Para monitorizar los trabajos que lanzamos, Hadoop tiene definidas
+unas interfaces web para ello.</p>
+<ul class="simple">
+<li><a class="reference external" href="http://localhost:50030/">http://localhost:50030/</a> – MapReduce job tracker</li>
+<li><a class="reference external" href="http://localhost:50060/">http://localhost:50060/</a> – Task tracker</li>
+<li><a class="reference external" href="http://localhost:50070/">http://localhost:50070/</a> – HDFS name node</li>
+</ul>
+<p>Son un poco simples, pero sirven de ayuda para ver el estado de nuestros
+trabajos.</p>
+</p>
+            </div>
+            <!-- /.entry-content -->
+        </article>
+    </section>
+
+        </div>
+        <div class="col-sm-3 well well-sm" id="sidebar">
+
+<aside>
+    <section>
+        <ul class="list-group list-group-flush">
+                <li class="list-group-item"><h4><i class="fa fa-home fa-lg"></i><span class="icon-label">Social</span></h4>
+                  <ul class="list-group" id="social">
+                    <li class="list-group-item"><a href="https://twitter.com/terrimyu"><i class="fa fa-twitter-square fa-lg"></i> Twitter</a></li>
+                    <li class="list-group-item"><a href="https://linkedin.com/in/terriyu"><i class="fa fa-linkedin-square fa-lg"></i> Linkedin</a></li>
+                  </ul>
+                </li>
+
+
+
+                <li class="list-group-item"><a href="/"><h4><i class="fa fa-tags fa-lg"></i><span class="icon-label">Tags</span></h4></a>
+                    <ul class="list-group " id="tags">
+                        <li class="list-group-item tag-1">
+                            <a href="/tag/gestion-de-proyectos.html">
+                                gestión de proyectos
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-1">
+                            <a href="/tag/desarrollo.html">
+                                desarrollo
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-2">
+                            <a href="/tag/cloud.html">
+                                cloud
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-2">
+                            <a href="/tag/hadoop.html">
+                                hadoop
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-2">
+                            <a href="/tag/agil.html">
+                                ágil
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-2">
+                            <a href="/tag/management.html">
+                                management
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-2">
+                            <a href="/tag/facebook.html">
+                                facebook
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-3">
+                            <a href="/tag/tutorial-hadoop.html">
+                                tutorial hadoop
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-3">
+                            <a href="/tag/pig.html">
+                                pig
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-3">
+                            <a href="/tag/ubuntu.html">
+                                Ubuntu
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-3">
+                            <a href="/tag/escalar.html">
+                                escalar
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-3">
+                            <a href="/tag/reflexiones.html">
+                                reflexiones
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-4">
+                            <a href="/tag/hive.html">
+                                hive
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-4">
+                            <a href="/tag/scrum.html">
+                                scrum
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-4">
+                            <a href="/tag/startup.html">
+                                startup
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-4">
+                            <a href="/tag/bigdata.html">
+                                bigdata
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-4">
+                            <a href="/tag/data-analysis.html">
+                                data analysis
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-4">
+                            <a href="/tag/mysql.html">
+                                mysql
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-4">
+                            <a href="/tag/linux.html">
+                                Linux
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-4">
+                            <a href="/tag/php.html">
+                                php
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-4">
+                            <a href="/tag/post.html">
+                                post
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-4">
+                            <a href="/tag/data-science.html">
+                                data science
+                            </a>
+                        </li>
+                    </ul>
+                </li>    
+    <li class="list-group-item"><h4><i class="fa fa-external-link-square fa-lg"></i><span class="icon-label">Links</span></h4>
+      <ul class="list-group" id="links">
+        <li class="list-group-item">
+            <a href="http://getpelican.com/" target="_blank">
+                Pelican
+            </a>
+        </li>
+        <li class="list-group-item">
+            <a href="http://python.org/" target="_blank">
+                Python.org
+            </a>
+        </li>
+        <li class="list-group-item">
+            <a href="http://jinja.pocoo.org/" target="_blank">
+                Jinja2
+            </a>
+        </li>
+        <li class="list-group-item">
+            <a href="#" target="_blank">
+                You can modify those links in your config file
+            </a>
+        </li>
+      </ul>
+    </li>
+
+        </ul>
+    </section>
+
+</aside>        </div>
+    </div>
+</div>
+<footer>
+   <div class="container">
+      <hr>
+      <div class="row">
+         <div class="col-xs-10">&copy; 2013 Angel Llosá
+            &middot; Powered by <a href="https://github.com/DandyDev/pelican-bootstrap3" target="_blank">pelican-bootstrap3</a>,
+            <a href="http://docs.getpelican.com/" target="_blank">Pelican</a>,
+            <a href="http://getbootstrap.com" target="_blank">Bootstrap</a>         </div>
+         <div class="col-xs-2"><p class="pull-right"><i class="fa fa-arrow-up"></i> <a href="#">Back to top</a></p></div>
+      </div>
+   </div>
+</footer>
+<script src="/theme/js/jquery.min.js"></script>
+
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="/theme/js/bootstrap.min.js"></script>
+
+<!-- Enable responsive features in IE8 with Respond.js (https://github.com/scottjehl/Respond) -->
+<script src="/theme/js/respond.min.js"></script>
+
+</body>
+</html>

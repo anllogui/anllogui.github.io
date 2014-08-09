@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="es"
+>
+<head>
+    <title>el software detrás de Facebook - Angel Llosá</title>
+    <!-- Using the latest rendering mode for IE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+<link rel="canonical" href="/el-software-detras-de-facebook.html">
+
+        <meta name="author" content="Angel Llosá" />
+        <meta name="keywords" content="cloud,mysql,facebook,php,hadoop" />
+        <meta name="description" content="Siempre he tenido curiosidad de Facebook. Te conectas y se carga todo en apenas segundos. A día de hoy, Facebook tiene 500 millones de usuarios activos. ¿Cómo pueden hacerlo para que vaya tan rápido? Buscando he encontrado que, para soportar esto, en Facebook han tenido que romper con la manera ..." />
+
+
+
+    <!-- Bootstrap -->
+        <link rel="stylesheet" href="/theme/css/bootstrap.min.css" type="text/css"/>
+    <link href="/theme/css/font-awesome.min.css" rel="stylesheet">
+
+    <link href="/theme/css/pygments/native.css" rel="stylesheet">
+    <link rel="stylesheet" href="/theme/css/style.css" type="text/css"/>
+
+
+</head>
+<body>
+
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="/" class="navbar-brand">
+Angel Llosá            </a>
+        </div>
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav">
+                        <li class="active">
+                            <a href="/category/big-data.html">Big data</a>
+                        </li>
+                        <li >
+                            <a href="/category/desarrollo.html">Desarrollo</a>
+                        </li>
+                        <li >
+                            <a href="/category/management.html">Management</a>
+                        </li>
+                        <li >
+                            <a href="/category/misc.html">Misc</a>
+                        </li>
+                        <li >
+                            <a href="/category/mundoreal.html">Mundoreal</a>
+                        </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="/archives.html"><i class="fa fa-th-list"></i><span class="icon-label">Archives</span></a></li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+</div> <!-- /.navbar -->
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-9">
+
+    <section id="content">
+        <article>
+            <header class="page-header">
+                <h1>
+                    <a href="/el-software-detras-de-facebook.html"
+                       rel="bookmark"
+                       title="Permalink to el software detrás de Facebook">
+                        el software detrás de Facebook
+                    </a>
+                </h1>
+            </header>
+            <div class="entry-content">
+                <div class="panel">
+                    <div class="panel-body">
+<footer class="post-info">
+    <span class="label label-default">Date</span>
+    <span class="published">
+        <i class="fa fa-calendar"></i><time datetime="2011-02-13T11:58:00"> dom 13 febrero 2011</time>
+    </span>
+
+
+
+<span class="label label-default">Tags</span>
+	<a href="/tag/cloud.html">cloud</a>
+        /
+	<a href="/tag/mysql.html">mysql</a>
+        /
+	<a href="/tag/facebook.html">facebook</a>
+        /
+	<a href="/tag/php.html">php</a>
+        /
+	<a href="/tag/hadoop.html">hadoop</a>
+    
+</footer><!-- /.post-info -->                    </div>
+                </div>
+                <p>Siempre he tenido curiosidad de Facebook. Te conectas y se carga todo
+en apenas segundos. A día de hoy, Facebook tiene 500 millones de
+usuarios activos. ¿Cómo pueden hacerlo para que vaya tan rápido?
+Buscando he encontrado que, para soportar esto, en Facebook han tenido
+que romper con la manera tradicional de servir contenido y evolucionar
+hacia nuevas soluciones. A parte de Oracle RAC (<a class="reference external" href="http://www.slideshare.net/ragho/hive-icde-2010">en esta presentación,
+transparencia 11</a>), el uso de soluciones de software libre es
+apabullante.</p>
+<p>Los números que maneja actualmente son:</p>
+<ul class="simple">
+<li><strong>570.000 millones</strong> de páginas vistas al mes.</li>
+<li>Tiene más fotos que el resto de sítios de fotos combinados (incluido
+Flickr).</li>
+<li>Se suben <strong>3.000 millones de fotos</strong> todos los meses y sirve más de
+<strong>1.2 millones</strong> de estas por segundo.</li>
+<li>Todo esto lo manejan más de 30.000 servidores.</li>
+</ul>
+<p><strong>¿Y cual es el software que ayuda a manejar todo esto?</strong></p>
+<p>Aunque aún mantiene parte de su plataforma LAMP, ha ido evolucionando
+creando un compilador propio de PHP, linux con kernels parcheados por
+ellos mismos y llevando lógica de MySQL al propio servidor web.
+Además de esto, se ayuda de:
+<strong>Hadoop / Hive</strong></p>
+<p><img alt="image0" src="http://farm5.static.flickr.com/4067/4712028518_ed2144f29c_o.png" /></p>
+<p>Cómo no, Hive sobre Hadoop está teniendo cada vez más peso
+en la arquitectura de Facebook. Al igual que Cassandra, son del proyecto
+Apache y son de código abierto. Se ejecutan sobre Java y se utilizan
+para el proceso de grandes cantidades de datos. Hive se ejecuta sobre
+Hadoop, por lo que puede distribuir el trabajo en tantos servidores como
+tenga el cluster. En este blog ya hablamos sobre <a class="reference external" href="http://binaridev.es/2010/12/como-instalar-hadoop-en-ubuntu-modo-multi-node/">cómo instalar Hadoop
+en una máquina Ubuntu</a>.</p>
+<p><strong>Haystack</strong></p>
+<p>Facebook utiliza un servidor http que utiliza Haystack para guardar y
+servir las fotos. Es un servidor adaptado y optimizado para este
+propósito. Haystack ha sido desarrollado por Facebook, para migrar desde
+NFS.</p>
+<p><strong>Memcached</strong></p>
+<p><a class="reference external" href="http://memcached.org/">Memcached</a> es un sistema distribuido para cachear la información que
+fluye entre el servidor de base de datos y el servidor web. Éste ha sido
+modificado y adaptado por Facebook, siempre buscando las optimizaciones
+que necesitaban.</p>
+<p><strong>HipHop</strong></p>
+<p><a class="reference external" href="http://wiki.github.com/facebook/hiphop-php/">HipHop</a>convierte PHP en C++, que luego es compilado para obtener
+mejor rendimiento que en PHP nativo.</p>
+<p><strong>BigPipe</strong></p>
+<p><a class="reference external" href="http://www.facebook.com/notes/facebook-engineering/bigpipe-pipelining-web-pages-for-high-performance/389414033919">BigPipe</a>es un servidor de páginas web que utiliza Facebook para
+servir cada página en secciones llamadas &quot;pagelets&quot; para optimizar el
+rendimiento. De esta manera se puede obtener en paralelo varias partes
+de la misma página, aumentando la velocidad de carga. Si te fijas
+mientras se carga la página que estás solicitando, las diferentes
+secciones se cargan en tiempos distintos.</p>
+<p><strong>Cassandra</strong></p>
+<p>Se utiliza para las búsquedas del Inbox. <a class="reference external" href="http://cassandra.apache.org/">Cassandra</a>es una base de
+datos NoSQL que fue desarrollada por Facebook y liberada posteriormente.
+Actualmente forma parte del proyecto Apache.</p>
+<p>Como vemos, en Facebook se utiliza un compendio de herramientas de
+software libre bastante punteras (no me refiero a LAMP) las cuales, o
+las han desarrollado ellos, o las utilizan, mejoran y amplían de manera
+activa.</p>
+<p><strong>Fuentes</strong></p>
+<ul class="simple">
+<li><a class="reference external" href="http://highscalability.com/blog/2010/6/22/exploring-the-software-behind-facebook-the-worlds-largest-si.html">Highscalability.com</a></li>
+<li><a class="reference external" href="http://www.infoq.com/presentations/Facebook-Moving-Fast-at-Scale">infoq.com</a></li>
+<li><a class="reference external" href="http://www.facebook.com/notes.php?id=9445547199">Facebook</a></li>
+</ul>
+</p>
+            </div>
+            <!-- /.entry-content -->
+        </article>
+    </section>
+
+        </div>
+        <div class="col-sm-3 well well-sm" id="sidebar">
+
+<aside>
+    <section>
+        <ul class="list-group list-group-flush">
+                <li class="list-group-item"><h4><i class="fa fa-home fa-lg"></i><span class="icon-label">Social</span></h4>
+                  <ul class="list-group" id="social">
+                    <li class="list-group-item"><a href="https://twitter.com/terrimyu"><i class="fa fa-twitter-square fa-lg"></i> Twitter</a></li>
+                    <li class="list-group-item"><a href="https://linkedin.com/in/terriyu"><i class="fa fa-linkedin-square fa-lg"></i> Linkedin</a></li>
+                  </ul>
+                </li>
+
+
+
+                <li class="list-group-item"><a href="/"><h4><i class="fa fa-tags fa-lg"></i><span class="icon-label">Tags</span></h4></a>
+                    <ul class="list-group " id="tags">
+                        <li class="list-group-item tag-1">
+                            <a href="/tag/gestion-de-proyectos.html">
+                                gestión de proyectos
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-1">
+                            <a href="/tag/desarrollo.html">
+                                desarrollo
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-2">
+                            <a href="/tag/cloud.html">
+                                cloud
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-2">
+                            <a href="/tag/hadoop.html">
+                                hadoop
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-2">
+                            <a href="/tag/agil.html">
+                                ágil
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-2">
+                            <a href="/tag/management.html">
+                                management
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-2">
+                            <a href="/tag/facebook.html">
+                                facebook
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-3">
+                            <a href="/tag/tutorial-hadoop.html">
+                                tutorial hadoop
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-3">
+                            <a href="/tag/pig.html">
+                                pig
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-3">
+                            <a href="/tag/ubuntu.html">
+                                Ubuntu
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-3">
+                            <a href="/tag/escalar.html">
+                                escalar
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-3">
+                            <a href="/tag/reflexiones.html">
+                                reflexiones
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-4">
+                            <a href="/tag/hive.html">
+                                hive
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-4">
+                            <a href="/tag/scrum.html">
+                                scrum
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-4">
+                            <a href="/tag/startup.html">
+                                startup
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-4">
+                            <a href="/tag/bigdata.html">
+                                bigdata
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-4">
+                            <a href="/tag/data-analysis.html">
+                                data analysis
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-4">
+                            <a href="/tag/mysql.html">
+                                mysql
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-4">
+                            <a href="/tag/linux.html">
+                                Linux
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-4">
+                            <a href="/tag/php.html">
+                                php
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-4">
+                            <a href="/tag/post.html">
+                                post
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-4">
+                            <a href="/tag/data-science.html">
+                                data science
+                            </a>
+                        </li>
+                    </ul>
+                </li>    
+    <li class="list-group-item"><h4><i class="fa fa-external-link-square fa-lg"></i><span class="icon-label">Links</span></h4>
+      <ul class="list-group" id="links">
+        <li class="list-group-item">
+            <a href="http://getpelican.com/" target="_blank">
+                Pelican
+            </a>
+        </li>
+        <li class="list-group-item">
+            <a href="http://python.org/" target="_blank">
+                Python.org
+            </a>
+        </li>
+        <li class="list-group-item">
+            <a href="http://jinja.pocoo.org/" target="_blank">
+                Jinja2
+            </a>
+        </li>
+        <li class="list-group-item">
+            <a href="#" target="_blank">
+                You can modify those links in your config file
+            </a>
+        </li>
+      </ul>
+    </li>
+
+        </ul>
+    </section>
+
+</aside>        </div>
+    </div>
+</div>
+<footer>
+   <div class="container">
+      <hr>
+      <div class="row">
+         <div class="col-xs-10">&copy; 2013 Angel Llosá
+            &middot; Powered by <a href="https://github.com/DandyDev/pelican-bootstrap3" target="_blank">pelican-bootstrap3</a>,
+            <a href="http://docs.getpelican.com/" target="_blank">Pelican</a>,
+            <a href="http://getbootstrap.com" target="_blank">Bootstrap</a>         </div>
+         <div class="col-xs-2"><p class="pull-right"><i class="fa fa-arrow-up"></i> <a href="#">Back to top</a></p></div>
+      </div>
+   </div>
+</footer>
+<script src="/theme/js/jquery.min.js"></script>
+
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="/theme/js/bootstrap.min.js"></script>
+
+<!-- Enable responsive features in IE8 with Respond.js (https://github.com/scottjehl/Respond) -->
+<script src="/theme/js/respond.min.js"></script>
+
+</body>
+</html>

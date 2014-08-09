@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="es"
+>
+<head>
+    <title>Cómo montar equipos de científicos de datos (data scientist) - Angel Llosá</title>
+    <!-- Using the latest rendering mode for IE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+<link rel="canonical" href="/como-montar-equipos-de-cientificos-de-datos-data-scientist.html">
+
+        <meta name="author" content="Angel Llosá" />
+        <meta name="keywords" content="data science,data analysis,bigdata,hive,facebook,pig,hadoop" />
+        <meta name="description" content="NOTA: Iba a poner el título en inglés, pero me he arriesgado a ponerlo en castellano. Si alguien tiene una traducción mejor para &#34;data scientist&#34; o &#34;data science&#34;, estoy abierto a recomendaciones. Data science Hace poco en O&#39;Reilly publicaban un artículo sobre montar equipos de se dediquen a lo ..." />
+
+
+
+    <!-- Bootstrap -->
+        <link rel="stylesheet" href="/theme/css/bootstrap.min.css" type="text/css"/>
+    <link href="/theme/css/font-awesome.min.css" rel="stylesheet">
+
+    <link href="/theme/css/pygments/native.css" rel="stylesheet">
+    <link rel="stylesheet" href="/theme/css/style.css" type="text/css"/>
+
+
+</head>
+<body>
+
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="/" class="navbar-brand">
+Angel Llosá            </a>
+        </div>
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav">
+                        <li >
+                            <a href="/category/big-data.html">Big data</a>
+                        </li>
+                        <li >
+                            <a href="/category/desarrollo.html">Desarrollo</a>
+                        </li>
+                        <li class="active">
+                            <a href="/category/management.html">Management</a>
+                        </li>
+                        <li >
+                            <a href="/category/misc.html">Misc</a>
+                        </li>
+                        <li >
+                            <a href="/category/mundoreal.html">Mundoreal</a>
+                        </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="/archives.html"><i class="fa fa-th-list"></i><span class="icon-label">Archives</span></a></li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+</div> <!-- /.navbar -->
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-9">
+
+    <section id="content">
+        <article>
+            <header class="page-header">
+                <h1>
+                    <a href="/como-montar-equipos-de-cientificos-de-datos-data-scientist.html"
+                       rel="bookmark"
+                       title="Permalink to Cómo montar equipos de científicos de datos (data scientist)">
+                        Cómo montar equipos de científicos de datos (data scientist)
+                    </a>
+                </h1>
+            </header>
+            <div class="entry-content">
+                <div class="panel">
+                    <div class="panel-body">
+<footer class="post-info">
+    <span class="label label-default">Date</span>
+    <span class="published">
+        <i class="fa fa-calendar"></i><time datetime="2012-12-21T20:04:00"> vie 21 diciembre 2012</time>
+    </span>
+
+
+
+<span class="label label-default">Tags</span>
+	<a href="/tag/data-science.html">data science</a>
+        /
+	<a href="/tag/data-analysis.html">data analysis</a>
+        /
+	<a href="/tag/bigdata.html">bigdata</a>
+        /
+	<a href="/tag/hive.html">hive</a>
+        /
+	<a href="/tag/facebook.html">facebook</a>
+        /
+	<a href="/tag/pig.html">pig</a>
+        /
+	<a href="/tag/hadoop.html">hadoop</a>
+    
+</footer><!-- /.post-info -->                    </div>
+                </div>
+                <p><em>NOTA: Iba a poner el título en inglés, pero me he arriesgado a
+ponerlo en castellano. Si alguien tiene una traducción mejor para &quot;data
+scientist&quot; o &quot;data science&quot;, estoy abierto a recomendaciones.</em></p>
+<div class="section" id="data-science">
+<h2>Data science</h2>
+<p>Hace poco en O'Reilly publicaban un <a class="reference external" href="http://radar.oreilly.com/2011/09/building-data-science-teams.html">artículo sobre montar equipos
+de se dediquen a lo que se está llamando &quot;ciencia de datos&quot;</a>&nbsp;(data
+science) dentro de tu empresa. Con <em>data science</em> se refiere a las
+técnicas y teorías implicadas el proceso de adquirir, limpiar, ordenar,
+procesar, mostrar, almacenar, etc. los datos que nos pueden ayudar a
+detectar problemas en nuestro negocio o a optimizar y mejorar nuestros
+procesos. &nbsp;Podéis&nbsp;leer más información sobre esta disciplina en
+esta&nbsp;<a class="reference external" href="http://en.wikipedia.org/wiki/Data_science">entrada de la wikipedia</a>&nbsp;o en este <a class="reference external" href="http://radar.oreilly.com/2010/06/what-is-data-science.html">artículo también de
+O'Reilly</a></p>
+<div style="border: 0px; margin: 0px; padding: 0px;"><div class="separator"
+style="clear: both; line-height: 1.428571em; text-align: center;"><p><a class="reference external" href="http://4.bp.blogspot.com/-UHomXVF9dsA/UNNne-A23kI/AAAAAAAABgs/Rj0slwRgOZ8/s1600/DataScientistJobDescriptions.jpg"><img alt="image0" src="http://4.bp.blogspot.com/-UHomXVF9dsA/UNNne-A23kI/AAAAAAAABgs/Rj0slwRgOZ8/s400/DataScientistJobDescriptions.jpg" /></a></p>
+</div></div>
+<div class="section" id="aplicacion-en-empresas">
+<h2>Aplicación en empresas</h2>
+<div style="line-height: 1.428571em;"><p>Como introducción, el autor habla sobre la importancia de esta nueva
+disciplina en las empresas que se están posicionando como líderes en el
+comercio y en redes sociales. Estas compañías se apoyan en
+sus <em>científicos de datos</em> para muy diversos objetivos:</p>
+</div><div style="line-height: 1.428571em;"></div><ul class="simple">
+<li><a class="reference external" href="http://www.amazon.com/">Amazon</a>: Recomendación de productos, experiencias de usuario,
+etc.</li>
+<li><a class="reference external" href="http://facebook.com/">Facebook</a>: Uno de los ejemplos más famosos con su recomendación
+de personas que podrías conocer.</li>
+<li><a class="reference external" href="http://www.walmart.com/">Walmart</a>: Análisis y mejora de sus procesos de distribución.</li>
+<li><a class="reference external" href="https://www.netflix.com/">Netflix</a>: Analizan el tipo de consumidor que es para poder
+convertirlo en un tipo de consumidor a largo plazo o para mantenerlo
+como tal.</li>
+<li><a class="reference external" href="http://www.zynga.com/">Zynga</a>: Analiza cómo interactúan los usuarios con sus juegos. Con
+esta información los modifican para que el usuario esté el máximo
+tiempo jugando.</li>
+</ul>
+<div style="line-height: 1.428571em;"><p>De esta manera vemos como no solo las tecnológicas se pueden aprovechan
+de esta disciplina para aumentar sus ventajas competitivas. Empresas con
+un negocio del finales del siglo XX como Walmart utilizan las
+herramientas ofrecidas para mejorar sus procesos.</p>
+</div><p>Para empezar a trabajar en tu empresa en esta dirección, has de seguir
+el siguiente lema: Si puedes medirlo, puedes arreglarlo. Por eso, para
+generar ese valor con los datos, necesitas:</p>
+<ul class="simple">
+<li>Sensorizar y guardar todos los datos que puedas.</li>
+<li>Medir los procesos a partir de los datos para poder mejorarlos.</li>
+<li><strong>Dejarlos accesibles a todos los trabajadores de la empresa</strong>. No
+solo al departamento de informática. Cuanta mas gente lo vea mejor,
+ya que así es más fácil es encontrar errores.</li>
+</ul>
+<p>Este último punto es importante. Todo el personal debería mirar, por lo
+menos, los datos implicados en su &nbsp;área o adyacentes y analizándolos.
+Esto es lo que llaman la democratización de los datos (democratization
+of data). Por ejemplo, en Facebook cualquiera puede consultar la base de
+datos (que está construida sobre <a class="reference external" href="http://hadoop.apache.org/">hadoop</a>) y montarse un dashboard con
+los datos que necesite monitorizar, ejecutando a intervalos los scripts
+que haya predefinido.</p>
+<p>Otro ejemplo es <a class="reference external" href="http://zynga.com/">Zinga</a>. Que para soportar las distintas necesidades
+de analistas de negocio con mantener un entorno de producción estable,
+tiene dos bases de datos: Una de producción y la otra para el resto. Las
+2 son replicas, y no se asegura la velocidad de respuesta de la segunda.</p>
+</div>
+<div class="section" id="aplicacion-en-banca">
+<h2>Aplicación en banca</h2>
+<p>También existen aplicaciones bancarias. Líderes de este sector como
+Paypal, Visa y American Express se apoyan en esta disciplina para
+detectar fraude analizando operaciones bancarias y de tarjeta,
+utilizando las siguientes pautas:</p>
+<ul class="simple">
+<li>Recoger todos los datos posibles.</li>
+<li>Detectar casos de fraude realizando análisis forense de los datos.
+Una vez detectados los patrones, analizar los datos del momento.</li>
+<li>Utilizar herramientas rápidas y potentes para el análisis en línea
+para poder detectar los casos en el momento en que se están
+realizando.</li>
+<li>Ingeniería de datos</li>
+</ul>
+<p>En el artículo también se repasa las tecnologías (data engineering) que
+se utilizan para cumplir los objetivos:</p>
+<ul class="simple">
+<li>Recogida de datos: <a class="reference external" href="https://bitbucket.org/angelnan/kafkadb/wiki/Home">Kafka</a>, <a class="reference external" href="https://cwiki.apache.org/FLUME/home.html">Flume</a> y <a class="reference external" href="http://en.wikipedia.org/wiki/Scribe_(log_server)">Scribe</a>.</li>
+<li>Almacenaje: <a class="reference external" href="http://hadoop.apache.org/">Hadoop</a>.</li>
+<li>Control de procesos y tareas: <a class="reference external" href="http://data.linkedin.com/opensource/azkaban">Azkaban</a> y <a class="reference external" href="http://oozie.apache.org/">Oozie</a>.</li>
+<li>Análisis: <a class="reference external" href="http://pig.apache.org/">Pig</a> y <a class="reference external" href="http://hive.apache.org/">Hive</a>.</li>
+</ul>
+<p>Estas tecnologías ayudan a poder escalar los sistemas a partir de un
+volumen grande de datos, lo que hoy en día llaman &quot;big data&quot;.</p>
+</div>
+<div class="section" id="cientifico-de-datos">
+<h2>Científico de datos</h2>
+<p>Finalmente se hace un repaso a las habilidades que ha de tener alguien
+que trabaje en esta disciplina y que puede hacer para empezar:</p>
+<ul class="simple">
+<li>Experiencia técnica y experiencia en alguna disciplina científica
+(matemáticas, física, tecnológica, estadística, etc).</li>
+<li>Curiosidad.</li>
+<li>Habilidad de contar&nbsp;historias&nbsp;(Storytelling). En este caso se refiere
+a la habilidad de contar las cosas para que además de serlo, parezca
+interesante y comprensible.</li>
+<li>Inteligencia y habilidad para enfocar problemas de manera diferente y
+creativa.</li>
+</ul>
+<p>También se resalta que no es necesaria experiencia en informática. En mi
+opinión, que es porque el tecnólogo se centra en el problema técnico y
+no en el problema lógico que se quiere resolver en el negocio.</p>
+<p>También podríamos añadir a las habilidades, tener experiencia en :</p>
+<ul class="simple">
+<li>Encontrar fuentes de datos útiles.</li>
+<li>Trabajar con grandes volúmenes de datos a pesar de las restricciones
+de computo o de espacio.</li>
+<li>Limpiar datos y dejarlos consistentes.</li>
+<li>Mezclar varios paquetes de datos y juntarlos de manera que acaben
+siendo coherentes.</li>
+<li>Visualizar esos datos.</li>
+<li>Construir herramientas para que otros puedan trabajar con los datos
+de manera eficiente.</li>
+</ul>
+<p>De ahí que la mejor manera de prepararse para esta disciplina sea
+trabajar ya con datos de manera intensiva.</p>
+</div>
+<div class="section" id="conclusion">
+<h2>Conclusión</h2>
+<p>Así que ya sabes, tanto como si quieres montar un equipo de trabajo de
+esta disciplina o quieres empezar a trabajar en la profesión más sexy
+del siglo XXI, este artículo te puede ser de utilidad como guía
+introductoria.</p>
+<p>Y ahora, como siempre, <strong>me interesa tu opinión</strong>. ¿Qué opinas de esta
+disciplina? ¿Otro hype o es algo que no acaba de despertar?</p>
+</div>
+
+            </div>
+            <!-- /.entry-content -->
+        </article>
+    </section>
+
+        </div>
+        <div class="col-sm-3 well well-sm" id="sidebar">
+
+<aside>
+    <section>
+        <ul class="list-group list-group-flush">
+                <li class="list-group-item"><h4><i class="fa fa-home fa-lg"></i><span class="icon-label">Social</span></h4>
+                  <ul class="list-group" id="social">
+                    <li class="list-group-item"><a href="https://twitter.com/terrimyu"><i class="fa fa-twitter-square fa-lg"></i> Twitter</a></li>
+                    <li class="list-group-item"><a href="https://linkedin.com/in/terriyu"><i class="fa fa-linkedin-square fa-lg"></i> Linkedin</a></li>
+                  </ul>
+                </li>
+
+
+
+                <li class="list-group-item"><a href="/"><h4><i class="fa fa-tags fa-lg"></i><span class="icon-label">Tags</span></h4></a>
+                    <ul class="list-group " id="tags">
+                        <li class="list-group-item tag-1">
+                            <a href="/tag/gestion-de-proyectos.html">
+                                gestión de proyectos
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-1">
+                            <a href="/tag/desarrollo.html">
+                                desarrollo
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-2">
+                            <a href="/tag/cloud.html">
+                                cloud
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-2">
+                            <a href="/tag/hadoop.html">
+                                hadoop
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-2">
+                            <a href="/tag/agil.html">
+                                ágil
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-2">
+                            <a href="/tag/management.html">
+                                management
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-2">
+                            <a href="/tag/facebook.html">
+                                facebook
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-3">
+                            <a href="/tag/tutorial-hadoop.html">
+                                tutorial hadoop
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-3">
+                            <a href="/tag/pig.html">
+                                pig
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-3">
+                            <a href="/tag/ubuntu.html">
+                                Ubuntu
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-3">
+                            <a href="/tag/escalar.html">
+                                escalar
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-3">
+                            <a href="/tag/reflexiones.html">
+                                reflexiones
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-4">
+                            <a href="/tag/hive.html">
+                                hive
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-4">
+                            <a href="/tag/scrum.html">
+                                scrum
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-4">
+                            <a href="/tag/startup.html">
+                                startup
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-4">
+                            <a href="/tag/bigdata.html">
+                                bigdata
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-4">
+                            <a href="/tag/data-analysis.html">
+                                data analysis
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-4">
+                            <a href="/tag/mysql.html">
+                                mysql
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-4">
+                            <a href="/tag/linux.html">
+                                Linux
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-4">
+                            <a href="/tag/php.html">
+                                php
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-4">
+                            <a href="/tag/post.html">
+                                post
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-4">
+                            <a href="/tag/data-science.html">
+                                data science
+                            </a>
+                        </li>
+                    </ul>
+                </li>    
+    <li class="list-group-item"><h4><i class="fa fa-external-link-square fa-lg"></i><span class="icon-label">Links</span></h4>
+      <ul class="list-group" id="links">
+        <li class="list-group-item">
+            <a href="http://getpelican.com/" target="_blank">
+                Pelican
+            </a>
+        </li>
+        <li class="list-group-item">
+            <a href="http://python.org/" target="_blank">
+                Python.org
+            </a>
+        </li>
+        <li class="list-group-item">
+            <a href="http://jinja.pocoo.org/" target="_blank">
+                Jinja2
+            </a>
+        </li>
+        <li class="list-group-item">
+            <a href="#" target="_blank">
+                You can modify those links in your config file
+            </a>
+        </li>
+      </ul>
+    </li>
+
+        </ul>
+    </section>
+
+</aside>        </div>
+    </div>
+</div>
+<footer>
+   <div class="container">
+      <hr>
+      <div class="row">
+         <div class="col-xs-10">&copy; 2013 Angel Llosá
+            &middot; Powered by <a href="https://github.com/DandyDev/pelican-bootstrap3" target="_blank">pelican-bootstrap3</a>,
+            <a href="http://docs.getpelican.com/" target="_blank">Pelican</a>,
+            <a href="http://getbootstrap.com" target="_blank">Bootstrap</a>         </div>
+         <div class="col-xs-2"><p class="pull-right"><i class="fa fa-arrow-up"></i> <a href="#">Back to top</a></p></div>
+      </div>
+   </div>
+</footer>
+<script src="/theme/js/jquery.min.js"></script>
+
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="/theme/js/bootstrap.min.js"></script>
+
+<!-- Enable responsive features in IE8 with Respond.js (https://github.com/scottjehl/Respond) -->
+<script src="/theme/js/respond.min.js"></script>
+
+</body>
+</html>
