@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Angel Llosá</title><link href="http://angel-llosa.com/" rel="alternate"></link><link href="http://angel-llosa.com/feeds/mundoreal.atom.xml" rel="self"></link><id>http://angel-llosa.com/</id><updated>2012-07-09T06:52:00+02:00</updated><entry><title>bajando precios (II)</title><link href="http://angel-llosa.com/bajando-precios-ii.html" rel="alternate"></link><updated>2012-07-09T06:52:00+02:00</updated><author><name>Angel Llosá (noreply@blogger.com)</name></author><id>tag:angel-llosa.com,2012-07-09:bajando-precios-ii.html</id><summary type="html">&lt;p&gt;Entre la coyuntura económica que vivimos y el flame que se montó el
+otro día con eso de que &lt;a class="reference external" href="http://www.enriquedans.com/2012/06/el-programador-perdido-en-mi-columna-de-expansion.html"&gt;no hay programadores con talento en España&lt;/a&gt;,
+me dio por pensar (de nuevo) en la situación del mercado laboral de las
+TIC en este país.&lt;/p&gt;
+&lt;p&gt;De todo lo que diga, me voy a referir a empresas de servicios, no de
+producto. Y siempre de desarrollo, no de mantenimiento de sistemas.
+Aunque entiendo que el flame que comentaba se refería a las empresas que
+desarrollan productos. Pero claro, eso es otro mundo, y en España lo que
+abunda son las empresas de servicios.&lt;/p&gt;
+&lt;p&gt;Cuando hablo de una &lt;strong&gt;empresa de servicios&lt;/strong&gt; me refiero a las empresas
+que hacen productos a medida, realizan algún tipo de mantenimiento de
+software ya existente y de sus respectivos evolutivos. Vamos, a lo que
+nos dedicamos la mayoría de los que trabajamos en este sector.&lt;/p&gt;
+&lt;p&gt;En mi anterior post de &lt;a class="reference external" href="http://www.binaridev.es/2011/06/bajando-precios.html"&gt;bajando precios&lt;/a&gt;, hablaba del recorte de la
+calidad de los entregables para poder hacer frente a la restricción del
+precio. Hoy me gustaría hablar de mis reflexiones sobre lo que creo que
+es el por qué de estos precios.&lt;/p&gt;
+&lt;div class="separator" style="clear: both; text-align: center;"&gt;&lt;p&gt;&lt;a class="reference external" href="http://www.binaridev.es/2011/06/bajando-precios.html"&gt;&lt;img alt="image0" src="http://1.bp.blogspot.com/-h9hbIQ_VJLQ/T_p8t0mDBFI/AAAAAAAABek/Bsw7na-RC8I/s320/bajando.jpg" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;&lt;p&gt;Creo que los precios de risa por los que se acaba ofertando un
+proyecto se debe a tres motivos: El &lt;strong&gt;cliente no sabe lo que cuesta lo
+que ha pedido&lt;/strong&gt;, &lt;strong&gt;algunas empresas proveedoras de servicios son
+bastante agresivas a la hora de vender&lt;/strong&gt; y &lt;strong&gt;hay demasiada gente para
+trabajar en el mundo de las TIC&lt;/strong&gt;. Y ahora por partes.&lt;/p&gt;
+&lt;p&gt;Normalmente, el core del negocio de un &lt;strong&gt;cliente&lt;/strong&gt; de una empresa de
+servicios no suele ser el desarrollo, de ahí que contrate a otra empresa
+para que se lo haga. En estos casos, solo existe un departamento que se
+dedica al mantenimiento de sistemas y de que todo esté encendido cuando
+toca. Al no ser el desarrollo su sector es bastante&amp;nbsp;difícil&amp;nbsp;el poder
+saber el coste real de lo que está pidiendo. Normalmente sabemos el
+coste porque comparamos con otros. Y aquí es donde viene el segundo
+problema.&lt;/p&gt;
+&lt;p&gt;La &lt;strong&gt;empresa de servicios&lt;/strong&gt; tiene un comercial, el cual no suele tener
+conocimientos técnicos o si tiene, hace tiempo que se desconectó de ese
+mundo. A él le pagan para vender y cuanto más venda más cobra, por lo
+que se suelen esmerar para conseguir ventas. También están los motivos
+de mejor precio por ser primer trabajo para ver si &amp;quot;metemos cabeza&amp;quot;,
+&amp;quot;cliente estratégico&amp;quot;, etc. Al final esto se propaga y casi todos acaban
+yendo igual, con precios que no acaban cubriendo costes. ¿Y cual es la
+solución más&amp;nbsp;fácil en este punto? Contratar a gente por menos dinero. Y
+ya sabemos el dicho, &amp;quot;si pagas cacahuetes, contratarás monos&amp;quot;.
+| Y finalmente llegamos al punto del número excesivo de&amp;nbsp;&lt;strong&gt;personas
+&amp;quot;cualificadas&amp;quot; en el mundo TIC&lt;/strong&gt; (lo pongo entre comillas porque aunque
+tengan un título que los cualifique, hay muchos que se equivocaron de
+profesión). Tenemos unas universidades que producen ingenieros como
+churros. Y hay ciertas zonas en España donde acaban trabajando en
+empresas de servicios. Esto hace que, para poder empezar, muchos
+empiecen o no cobrando o cobrando una miseria. Y este
+flujo&amp;nbsp;continuo&amp;nbsp;de&amp;nbsp;recién&amp;nbsp;licenciados no hace más que alimentar a las
+empresas que necesitan a gente que cobre poco para que los números en el
+Excel les cuadren con lo que van a facturar por lo que han malvendido.&lt;/p&gt;
+&lt;p&gt;Y aquí es donde vienen los problemas como la &lt;a class="reference external" href="http://es.wikipedia.org/wiki/Deuda_t%C3%A9cnica"&gt;deuda técnica que
+acarrea España&lt;/a&gt;, que no haya personal cualificado ni rotación de éste
+(intentas buscar buenos profesionales pagando poco para que te cuadren
+los números) y que las empresas de servicios les cueste ganar dinero, ya
+que lo que acaban desarrollando falla más que una escopeta de feria y
+acaba llevando a un&amp;nbsp;mantenimiento&amp;nbsp;muy costoso a cargo de la garantía o a
+impago por parte del cliente por no haber entregado un producto que
+cumpliese con el contrato.&lt;/p&gt;
+&lt;p&gt;¿Y cual es la solución a todo esto? Pues lo dejaré para otro post,
+porque este ya es demasiado largo.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Atención:&lt;/strong&gt;&amp;nbsp;Todo lo que he escrito son reflexiones de un profesional
+de este mundillo que surgen mientras hago footing o conduzco con la
+radio apagada.&amp;nbsp;Todavía&amp;nbsp;hay empresas de servicios que siguen luchando
+para mantener precios con los cuales poder contratar profesionales
+adecuados y mantener la calidad de lo que generan. Pero cada vez es
+más&amp;nbsp;difícil&amp;nbsp;competir con las que lo intentan por precio.&lt;/p&gt;
+&lt;p&gt;Como siempre, no&amp;nbsp;dudéis&amp;nbsp;en comentar lo que&amp;nbsp;conocéis, ya que lo que
+aquí expongo son interpretaciones a partir de hechos.&lt;/p&gt;
+&lt;/p&gt;</summary><category term="desarrollo"></category><category term="reflexiones"></category></entry></feed>

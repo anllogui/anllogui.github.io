@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Angel Llosá</title><link href="http://angel-llosa.com/" rel="alternate"></link><link href="http://angel-llosa.com/feeds/big-data.atom.xml" rel="self"></link><id>http://angel-llosa.com/</id><updated>2011-02-15T10:42:00+01:00</updated><entry><title>ejecutar un trabajo en hadoop (single-node)</title><link href="http://angel-llosa.com/ejecutar-un-trabajo-en-hadoop-single-node.html" rel="alternate"></link><updated>2011-02-15T10:42:00+01:00</updated><author><name>Angel Llosá</name></author><id>tag:angel-llosa.com,2011-02-15:ejecutar-un-trabajo-en-hadoop-single-node.html</id><summary type="html">&lt;p&gt;Ya vimos como &lt;a class="reference external" href="http://binaridev.es/2010/12/como-instalar-hadoop-en-ubuntu-modo-single-node/"&gt;instalar y configurar hadoop en nuestra máquina&lt;/a&gt;.
+Ahora toca ejecutar algo para ver cómo funciona. Para ello, vamos a
+probar uno de los &lt;a class="reference external" href="http://wiki.apache.org/hadoop/WordCount"&gt;ejemplos que vienen en hadoop&lt;/a&gt;, el cual nos calcula
+las veces que aparece una palabra en los textos que le pasamos.&lt;/p&gt;
+&lt;p&gt;Para ello, primero nos bajaremos los ficheros que vamos a tratar:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://www.gutenberg.org/etext/20417"&gt;The Outline of Science, Vol. 1 (of 4) by J. Arthur Thomson&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://www.gutenberg.org/etext/5000"&gt;The Notebooks of Leonardo Da Vinci&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://www.gutenberg.org/etext/4300"&gt;Ulysses by James Joyce&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Nos bajamos los ficheros y los guardamos, por ejemplo, en
+&lt;tt class="docutils literal"&gt;/tmp/gutenberg&lt;/tt&gt;:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;hadoop@ubuntu:~&lt;span class="nv"&gt;$ &lt;/span&gt;ls -l /tmp/gutenberg/
+total 3592
+-rw-r--r-- 1 hadoop hadoop 674425 2007-01-22 12:56 20417-8.txt
+-rw-r--r-- 1 hadoop hadoop 1423808 2006-08-03 16:36 7ldvc10.txt
+-rw-r--r-- 1 hadoop hadoop 1561677 2004-11-26 09:48 ulyss12.txt
+hadoop@ubuntu:~&lt;span class="err"&gt;$&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Si no teníamos arrancado hadoop, lo arrancamos
+&lt;tt class="docutils literal"&gt;con &lt;span class="pre"&gt;bin/start-all.sh&lt;/span&gt;&lt;/tt&gt;. Una vez arrancado, vamos a copiar los ficheros
+descargados a nuestro sistema HDFS, para que pueda ser tratado por
+hadoop:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;bin/hadoop dfs -copyFromLocal /tmp/gutenberg gutenberg
+bin/hadoop dfs -ls
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Ahora, ejecutaremos el trabajo:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;jar hadoop-0.20.2-examples.jar wordcount gutenberg gutenberg-output
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Comprobamos que nos ha guardado el resultado en el directorio en HDFS
+&lt;tt class="docutils literal"&gt;&lt;span class="pre"&gt;gutenberg-output&lt;/span&gt;&lt;/tt&gt;:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;bin/hadoop dfs -ls
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Para ver que hay dentro de los ficheros que nos ha generado podemos
+ejecutar lo siguiente:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;bin/hadoop dfs -cat gutenberg-output/part-r-00000
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Si queremos verlo desde local, primero lo copiaremos a algún destino
+de nuestro sistema de ficheros:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;mkdir /tmp/gutenberg-output
+bin/hadoop dfs -getmerge gutenberg-output /tmp/gutenberg-output
+head /tmp/gutenberg-output/gutenberg-output
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Interfaz Web&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Para monitorizar los trabajos que lanzamos, Hadoop tiene definidas
+unas interfaces web para ello.&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://localhost:50030/"&gt;http://localhost:50030/&lt;/a&gt; – MapReduce job tracker&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://localhost:50060/"&gt;http://localhost:50060/&lt;/a&gt; – Task tracker&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://localhost:50070/"&gt;http://localhost:50070/&lt;/a&gt; – HDFS name node&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Son un poco simples, pero sirven de ayuda para ver el estado de nuestros
+trabajos.&lt;/p&gt;
+&lt;/p&gt;</summary><category term="tutorial hadoop"></category><category term="cloud"></category><category term="Linux"></category><category term="Ubuntu"></category><category term="hadoop"></category></entry><entry><title>los 4 secretos de facebook para escalar</title><link href="http://angel-llosa.com/los-4-secretos-de-facebook-para-escalar.html" rel="alternate"></link><updated>2011-02-13T17:49:00+01:00</updated><author><name>Angel Llosá</name></author><id>tag:angel-llosa.com,2011-02-13:los-4-secretos-de-facebook-para-escalar.html</id><summary type="html">&lt;p&gt;Ya hablamos en este blog sobre &lt;a class="reference external" href="http://angel-llosa.com/el-software-detras-de-facebook.html"&gt;Facebook y el software que existe
+detrás&lt;/a&gt;. Todos conocemos sus&amp;nbsp;apabullantes&amp;nbsp;datos de de usuarios, páginas
+vista, fotos, etc.&lt;/p&gt;
+&lt;p&gt;El directo de ingeniería de Facebook,&amp;nbsp;Aditya Agarwal,&amp;nbsp;dio&amp;nbsp;una
+conferencia con el tema &amp;quot;&lt;a class="reference external" href="http://www.infoq.com/presentations/Scale-at-Facebook"&gt;Escalar en Facebook&lt;/a&gt;&amp;quot;. &amp;nbsp;La presentación es
+muy recomendable aunque dure una hora y sea en inglés. &amp;nbsp;Mezcla
+arquitectura a nivel técnico y metodología.&lt;/p&gt;
+&lt;p&gt;Hace un buen repaso sobre la tecnología que están utilizando
+actualmente y cómo. En detalle lo que hablábamos en el post anterior:
+&lt;a class="reference external" href="http://angel-llosa.com/el-software-detras-de-facebook.html"&gt;uso de PHP, memcache, MySQL, HipHop, etc&lt;/a&gt;.&lt;/p&gt;
+&lt;div style="font-size: 14px; line-height: 25px;"&gt;&lt;p&gt;Una parte que me ha gustado mucho ha sido la de la cultura de empresa,
+la cual se basa en 3 puntos principales:&lt;/p&gt;
+&lt;/div&gt;&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;strong&gt;Muévete&amp;nbsp;rápido e innova&lt;/strong&gt;, no te preocupes en romper cosas.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Alcanzar gran impacto con equipos pequeños&lt;/strong&gt;. Se trabaja mejor, más
+rapido y hay mejor comunicación.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Se valiente e innova&lt;/strong&gt;. Un poco extensión del primer punto.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div&gt;&lt;p&gt;También es interesante cuando aconseja que antes de pensar en escalar,
+hay que hacerlo funcionar, ya que no vas a tener millones de usuarios
+para empezar. &lt;strong&gt;Es más importante sacar el producto al mercado rápido&lt;/strong&gt;.&lt;/p&gt;
+&lt;/div&gt;&lt;div&gt;&lt;p&gt;A nivel técnico, me quedo con:&lt;/p&gt;
+&lt;/div&gt;&lt;ul class="simple"&gt;
+&lt;li&gt;Desventajas PHP: tiene coste de CPU alto. Lo pasan a C++ con HipHop.
+Es curiosa la gráfica que muestra, donde aparece primero C++ y luego
+Java como los más óptimos.&lt;/li&gt;
+&lt;li&gt;Uso de servicios: usa el lenguaje, librerias y herramientas correctas
+para la tarea que quieres (usan c++, java, erlang, python). Facebook
+utiliza mucho la arquitectura orientada a servicios, pero no tiene
+una herramienta única, sino que depende de lo que busque, utiliza lo
+que necesita.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Lo dicho, &lt;a class="reference external" href="http://www.infoq.com/presentations/Scale-at-Facebook"&gt;la conferencia no tiene desperdicio&lt;/a&gt;. 50 minutos de charla y
+10 de preguntas.&lt;/p&gt;
+&lt;/p&gt;</summary><category term="escalar"></category><category term="facebook"></category></entry><entry><title>el software detrás de Facebook</title><link href="http://angel-llosa.com/el-software-detras-de-facebook.html" rel="alternate"></link><updated>2011-02-13T11:58:00+01:00</updated><author><name>Angel Llosá</name></author><id>tag:angel-llosa.com,2011-02-13:el-software-detras-de-facebook.html</id><summary type="html">&lt;p&gt;Siempre he tenido curiosidad de Facebook. Te conectas y se carga todo
+en apenas segundos. A día de hoy, Facebook tiene 500 millones de
+usuarios activos. ¿Cómo pueden hacerlo para que vaya tan rápido?
+Buscando he encontrado que, para soportar esto, en Facebook han tenido
+que romper con la manera tradicional de servir contenido y evolucionar
+hacia nuevas soluciones. A parte de Oracle RAC (&lt;a class="reference external" href="http://www.slideshare.net/ragho/hive-icde-2010"&gt;en esta presentación,
+transparencia 11&lt;/a&gt;), el uso de soluciones de software libre es
+apabullante.&lt;/p&gt;
+&lt;p&gt;Los números que maneja actualmente son:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;strong&gt;570.000 millones&lt;/strong&gt; de páginas vistas al mes.&lt;/li&gt;
+&lt;li&gt;Tiene más fotos que el resto de sítios de fotos combinados (incluido
+Flickr).&lt;/li&gt;
+&lt;li&gt;Se suben &lt;strong&gt;3.000 millones de fotos&lt;/strong&gt; todos los meses y sirve más de
+&lt;strong&gt;1.2 millones&lt;/strong&gt; de estas por segundo.&lt;/li&gt;
+&lt;li&gt;Todo esto lo manejan más de 30.000 servidores.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;¿Y cual es el software que ayuda a manejar todo esto?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Aunque aún mantiene parte de su plataforma LAMP, ha ido evolucionando
+creando un compilador propio de PHP, linux con kernels parcheados por
+ellos mismos y llevando lógica de MySQL al propio servidor web.
+Además de esto, se ayuda de:
+&lt;strong&gt;Hadoop / Hive&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="image0" src="http://farm5.static.flickr.com/4067/4712028518_ed2144f29c_o.png" /&gt;&lt;/p&gt;
+&lt;p&gt;Cómo no, Hive sobre Hadoop está teniendo cada vez más peso
+en la arquitectura de Facebook. Al igual que Cassandra, son del proyecto
+Apache y son de código abierto. Se ejecutan sobre Java y se utilizan
+para el proceso de grandes cantidades de datos. Hive se ejecuta sobre
+Hadoop, por lo que puede distribuir el trabajo en tantos servidores como
+tenga el cluster. En este blog ya hablamos sobre &lt;a class="reference external" href="http://binaridev.es/2010/12/como-instalar-hadoop-en-ubuntu-modo-multi-node/"&gt;cómo instalar Hadoop
+en una máquina Ubuntu&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Haystack&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Facebook utiliza un servidor http que utiliza Haystack para guardar y
+servir las fotos. Es un servidor adaptado y optimizado para este
+propósito. Haystack ha sido desarrollado por Facebook, para migrar desde
+NFS.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Memcached&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external" href="http://memcached.org/"&gt;Memcached&lt;/a&gt; es un sistema distribuido para cachear la información que
+fluye entre el servidor de base de datos y el servidor web. Éste ha sido
+modificado y adaptado por Facebook, siempre buscando las optimizaciones
+que necesitaban.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;HipHop&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external" href="http://wiki.github.com/facebook/hiphop-php/"&gt;HipHop&lt;/a&gt;convierte PHP en C++, que luego es compilado para obtener
+mejor rendimiento que en PHP nativo.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;BigPipe&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external" href="http://www.facebook.com/notes/facebook-engineering/bigpipe-pipelining-web-pages-for-high-performance/389414033919"&gt;BigPipe&lt;/a&gt;es un servidor de páginas web que utiliza Facebook para
+servir cada página en secciones llamadas &amp;quot;pagelets&amp;quot; para optimizar el
+rendimiento. De esta manera se puede obtener en paralelo varias partes
+de la misma página, aumentando la velocidad de carga. Si te fijas
+mientras se carga la página que estás solicitando, las diferentes
+secciones se cargan en tiempos distintos.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Cassandra&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Se utiliza para las búsquedas del Inbox. &lt;a class="reference external" href="http://cassandra.apache.org/"&gt;Cassandra&lt;/a&gt;es una base de
+datos NoSQL que fue desarrollada por Facebook y liberada posteriormente.
+Actualmente forma parte del proyecto Apache.&lt;/p&gt;
+&lt;p&gt;Como vemos, en Facebook se utiliza un compendio de herramientas de
+software libre bastante punteras (no me refiero a LAMP) las cuales, o
+las han desarrollado ellos, o las utilizan, mejoran y amplían de manera
+activa.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Fuentes&lt;/strong&gt;&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://highscalability.com/blog/2010/6/22/exploring-the-software-behind-facebook-the-worlds-largest-si.html"&gt;Highscalability.com&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://www.infoq.com/presentations/Facebook-Moving-Fast-at-Scale"&gt;infoq.com&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://www.facebook.com/notes.php?id=9445547199"&gt;Facebook&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/p&gt;</summary><category term="cloud"></category><category term="mysql"></category><category term="facebook"></category><category term="php"></category><category term="hadoop"></category></entry></feed>

@@ -1,0 +1,760 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Angel Llosá</title><link href="http://angel-llosa.com/" rel="alternate"></link><link href="http://angel-llosa.com/feeds/misc.atom.xml" rel="self"></link><id>http://angel-llosa.com/</id><updated>2013-06-02T19:22:00+02:00</updated><entry><title>Montar un equipo para una startup tecnológica</title><link href="http://angel-llosa.com/montar-un-equipo-para-una-startup-tecnologica.html" rel="alternate"></link><updated>2013-06-02T19:22:00+02:00</updated><author><name>Angel Llosá (noreply@blogger.com)</name></author><id>tag:angel-llosa.com,2013-06-02:montar-un-equipo-para-una-startup-tecnologica.html</id><summary type="html">&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div class="line"&gt;Estos últimos meses he estado echando una mano en el desarrollo de la&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="system-message"&gt;
+&lt;p class="system-message-title"&gt;System Message: WARNING/2 (&lt;tt class="docutils"&gt;/Users/anllogui/Dropbox/blogs/angel-llosa.com/content/montar-un-equipo-para-una-startup-tecnologica.rst&lt;/tt&gt;, line 9)&lt;/p&gt;
+Line block ends without a blank line.&lt;/div&gt;
+&lt;p&gt;aplicación principal de una startup internetil. Los
+socios/creadores/fundadores no eran técnicos. Y después de varios
+intentos con otras empresas para hacer el desarrollo, la aplicación
+llegó a manos de un compañero y mías.
+| La aplicación había pasado ya por 2 equipos distintos y estaba
+construida al 50%. A un código un poco caótico, y como podréis imaginar,
+había que añadir unos plazos que ya venían apretados. La combinación
+perfecta. Por lo menos, la parte de análisis y el diseño gráfico estaba
+cerrado (y se mantuvo así hasta la entrega).
+| Al final, se consiguió poner en producción y con pocas incidencias,
+pero estos meses me ha dado que pensar en &lt;strong&gt;cómo montaría un equipo de
+desarrollo&amp;nbsp;enfocado&amp;nbsp;a startups&lt;/strong&gt;.&lt;/p&gt;
+&lt;div class="separator" style="clear: both; text-align: center;"&gt;&lt;p&gt;&lt;a class="reference external" href="http://2.bp.blogspot.com/-NvFsybQnIdg/UTTG48PtCVI/AAAAAAAABhs/VsY2mxlAATI/s1600/7_people_large.jpg"&gt;&lt;img alt="image0" src="http://2.bp.blogspot.com/-NvFsybQnIdg/UTTG48PtCVI/AAAAAAAABhs/VsY2mxlAATI/s320/7_people_large.jpg" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div class="line"&gt;En este caso, el equipo con el que trabajar ya venía dado. 3 personas&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="system-message"&gt;
+&lt;p class="system-message-title"&gt;System Message: WARNING/2 (&lt;tt class="docutils"&gt;/Users/anllogui/Dropbox/blogs/angel-llosa.com/content/montar-un-equipo-para-una-startup-tecnologica.rst&lt;/tt&gt;, line 34)&lt;/p&gt;
+Line block ends without a blank line.&lt;/div&gt;
+&lt;p&gt;al otro lado del charco, uno en una ciudad y un compañero y yo en otra.
+&amp;nbsp;Mi background profesional (y el de mi socio) es de consultora
+tecnológica, pero en mi tiempo libre me he dedicado a montar cosillas
+por internet desde hace años. La última ha sido &lt;a class="reference external" href="http://estilr.es/"&gt;http://estilr.es&lt;/a&gt; (uno
+de los motivos de que al final me llegase la colaboración en el
+desarrollo de la aplicación de la que hablaba). Por lo tanto, he
+trabajado de maneras bien distintas.
+| Y juntando todas estas experiencias creo que para montar el equipo
+intentaría seguir las siguientes premisas:
+| Lo primero sería tener en cuenta las necesidades de este tipo de
+empresa. Como startup, al estar probando el modelo de negocio,
+necesitaría un equipo:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;strong&gt;Ágil&lt;/strong&gt;y no muy grande.&lt;/li&gt;
+&lt;li&gt;Si el equipo es técnico debería de tener &lt;strong&gt;experiencia en las
+tecnologías a utilizar&lt;/strong&gt; o facilidad para aprender a utilizarlas.&lt;/li&gt;
+&lt;li&gt;Con &lt;strong&gt;perfiles que abarcasen varias disciplinas&lt;/strong&gt; o capacidades
+técnicas. La única manera de cubrir al principio con la gente justa
+el máximo&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;Hasta aquí lo fácil. Ahora viene lo&amp;nbsp;difícil: &lt;strong&gt;el factor humano&lt;/strong&gt;.&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="system-message"&gt;
+&lt;p class="system-message-title"&gt;System Message: WARNING/2 (&lt;tt class="docutils"&gt;/Users/anllogui/Dropbox/blogs/angel-llosa.com/content/montar-un-equipo-para-una-startup-tecnologica.rst&lt;/tt&gt;, line 56)&lt;/p&gt;
+Line block ends without a blank line.&lt;/div&gt;
+&lt;p&gt;Para ello, te puedes hacer las siguientes preguntas:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;¿&amp;nbsp;&lt;strong&gt;Pasarías&amp;nbsp;mucho tiempo con esa persona&lt;/strong&gt;? Has de tener en cuenta
+que vais a compartir mucho tiempo juntos (lo verás más que a tu
+pareja) y vas a pasar por momentos de bastante estrés. Y ya sabemos
+que las relaciones personales bajo estas circunstancias se resienten.&lt;/li&gt;
+&lt;li&gt;¿&lt;strong&gt;Es de confianza&lt;/strong&gt;? ¿Crees que tendrás que estar encima para ver
+si hace bien su trabajo? Cuando el trabajo se ha de hacer rápido,
+necesitas poder confiar en los que te rodean. Estas preguntas son
+difíciles de responder a partir de una entrevista de trabajo, pero
+con&amp;nbsp;alguna&amp;nbsp;dinámica simulando trabajo puedes ver por donde van los
+tiros.&lt;/li&gt;
+&lt;li&gt;¿&lt;strong&gt;Nos podemos comunicar con él fácilmente&lt;/strong&gt;? En un entorno en el
+que no tienes mucho tiempo que perder, necesitas tener compañeros con
+una buena capacidad de comunicación. Imaginaos que fichamos a ese
+tipo de persona con el que nos cuesta mucho hacernos entender y que
+tampoco entendemos que nos quieren transmitir, como si hablaseis
+distintos idiomas hablando el mismo.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;strong&gt;Y vosotros que&amp;nbsp;pensáis&lt;/strong&gt;, ¿añadiríais más capacidades o preguntas?&lt;/div&gt;
+&lt;/div&gt;
+&lt;/p&gt;</summary><category term="http://schemas.google.com/blogger/2008/kind#post"></category><category term="ágil"></category><category term="startup"></category><category term="gestión de proyectos"></category><category term="desarrollo"></category></entry><entry><title>Cómo montar equipos de científicos de datos (data scientist)</title><link href="http://angel-llosa.com/como-montar-equipos-de-cientificos-de-datos-data-scientist.html" rel="alternate"></link><updated>2012-12-21T20:04:00+01:00</updated><author><name>Angel Llosá (noreply@blogger.com)</name></author><id>tag:angel-llosa.com,2012-12-21:como-montar-equipos-de-cientificos-de-datos-data-scientist.html</id><summary type="html">&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div class="line"&gt;&lt;a href="#id1"&gt;&lt;span class="problematic" id="id2"&gt;*&lt;/span&gt;&lt;/a&gt;NOTA: Iba a poner el título en inglés, pero me he arriesgado a&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="system-message" id="id1"&gt;
+&lt;p class="system-message-title"&gt;System Message: WARNING/2 (&lt;tt class="docutils"&gt;/Users/anllogui/Dropbox/blogs/angel-llosa.com/content/como-montar-equipos-de-cientificos-de-datos-data-scientist.rst&lt;/tt&gt;, line 9); &lt;em&gt;&lt;a href="#id2"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+Inline emphasis start-string without end-string.&lt;/div&gt;
+&lt;div class="system-message"&gt;
+&lt;p class="system-message-title"&gt;System Message: WARNING/2 (&lt;tt class="docutils"&gt;/Users/anllogui/Dropbox/blogs/angel-llosa.com/content/como-montar-equipos-de-cientificos-de-datos-data-scientist.rst&lt;/tt&gt;, line 9)&lt;/p&gt;
+Line block ends without a blank line.&lt;/div&gt;
+&lt;p&gt;ponerlo en castellano. Si alguien tiene una traducción mejor para &amp;quot;data
+scientist&amp;quot; o &amp;quot;data science&amp;quot;, estoy abierto a recomendaciones.*&lt;/p&gt;
+&lt;div class="section" id="data-science"&gt;
+&lt;h2&gt;Data science&lt;/h2&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;Hace poco en O'Reilly publicaban un&amp;nbsp;&lt;a href="#id3"&gt;&lt;span class="problematic" id="id4"&gt;`&lt;/span&gt;&lt;/a&gt;artículo sobre montar equipos&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="system-message" id="id3"&gt;
+&lt;p class="system-message-title"&gt;System Message: WARNING/2 (&lt;tt class="docutils"&gt;/Users/anllogui/Dropbox/blogs/angel-llosa.com/content/como-montar-equipos-de-cientificos-de-datos-data-scientist.rst&lt;/tt&gt;, line 16); &lt;em&gt;&lt;a href="#id4"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+Inline interpreted text or phrase reference start-string without end-string.&lt;/div&gt;
+&lt;div class="system-message"&gt;
+&lt;p class="system-message-title"&gt;System Message: WARNING/2 (&lt;tt class="docutils"&gt;/Users/anllogui/Dropbox/blogs/angel-llosa.com/content/como-montar-equipos-de-cientificos-de-datos-data-scientist.rst&lt;/tt&gt;, line 17)&lt;/p&gt;
+Line block ends without a blank line.&lt;/div&gt;
+&lt;p&gt;de se dediquen a lo que se está llamando &amp;quot;ciencia de datos&amp;quot;&lt;a href="#id6"&gt;&lt;span class="problematic" id="id7"&gt;`_&amp;nbsp;(data
+science) dentro de tu empresa. Con *data science* se refiere a las
+técnicas y teorías implicadas el proceso de adquirir, limpiar, ordenar,
+procesar, mostrar, almacenar, etc. los datos que nos pueden ayudar a
+detectar problemas en nuestro negocio o a optimizar y mejorar nuestros
+procesos. &amp;nbsp;Podéis&amp;nbsp;leer más información sobre esta disciplina en
+esta&amp;nbsp;\ `entrada de la wikipedia`_&lt;/span&gt;&lt;/a&gt;&amp;nbsp;o en este&amp;nbsp;&lt;a class="reference external" href="http://radar.oreilly.com/2010/06/what-is-data-science.html"&gt;artículo también de
+O'Reilly&lt;/a&gt;&lt;/p&gt;
+&lt;div style="border: 0px; margin: 0px; padding: 0px;"&gt;&lt;div class="separator"
+style="clear: both; line-height: 1.428571em; text-align: center;"&gt;&lt;p&gt;&lt;a class="reference external" href="http://4.bp.blogspot.com/-UHomXVF9dsA/UNNne-A23kI/AAAAAAAABgs/Rj0slwRgOZ8/s1600/DataScientistJobDescriptions.jpg"&gt;&lt;img alt="image0" src="http://4.bp.blogspot.com/-UHomXVF9dsA/UNNne-A23kI/AAAAAAAABgs/Rj0slwRgOZ8/s400/DataScientistJobDescriptions.jpg" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;&lt;/div&gt;
+&lt;div class="section" id="aplicacion-en-empresas"&gt;
+&lt;h2&gt;Aplicación en empresas&lt;/h2&gt;
+&lt;div style="line-height: 1.428571em;"&gt;&lt;p&gt;Como introducción, el autor habla sobre la importancia de esta nueva
+disciplina en las empresas que se están posicionando como líderes en el
+comercio y en redes sociales. Estas compañías se apoyan en
+sus&lt;em&gt;científicos de datos&lt;/em&gt; para muy diversos objetivos:&lt;/p&gt;
+&lt;/div&gt;&lt;div style="line-height: 1.428571em;"&gt;&lt;/div&gt;&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://www.amazon.com/"&gt;Amazon&lt;/a&gt;: Recomendación de productos, experiencias de usuario,
+etc.&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://facebook.com/"&gt;Facebook&lt;/a&gt;: Uno de los ejemplos más famosos con su recomendación
+de personas que podrías conocer.&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://www.walmart.com/"&gt;Walmart&lt;/a&gt;: Análisis y mejora de sus procesos de distribución.&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://www.netflix.com/"&gt;Netflix&lt;/a&gt;: Analizan el tipo de consumidor que es para poder
+convertirlo en un tipo de consumidor a largo plazo o para mantenerlo
+como tal.&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://www.zynga.com/"&gt;Zynga&lt;/a&gt;: Analiza cómo interactúan los usuarios con sus juegos. Con
+esta información los modifican para que el usuario esté el máximo
+tiempo jugando.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div style="line-height: 1.428571em;"&gt;&lt;p&gt;De esta manera vemos como no solo las tecnológicas se pueden aprovechan
+de esta disciplina para aumentar sus ventajas competitivas. Empresas con
+un negocio del finales del siglo XX como Walmart utilizan las
+herramientas ofrecidas para mejorar sus procesos.&lt;/p&gt;
+  &lt;/div&gt;
+
+Para empezar a trabajar en tu empresa en esta dirección, has de seguir&lt;div class="system-message"&gt;
+&lt;p class="system-message-title"&gt;System Message: WARNING/2 (&lt;tt class="docutils"&gt;/Users/anllogui/Dropbox/blogs/angel-llosa.com/content/como-montar-equipos-de-cientificos-de-datos-data-scientist.rst&lt;/tt&gt;, line 91)&lt;/p&gt;
+Explicit markup ends without a blank line; unexpected unindent.&lt;/div&gt;
+&lt;p&gt;el siguiente lema: Si puedes medirlo, puedes arreglarlo. Por eso, para
+generar ese valor con los datos, necesitas:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;Sensorizar y guardar todos los datos que puedas.&lt;/li&gt;
+&lt;li&gt;Medir los procesos a partir de los datos para poder mejorarlos.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Dejarlos accesibles a todos los trabajadores de la empresa&lt;/strong&gt;. No
+solo al departamento de informática. Cuanta mas gente lo vea mejor,
+ya que así es más fácil es encontrar errores.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Este último punto es importante. Todo el personal debería mirar, por lo
+menos, los datos implicados en su &amp;nbsp;área o adyacentes y analizándolos.
+Esto es lo que llaman la democratización de los datos (democratization
+of data). Por ejemplo, en Facebook cualquiera puede consultar la base de
+datos (que está construida sobre &lt;a class="reference external" href="http://hadoop.apache.org/"&gt;hadoop&lt;/a&gt;) y montarse un dashboard con
+los datos que necesite monitorizar, ejecutando a intervalos los scripts
+que haya predefinido.&lt;/p&gt;
+&lt;div class="system-message"&gt;
+&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/anllogui/Dropbox/blogs/angel-llosa.com/content/como-montar-equipos-de-cientificos-de-datos-data-scientist.rst&lt;/tt&gt;, line 107)&lt;/p&gt;
+Unexpected indentation.&lt;/div&gt;
+&lt;blockquote&gt;
+Otro ejemplo es &lt;a class="reference external" href="http://zynga.com/"&gt;Zinga&lt;/a&gt;. Que para soportar las distintas necesidades&lt;/blockquote&gt;
+&lt;div class="system-message"&gt;
+&lt;p class="system-message-title"&gt;System Message: WARNING/2 (&lt;tt class="docutils"&gt;/Users/anllogui/Dropbox/blogs/angel-llosa.com/content/como-montar-equipos-de-cientificos-de-datos-data-scientist.rst&lt;/tt&gt;, line 108)&lt;/p&gt;
+Block quote ends without a blank line; unexpected unindent.&lt;/div&gt;
+&lt;p&gt;de analistas de negocio con mantener un entorno de producción estable,
+tiene dos bases de datos: Una de producción y la otra para el resto. Las
+2 son replicas, y no se asegura la velocidad de respuesta de la segunda.
+Aplicación en banca
+-------------------&lt;/p&gt;
+&lt;p&gt;También existen aplicaciones bancarias. Líderes de este sector como
+Paypal, Visa y American Express se apoyan en esta disciplina para
+detectar fraude analizando operaciones bancarias y de tarjeta,
+utilizando las siguientes pautas:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;Recoger todos los datos posibles.&lt;/li&gt;
+&lt;li&gt;Detectar casos de fraude realizando análisis forense de los datos.
+Una vez detectados los patrones, analizar los datos del momento.&lt;/li&gt;
+&lt;li&gt;Utilizar herramientas rápidas y potentes para el análisis en línea
+para poder detectar los casos en el momento en que se están
+realizando.&lt;/li&gt;
+&lt;li&gt;Ingeniería de datos&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;En el artículo también se repasa las tecnologías (data engineering) que
+se utilizan para cumplir los objetivos:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;Recogida de datos: &lt;a class="reference external" href="https://bitbucket.org/angelnan/kafkadb/wiki/Home"&gt;Kafka&lt;/a&gt;, &lt;a class="reference external" href="https://cwiki.apache.org/FLUME/home.html"&gt;Flume&lt;/a&gt; y &lt;a class="reference external" href="http://en.wikipedia.org/wiki/Scribe_(log_server)"&gt;Scribe&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Almacenaje: &lt;a class="reference external" href="http://hadoop.apache.org/"&gt;Hadoop&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Control de procesos y tareas: &lt;a class="reference external" href="http://data.linkedin.com/opensource/azkaban"&gt;Azkaban&lt;/a&gt; y &lt;a class="reference external" href="http://oozie.apache.org/"&gt;Oozie&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Análisis: &lt;a class="reference external" href="http://pig.apache.org/"&gt;Pig&lt;/a&gt; y &lt;a class="reference external" href="http://hive.apache.org/"&gt;Hive&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Estas tecnologías ayudan a poder escalar los sistemas a partir de un
+volumen grande de datos, lo que hoy en día llaman &amp;quot;big data&amp;quot;.&lt;/p&gt;
+&lt;div class="system-message"&gt;
+&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/anllogui/Dropbox/blogs/angel-llosa.com/content/como-montar-equipos-de-cientificos-de-datos-data-scientist.rst&lt;/tt&gt;, line 137)&lt;/p&gt;
+Unexpected indentation.&lt;/div&gt;
+&lt;blockquote&gt;
+En este mismo blog podéis ver algunos tutoriales de cómo instalar&lt;/blockquote&gt;
+&lt;div class="system-message"&gt;
+&lt;p class="system-message-title"&gt;System Message: WARNING/2 (&lt;tt class="docutils"&gt;/Users/anllogui/Dropbox/blogs/angel-llosa.com/content/como-montar-equipos-de-cientificos-de-datos-data-scientist.rst&lt;/tt&gt;, line 138)&lt;/p&gt;
+Block quote ends without a blank line; unexpected unindent.&lt;/div&gt;
+&lt;p&gt;&lt;a class="reference external" href="http://www.binaridev.es/2010/12/como-instalar-hadoop-en-ubuntu-modo.html"&gt;hadoop&lt;/a&gt;
+o
+&lt;a class="reference external" href="http://www.binaridev.es/2011/01/instalar-pig-de-hadoop-en-ubuntu-en.html"&gt;Pig&lt;/a&gt;.
+Científico de datos
+-------------------&lt;/p&gt;
+&lt;p&gt;Finalmente se hace un repaso a las habilidades que ha de tener alguien
+que trabaje en esta disciplina y que puede hacer para empezar:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;Experiencia técnica y experiencia en alguna disciplina científica
+(matemáticas, física, tecnológica, estadística, etc).&lt;/li&gt;
+&lt;li&gt;Curiosidad.&lt;/li&gt;
+&lt;li&gt;Habilidad de contar&amp;nbsp;historias&amp;nbsp;(Storytelling). En este caso se refiere
+a la habilidad de contar las cosas para que además de serlo, parezca
+interesante y comprensible.&lt;/li&gt;
+&lt;li&gt;Inteligencia y habilidad para enfocar problemas de manera diferente y
+creativa.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;También se resalta que no es necesaria experiencia en informática. En mi
+opinión, que es porque el tecnólogo se centra en el problema técnico y
+no en el problema lógico que se quiere resolver en el negocio.&lt;/p&gt;
+&lt;div class="system-message"&gt;
+&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/anllogui/Dropbox/blogs/angel-llosa.com/content/como-montar-equipos-de-cientificos-de-datos-data-scientist.rst&lt;/tt&gt;, line 159)&lt;/p&gt;
+Unexpected indentation.&lt;/div&gt;
+&lt;blockquote&gt;
+También podríamos añadir a las habilidades, tener experiencia en :&lt;/blockquote&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;Encontrar fuentes de datos útiles.&lt;/li&gt;
+&lt;li&gt;Trabajar con grandes volúmenes de datos a pesar de las restricciones
+de computo o de espacio.&lt;/li&gt;
+&lt;li&gt;Limpiar datos y dejarlos consistentes.&lt;/li&gt;
+&lt;li&gt;Mezclar varios paquetes de datos y juntarlos de manera que acaben
+siendo coherentes.&lt;/li&gt;
+&lt;li&gt;Visualizar esos datos.&lt;/li&gt;
+&lt;li&gt;Construir herramientas para que otros puedan trabajar con los datos
+de manera eficiente.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;De ahí que la mejor manera de prepararse para esta disciplina sea
+trabajar ya con datos de manera intensiva.
+Conclusión
+----------&lt;/p&gt;
+&lt;p&gt;Así que ya sabes, tanto como si quieres montar un equipo de trabajo de
+esta disciplina o quieres empezar a trabajar en la profesión más sexy
+del siglo XXI, este artículo te puede ser de utilidad como guía
+introductoria.&lt;/p&gt;
+&lt;div class="system-message"&gt;
+&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/anllogui/Dropbox/blogs/angel-llosa.com/content/como-montar-equipos-de-cientificos-de-datos-data-scientist.rst&lt;/tt&gt;, line 180)&lt;/p&gt;
+Unexpected indentation.&lt;/div&gt;
+&lt;blockquote&gt;
+Y ahora, como siempre,&lt;strong&gt;me interesa tu opinión&lt;/strong&gt;. ¿Qué opinas de esta&lt;/blockquote&gt;
+&lt;div class="system-message"&gt;
+&lt;p class="system-message-title"&gt;System Message: WARNING/2 (&lt;tt class="docutils"&gt;/Users/anllogui/Dropbox/blogs/angel-llosa.com/content/como-montar-equipos-de-cientificos-de-datos-data-scientist.rst&lt;/tt&gt;, line 181)&lt;/p&gt;
+Block quote ends without a blank line; unexpected unindent.&lt;/div&gt;
+&lt;p&gt;disciplina? ¿Otro hype o es algo que no acaba de despertar?&lt;/p&gt;
+&lt;div style="line-height: 1.428571em;"&gt;&lt;/div&gt;&lt;/div&gt;&lt;div
+style="border: 0px; font-family: Helvetica, Arial, 'Droid Sans', sans-serif; font-size: 14px; line-height: 19.983333587646484px; margin: 0px; padding: 0px;"&gt;&lt;/div&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div class="system-messages section"&gt;
+&lt;h2&gt;Docutils System Messages&lt;/h2&gt;
+&lt;div class="system-message" id="id6"&gt;
+&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/anllogui/Dropbox/blogs/angel-llosa.com/content/como-montar-equipos-de-cientificos-de-datos-data-scientist.rst&lt;/tt&gt;, line 17); &lt;em&gt;&lt;a href="#id7"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+Unknown target name: &amp;quot;_ (data science) dentro de tu empresa. con *data science* se refiere a las técnicas y teorías implicadas el proceso de adquirir, limpiar, ordenar, procesar, mostrar, almacenar, etc. los datos que nos pueden ayudar a detectar problemas en nuestro negocio o a optimizar y mejorar nuestros procesos. podéis leer más información sobre esta disciplina en esta `entrada de la wikipedia&amp;quot;.&lt;/div&gt;
+&lt;/div&gt;
+</summary><category term="http://schemas.google.com/blogger/2008/kind#post"></category><category term="data science"></category><category term="data analysis"></category><category term="bigdata"></category><category term="hive"></category><category term="facebook"></category><category term="pig"></category><category term="hadoop"></category></entry><entry><title>instalar Pig (de Hadoop) en ubuntu en modo multi-cluster</title><link href="http://angel-llosa.com/instalar-pig-de-hadoop-en-ubuntu-en-modo-multi-cluster.html" rel="alternate"></link><updated>2012-11-20T16:51:00+01:00</updated><author><name>Angel Llosá (noreply@blogger.com)</name></author><id>tag:angel-llosa.com,2012-11-20:instalar-pig-de-hadoop-en-ubuntu-en-modo-multi-cluster.html</id><summary type="html">&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;strong&gt;Introducción&lt;/strong&gt;&lt;/div&gt;
+&lt;div class="line"&gt;&lt;a class="reference external" href="http://pig.apache.org/"&gt;Apache Pig&lt;/a&gt; es una plataforma para análisis de datos que se ejecuta&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="system-message"&gt;
+&lt;p class="system-message-title"&gt;System Message: WARNING/2 (&lt;tt class="docutils"&gt;/Users/anllogui/Dropbox/blogs/angel-llosa.com/content/instalar-pig-de-hadoop-en-ubuntu-en-modo-multi-cluster.rst&lt;/tt&gt;, line 9)&lt;/p&gt;
+Line block ends without a blank line.&lt;/div&gt;
+&lt;p&gt;sobre &lt;a class="reference external" href="http://hadoop.apache.org/"&gt;Hadoop&lt;/a&gt;. Pig tiene un compilador con el cual genera secuencias
+de programas con MapReduce, los cuales se ejecutan de forma paralela
+sobre la infraestructura en la que estemos ejecutando Hadoop.
+| Para verlo más claro, tenemos el siguiente ejemplo escrito en &lt;a class="reference external" href="http://pig.apache.org/docs/r0.8.0/piglatin_ref1.html"&gt;Pig
+Latin&lt;/a&gt; y ejecutado sobre la consola &lt;a class="reference external" href="http://pig.apache.org/docs/r0.8.0/piglatin_ref2.html#run"&gt;grunt&lt;/a&gt;:
+| `` grunt&amp;gt; A = load 'passwd' using PigStorage(':');grunt&amp;gt; B = foreach A generate $0 as id;grunt&amp;gt; dump B;``
+| Ejecutando el código anterior por consola, lo que hacemos es:&lt;/p&gt;
+&lt;ol class="arabic simple"&gt;
+&lt;li&gt;Cargamos el fichero guardado llamado &amp;quot;passwd&amp;quot; (en este caso es un
+fichero típico de linux /etc/passwd) y cargamos su contenido en A,
+diferenciando los campos con el caracter &amp;quot;:&amp;quot; (PigStorage(':')).&lt;/li&gt;
+&lt;li&gt;Para cada línea de A, volcamos el primer campo en B y lo llamamos
+&amp;quot;id&amp;quot;.&lt;/li&gt;
+&lt;li&gt;Mostramos por pantalla el resultado.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;Es posible utilizar cualquier función de tratamiento de datos&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="system-message"&gt;
+&lt;p class="system-message-title"&gt;System Message: WARNING/2 (&lt;tt class="docutils"&gt;/Users/anllogui/Dropbox/blogs/angel-llosa.com/content/instalar-pig-de-hadoop-en-ubuntu-en-modo-multi-cluster.rst&lt;/tt&gt;, line 26)&lt;/p&gt;
+Line block ends without a blank line.&lt;/div&gt;
+&lt;p&gt;realizada por nosotros en java y empaquetada en un jar (siempre
+siguiendo las especificaciones, claro) y utilizarla como en este caso se
+ha utilizado &lt;em&gt;PigStorage&lt;/em&gt;. De esta manera, podemos diseñar cualquier
+tipo de tratamiento que no se utilice en Pig Latin.
+| &lt;strong&gt;Instalación&lt;/strong&gt;
+| Se supone que ya hemos seguido los pasos de&amp;nbsp;&lt;a class="reference external" href="http://www.binaridev.es/2010/12/como-instalar-hadoop-en-ubuntu-modo.html"&gt;cómo instalar hadoop en
+Ubuntu (modo multi-node)&lt;/a&gt;. Una vez hecho esto nos descargaremos la
+última versión de &lt;a class="reference external" href="http://hadoop.apache.org/pig/releases.html"&gt;Pig desde la página de apache&lt;/a&gt;.
+| Lo descomprimiremos donde queramos (a partir de ahora &lt;em&gt;/path/pig&lt;/em&gt;) y
+añadiremos al path del usuario hadoop el directorio de binarios
+/path/pig/bin:
+| &lt;tt class="docutils literal"&gt;export &lt;span class="pre"&gt;PATH=/&amp;lt;my-path-to-pig&amp;gt;/pig-n.n.n/bin:$PATH&lt;/span&gt;&lt;/tt&gt;
+| Una vez realizado esto, añadiremos las siguientes variables locales al
+fichero .bashrc necesarias para la ejecución de Pig. Entre ellas están
+las necesarias para que sepa donde está instalado hadoop:
+| &lt;tt class="docutils literal"&gt;export &lt;span class="pre"&gt;HADOOP_HOME=/usr/local/hadoopexport&lt;/span&gt; &lt;span class="pre"&gt;HADOOP_SLAVES=${HADOOP_HOME}/conf/slavesexport&lt;/span&gt; &lt;span class="pre"&gt;HADOOP_CONF_DIR=${HADOOP_HOME}/confexport&lt;/span&gt; &lt;span class="pre"&gt;PATH=/path/pig/bin/:/usr/local/hadoop/bin/:$PATHexport&lt;/span&gt; &lt;span class="pre"&gt;PIG_CLASSPATH=/usr/local/hadoop/conf&lt;/span&gt;&lt;/tt&gt;
+| &lt;strong&gt;Ejecución por consola&lt;/strong&gt;
+| Existen 2 modos de ejecución, en modo local o mapreduce (cluster).
+Para ejecutar en modo local ejecutamos lo siguiente sobre la linea de
+comandos:
+| `` pig -x local``
+| Y para el modo distribuido:
+| `` pig``
+| &lt;tt class="docutils literal"&gt;o ``
+| `` ``
+| ``pig &lt;span class="pre"&gt;-x&lt;/span&gt; mapreduce&lt;/tt&gt;
+| &lt;strong&gt;Ejemplo&lt;/strong&gt;
+| Para ver un ejemplo de ejecución y comprobar que todo funciona
+correctamente, ejecutaremos lo siguiente sobre la consola grunt:
+| `` grunt&amp;gt; A = load 'passwd' using PigStorage(':');grunt&amp;gt; B = foreach A generate $0 as id;grunt&amp;gt; dump B;``
+| &lt;strong&gt;Ejecución por script&lt;/strong&gt;
+| Para lanzar scripts sin la ayuda de la consola, guardaremos el código
+anterior en un fichero llamado (por ejemplo) &lt;strong&gt;id.pig&lt;/strong&gt;. Lo lanzaremos
+en modo local de la siguiente manera:
+| `` pig -x local id.pig``
+| Y para el modo distribuido:
+| `` pig id.pig``
+| &lt;tt class="docutils literal"&gt;o ``
+| `` ``
+| ``pig &lt;span class="pre"&gt;-x&lt;/span&gt; mapreduce id.pig&lt;/tt&gt;
+| Y poco más. Para más información sobre Pig, podemos ir al &lt;a class="reference external" href="http://pig.apache.org/docs/r0.8.0/index.html"&gt;sitio
+oficial&lt;/a&gt; donde tenemos más información sobre el lenguaje &lt;a class="reference external" href="http://pig.apache.org/docs/r0.8.0/piglatin_ref1.html"&gt;Pig Latin&lt;/a&gt; o
+modos de &lt;a class="reference external" href="http://pig.apache.org/docs/r0.8.0/cookbook.html"&gt;optimizar la paralelización del código que desarrollemos&lt;/a&gt;.&lt;/p&gt;
+&lt;/p&gt;</summary><category term="http://schemas.google.com/blogger/2008/kind#post"></category><category term="tutorial hadoop"></category><category term="pig"></category><category term="Ubuntu"></category><category term="hadoop"></category></entry><entry><title>Entorno de desarrollo de software mínimo (II) - Documentación y Metodología</title><link href="http://angel-llosa.com/entorno-de-desarrollo-de-software-minimo-ii-documentacion-y-metodologia.html" rel="alternate"></link><updated>2012-05-08T15:08:00+02:00</updated><author><name>Angel Llosá (noreply@blogger.com)</name></author><id>tag:angel-llosa.com,2012-05-08:entorno-de-desarrollo-de-software-minimo-ii-documentacion-y-metodologia.html</id><summary type="html">&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;Siguiendo con el post de &lt;a class="reference external" href="http://www.binaridev.es/2011/12/entorno-de-desarrollo-de-software.html"&gt;Entorno de desarrollo de software mínimo&lt;/a&gt;,&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="system-message"&gt;
+&lt;p class="system-message-title"&gt;System Message: WARNING/2 (&lt;tt class="docutils"&gt;/Users/anllogui/Dropbox/blogs/angel-llosa.com/content/entorno-de-desarrollo-de-software-minimo-ii-documentacion-y-metodologia.rst&lt;/tt&gt;, line 9)&lt;/p&gt;
+Line block ends without a blank line.&lt;/div&gt;
+&lt;p&gt;vamos a tratar la parte de metodología y documentación necesaria para
+poder desarrollar y entregar el proyecto y que este sea mantenible.
+| &lt;a class="reference external" href="http://www.flickr.com/photos/kevharb/3056726319/"&gt;&lt;img alt="Day 47/365 - Dead Tree Graveyard" src="http://farm4.staticflickr.com/3073/3056726319_6caa7c4bc1.jpg" /&gt;&lt;/a&gt;
+| En primer lugar vamos a ver la &lt;strong&gt;documentación&lt;/strong&gt;necesaria, que será
+parte de los entregables del proyecto. Para definir ésta, tengo en
+cuenta que el equipo que va a formar parte del proyecto son personas
+maduras y profesionales, no &amp;quot;&lt;a class="reference external" href="http://en.wikipedia.org/wiki/Code_monkey"&gt;code monkeys&lt;/a&gt;&amp;quot;. Lo mínimo para poder
+desarrollar un proyecto con un equipo así sería:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;strong&gt;Acuerdo de especificaciones&lt;/strong&gt;: En este documento, acordaremos con
+el cliente las especificaciones de la aplicación a implementar.
+Definiremos dos tipos de requisitos:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ul&gt;&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;strong&gt;Funcionales&lt;/strong&gt;: Estos definirán la funcionalidad de la aplicación.
+Es muy recomendable bajar al detalle de estos para poder eliminar
+futura documentación. Se ha de escribir para que un desarrollador
+pueda utilizarlos de guía para implementar la aplicación sin apenas
+intervención de la persona que los escribió. Luego esto no es
+posible, pero es necesario tener ese objetivo en mente. Lo perfecto
+sería poder poner los flujos de trabajo, textos, errores, etc.
+Implicando de esta manera al cliente en el análisis, podemos
+ahorrarnos algunos cambios en el futuro. Si definimos a este nivel,
+el cliente se hace una idea más concreta de cómo acabará la
+aplicación. Otra herramienta a utilizar a la hora de definir la
+aplicación y que nos ayuda para dilucidar el objetivo final de la
+aplicación son los &lt;em&gt;`wireframes`_&lt;/em&gt; o bocetos de la aplicación (si lo
+que tenemos entre manos es una aplicación con interfaz de usuario).
+Son muy fáciles (técnicamente) de hacer, ya que es como dibujar, pero
+ayuda a que nos surjan dudas o posibles carencias de la aplicación
+que muchas veces salen en la fase de desarrollo. Si nos aparecen en
+este estado del proyecto, es mucho menos costoso resolverlas.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/ul&gt;&lt;ul&gt;&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;strong&gt;Técnicas&lt;/strong&gt;: Son opcionales. Si el cliente tiene el suficiente nivel
+técnico y requiere de tecnología específica, se pone en este
+apartado.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/ul&gt;&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;strong&gt;Estimación y Plan de proyecto&lt;/strong&gt;: Una vez tenemos el acuerdo con un
+nivel de detalle muy alto, podemos pasar a estimar el coste del
+proyecto y a planificar su implementación. Para la estimación,
+intentamos bajar a los posibles casos de uso de los requerimientos y
+estimamos cada uno. Bajando al detalle todo lo que podamos ayudamos a
+dejarnos lo mínimo posible sin estimar. Para el plan de proyecto
+podemos acudir a las herramientas de toda la vida para trabajar con
+&lt;a class="reference external" href="http://es.wikipedia.org/wiki/Diagrama_de_gantt"&gt;diagramas de Gantt&lt;/a&gt;o un tablero &lt;a class="reference external" href="http://en.wikipedia.org/wiki/Kanban"&gt;Kanban&lt;/a&gt; como se hace en
+&lt;a class="reference external" href="http://es.wikipedia.org/wiki/Scrum"&gt;Scrum&lt;/a&gt;. Con el diagrama de Gantt nos podemos hacer mejor una idea
+(y el cliente también, ya que es muy visual) del tiempo de entrega al
+que se nos puede ir el proyecto.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Plan de pruebas&lt;/strong&gt;: Siempre validado por el cliente. Ayuda a tener
+por escrito las salidas de la aplicación que estamos desarrollando.
+Si se puede hacer antes de empezar el desarrollo aportará más al
+proyecto, ya que al igual que en los &lt;em&gt;wireframes&lt;/em&gt;, pueden sacar a
+relucir dudas de la fase de análisis que solo surgirían en el
+desarrollo. También enfoca el desarrollo a pasar estas pruebas, que
+es lo mismo que desarrollar para que la aplicación tenga las salidas
+que espera el cliente. Sobre este tema podéis echar un vistazo a &lt;a class="reference external" href="http://es.wikipedia.org/wiki/Tdd"&gt;TDD
+(Test driven development)&lt;/a&gt;. También definiremos las pruebas de
+integración con otros sistemas.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Diseño de la base de datos&lt;/strong&gt;: La importancia de este documento, más
+que para los entregables finales para el futuro mantenimiento, la veo
+para unificar criterios en el desarrollo. Si existen en el equipo más
+de una persona (que suele ser lo usual), y dejamos que cada uno se
+defina las tablas que necesita, podemos tener duplicidades y
+nomenclaturas distintas por cada desarrollador. Al ser la base de
+datos la raíz de la aplicación, lo mejor es definir una primera
+versión inicial para unificar criterios y guiar el posterior
+desarrollo. Lo que no quita que este diseño pueda ser modificado de
+manera iterativa.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;La &lt;a class="reference external" href="http://es.wikipedia.org/wiki/Metodolog%C3%ADa_de_desarrollo_de_software"&gt;**metodología**&lt;/a&gt;a utilizar para realizar el proyecto, en caso&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="system-message"&gt;
+&lt;p class="system-message-title"&gt;System Message: WARNING/2 (&lt;tt class="docutils"&gt;/Users/anllogui/Dropbox/blogs/angel-llosa.com/content/entorno-de-desarrollo-de-software-minimo-ii-documentacion-y-metodologia.rst&lt;/tt&gt;, line 96)&lt;/p&gt;
+Line block ends without a blank line.&lt;/div&gt;
+&lt;p&gt;de que fuese un proyecto pequeño, podemos utilizar el &lt;a class="reference external" href="http://es.wikipedia.org/wiki/Metodolog%C3%ADa_de_desarrollo_de_software#Modelo_en_cascada"&gt;modelo en
+cascada&lt;/a&gt; sin aumentar la complejidad del proyecto. Para ello lo
+recomendable sería que la duración del proyecto no superase los 2 meses
+y que el equipo no sea muy grande (5-10 personas). Pero si el proyecto
+dura más o tiene más gente implicada, lo mejor es pasar a un modelo
+iterativo, con entregas cada mes (a estilo &lt;a class="reference external" href="http://es.wikipedia.org/wiki/Scrum"&gt;Scrum&lt;/a&gt;) y reducir el tamaño
+del equipo recortando alcance para sucesivas iteraciones o crear dos
+subproyectos.
+| De esta manera podemos ir tomando el pulso del proyecto de manera
+conjunta con el cliente al menos una vez al mes (aunque siempre es mejor
+tener una comunicación fluida con este) y que tanto el equipo como el
+que va a utilizar la aplicación vayan viendo que se consiguen hitos, lo
+que siempre es un factor de motivación. También se facilita el uso de
+&lt;a class="reference external" href="http://en.wikipedia.org/wiki/Scrum_%28development%29#Daily_Scrum"&gt;reuniones diarias&lt;/a&gt; cortas con el equipo de desarrollo como en Scrum,
+ya que al ser poca gente se puede hacer en poco tiempo.
+| Con esto está cubierta la parte de metodología y documentación. En el
+siguiente post pasaremos al conjunto de herramientas mínimo que podemos
+utilizar.
+| Y como siempre, os animo a que comentéis que&amp;nbsp; os parece, si añadiríais
+algo más o quitaríais.
+| &lt;em&gt;Actualización:&lt;/em&gt;
+| *
+*
+| Índice:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://www.binaridev.es/2011/12/entorno-de-desarrollo-de-software.html"&gt;Entorno de desarrollo de software mínimo (I) - Introducción&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Entorno de desarrollo de software mínimo (II) - Documentación y
+Metodología&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://www.binaridev.es/2012/05/entorno-de-desarrollo-de-software.html"&gt;Entorno de desarrollo de software mínimo (III) - Software y
+herramientas&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;em&gt;Imagen: `Kevin H.`_&lt;/em&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;ul&gt;&lt;/ul&gt;&lt;/p&gt;</summary><category term="http://schemas.google.com/blogger/2008/kind#post"></category><category term="ágil"></category><category term="gestión de proyectos"></category><category term="desarrollo"></category><category term="management"></category></entry><entry><title>Entorno de desarrollo de software mínimo (III) - Software y herramientas</title><link href="http://angel-llosa.com/entorno-de-desarrollo-de-software-minimo-iii-software-y-herramientas.html" rel="alternate"></link><updated>2012-05-08T15:08:00+02:00</updated><author><name>Angel Llosá (noreply@blogger.com)</name></author><id>tag:angel-llosa.com,2012-05-08:entorno-de-desarrollo-de-software-minimo-iii-software-y-herramientas.html</id><summary type="html">&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;Continuando con la serie de &lt;a href="#id1"&gt;&lt;span class="problematic" id="id2"&gt;`&lt;/span&gt;&lt;/a&gt;&lt;a href="#id3"&gt;&lt;span class="problematic" id="id4"&gt;*&lt;/span&gt;&lt;/a&gt;Entorno de desarrollo de software&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="system-message" id="id1"&gt;
+&lt;p class="system-message-title"&gt;System Message: WARNING/2 (&lt;tt class="docutils"&gt;/Users/anllogui/Dropbox/blogs/angel-llosa.com/content/entorno-de-desarrollo-de-software-minimo-iii-software-y-herramientas.rst&lt;/tt&gt;, line 8); &lt;em&gt;&lt;a href="#id2"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+Inline interpreted text or phrase reference start-string without end-string.&lt;/div&gt;
+&lt;div class="system-message" id="id3"&gt;
+&lt;p class="system-message-title"&gt;System Message: WARNING/2 (&lt;tt class="docutils"&gt;/Users/anllogui/Dropbox/blogs/angel-llosa.com/content/entorno-de-desarrollo-de-software-minimo-iii-software-y-herramientas.rst&lt;/tt&gt;, line 8); &lt;em&gt;&lt;a href="#id4"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+Inline emphasis start-string without end-string.&lt;/div&gt;
+&lt;div class="system-message"&gt;
+&lt;p class="system-message-title"&gt;System Message: WARNING/2 (&lt;tt class="docutils"&gt;/Users/anllogui/Dropbox/blogs/angel-llosa.com/content/entorno-de-desarrollo-de-software-minimo-iii-software-y-herramientas.rst&lt;/tt&gt;, line 9)&lt;/p&gt;
+Line block ends without a blank line.&lt;/div&gt;
+&lt;p&gt;mínimo*`_, llegamos a la parte de &lt;strong&gt;herramientas&lt;/strong&gt;. Ya hemos visto qué
+&lt;a class="reference external" href="http://www.binaridev.es/2011/12/entorno-de-desarrollo-de-software_31.html"&gt;documentación y metodología&lt;/a&gt; mínima que necesitamos para poder
+gestionar un proyecto. Ahora vamos a ver el mínimo conjunto
+de&amp;nbsp;software&amp;nbsp;o&amp;nbsp;herramientas que vamos a necesitar para llevarlo a cabo.&lt;/p&gt;
+&lt;div class="separator" style="clear: both; text-align: center;"&gt;&lt;p&gt;&lt;a class="reference external" href="http://www.flickr.com/photos/pictfactory/2850874087/"&gt;&lt;img alt="Herramientas // Tools" src="http://farm4.staticflickr.com/3264/2850874087_54ea2445c7.jpg" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div class="line"&gt;Como herramientas imprescindibles podríamos tener:&lt;/div&gt;
+&lt;/div&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;strong&gt;IDE o editor productivo&lt;/strong&gt;: El&amp;nbsp;&lt;a class="reference external" href="http://es.wikipedia.org/wiki/Entorno_de_desarrollo_integrado"&gt;IDE o *Entorno de desarrollo
+integrado*&lt;/a&gt;, una vez aprendido lo básico, aumenta la productividad
+cuando desarrollas. En el IDE puede estar integrado desde el
+autocompletado de código hasta la gestión de tareas o de versiones de
+código. También existen editores muy avanzados, como en el caso de
+&lt;a class="reference external" href="http://www.vim.org/"&gt;VIM&lt;/a&gt;, los cuales son igual de productivos que un IDE si el usuario
+es experto. Lo malo de estos es la curva de aprendizaje, que suele
+ser más alta. Es curioso que no he visto ningún arrepentido de haber
+aprendido a utilizar VIM, sino todo lo contrario.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Entorno de desarrollo y de integración&lt;/strong&gt;: Los entornos de
+desarrollo e integración suelen ser reproducciones del entorno en el
+que se va a instalar la app. Desde servidores, PC, móviles, etc.
+Según el tipo de aplicación que se esté desarrollando. Es importante
+tenerlos separados, ya que uno sirve para que un desarrollador pueda
+hacer pruebas unitarias sin molestar al resto del equipo y el de
+integración para (como bien dice la palabra) integrar su desarrollo
+en otros ya existentes.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;`Control de versiones de código`_&lt;/strong&gt;: Ha día de hoy, no me imagino
+ningún proyecto sin esta herramienta para controlar las versiones de
+código. Con este tipo de herramientas se puede controlar quién hace
+qué cambios y cuando, mezclar el código de manera más intuitiva y
+fácil y poder volver a versiones anteriores. Existen dos tipos
+principales, centralizados como &lt;a class="reference external" href="http://subversion.tigris.org/"&gt;SVN&lt;/a&gt;o distribuidos como &lt;a class="reference external" href="http://git-scm.com/"&gt;Git&lt;/a&gt;y
+&lt;a class="reference external" href="http://mercurial.selenic.com/"&gt;Mercurial&lt;/a&gt;. Aunque en el trabajo utilizo SVN, en proyectos
+personales o cuando no tengo acceso al servidor de subversion utilizo
+Mercurial. Una de las grandes ventajas de un repositorio distribuido
+es la facilidad de subir código de manera&amp;nbsp;continua&amp;nbsp;(commit por
+característica o bug) en local y luego sincronizar con el principal o
+con el de compañeros.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Gestor de tareas y bugs&lt;/strong&gt;: Otro elemento indispensable es tener un
+gestor de tareas y de bugs el cual sea fácil de actualizar y de
+acceder para todos los componentes del proyecto. Hoy en día existen
+mil alternativas, desde los instalables en un servidor propio a
+mantenidos por la&amp;nbsp;propia&amp;nbsp;empresa que los ha creado. Un ejemplo de
+ello es &lt;a class="reference external" href="http://www.atlassian.com/es/"&gt;Atalassian&lt;/a&gt;&amp;nbsp;con Jira. &lt;a class="reference external" href="http://www.mantisbt.org/"&gt;MántisBT&lt;/a&gt;es una buena alternativa
+libre para instalar en una máquina propia.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div&gt;&lt;p&gt;Con estas herramientas, podemos tener un entorno más que aceptable para
+poder llevar a cabo un proyecto de desarrollo con éxito. Si además
+tenemos experiencia y disciplina utilizándolas, con una buena gestión el
+éxito está casi asegurado.&lt;/p&gt;
+&lt;/div&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;&lt;p&gt;Y vosotros, ¿&amp;nbsp;Creéis&amp;nbsp;que falta alguna más que sea imprescindible?
+&lt;em&gt;Índice:&lt;/em&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;div class="first"&gt;&lt;div style="display: inline !important;"&gt;&lt;/div&gt;&lt;p&gt;&lt;a class="reference external" href="http://www.binaridev.es/2011/12/entorno-de-desarrollo-de-software.html"&gt;Entorno de desarrollo de software mínimo (I) - Introducción&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;&lt;div class="first"&gt;&lt;div style="display: inline !important;"&gt;&lt;/div&gt;&lt;p&gt;&lt;a class="reference external" href="http://www.binaridev.es/2011/12/entorno-de-desarrollo-de-software_31.html"&gt;Entorno de desarrollo de software mínimo (II) - Documentación y
+Metodología&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;&lt;div class="first"&gt;&lt;div style="display: inline !important;"&gt;&lt;/div&gt;&lt;p&gt;Entorno de desarrollo de software mínimo (III) - Software y
+herramientas&lt;/p&gt;
+&lt;/div&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;em&gt;Foto: `PictFactory`_&lt;/em&gt;&lt;/p&gt;
+&lt;/div&gt;&lt;/p&gt;</summary><category term="http://schemas.google.com/blogger/2008/kind#post"></category><category term="gestión de proyectos"></category><category term="desarrollo"></category></entry><entry><title>Entorno de desarrollo de software mínimo (I) - Introducción</title><link href="http://angel-llosa.com/entorno-de-desarrollo-de-software-minimo-i-introduccion.html" rel="alternate"></link><updated>2012-05-08T15:07:00+02:00</updated><author><name>Angel Llosá (noreply@blogger.com)</name></author><id>tag:angel-llosa.com,2012-05-08:entorno-de-desarrollo-de-software-minimo-i-introduccion.html</id><summary type="html">&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;Alguna vez nos hemos visto en la tesitura de implantar una metodología&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="system-message"&gt;
+&lt;p class="system-message-title"&gt;System Message: WARNING/2 (&lt;tt class="docutils"&gt;/Users/anllogui/Dropbox/blogs/angel-llosa.com/content/entorno-de-desarrollo-de-software-minimo-i-introduccion.rst&lt;/tt&gt;, line 9)&lt;/p&gt;
+Line block ends without a blank line.&lt;/div&gt;
+&lt;p&gt;de desarrollo en&amp;nbsp;sitios&amp;nbsp;donde nunca se ha trabajado con ninguna. En esos
+momentos, para cumplir el objetivo de manera poco traumática para nadie
+(incluyéndonos a nosotros mismos) es necesario&lt;strong&gt;tener en cuenta a la
+gente que va a utilizar esta metodología&lt;/strong&gt;.&lt;/p&gt;
+&lt;div style="text-align: center;"&gt;&lt;p&gt;&lt;a class="reference external" href="http://www.flickr.com/photos/marekj/3196036311/"&gt;&lt;img alt="Reading now" src="http://farm4.staticflickr.com/3114/3196036311_462abc7678.jpg" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div class="line"&gt;No es buena idea entrar a una empresa o un entorno de trabajo pensando&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="system-message"&gt;
+&lt;p class="system-message-title"&gt;System Message: WARNING/2 (&lt;tt class="docutils"&gt;/Users/anllogui/Dropbox/blogs/angel-llosa.com/content/entorno-de-desarrollo-de-software-minimo-i-introduccion.rst&lt;/tt&gt;, line 25)&lt;/p&gt;
+Line block ends without a blank line.&lt;/div&gt;
+&lt;p&gt;que lo que vamos a implantar va a solucionar la vida de la gente porque
+con nosotros ha funcionado. De esta manera lo único que conseguimos es
+&lt;strong&gt;cerrarnos a cualquier tipo de feedback&lt;/strong&gt; y hacer caso omiso a su
+realidad.
+| Es un poco drástico empezar con metodologías muy pesadas como &lt;a class="reference external" href="http://es.wikipedia.org/wiki/RUP#Artefactos_xxx"&gt;RUP y
+sus artefactos&lt;/a&gt;o ágiles como &lt;a class="reference external" href="http://es.wikipedia.org/wiki/Scrum"&gt;Scrum&lt;/a&gt;en sitios donde no utilizaban
+ninguna. Para realizar este tipo de acciones se ha de dedicar mucho
+esfuerzo a tener la disciplina necesaria para poder llevarla a cabo.
+| Por eso es necesario contemplar un planteamiento más &lt;strong&gt;minimalista&lt;/strong&gt;,
+haciendo caso al &lt;a class="reference external" href="http://es.wikipedia.org/wiki/Lean_software_development#Eliminar_los_desperdicios"&gt;primer principio de &amp;quot;Lean software development&amp;quot;&lt;/a&gt;, e
+ir trabajándolo de manera iterativa. Primero implantamos
+una&lt;strong&gt;metodología mínima de desarrollo&lt;/strong&gt;, un conjunto de&lt;strong&gt;buenas
+prácticas&lt;/strong&gt; y vamos &lt;strong&gt;iterando&lt;/strong&gt;para ir adaptándola a las necesidades
+del cliente y vamos añadiendo lo que veamos que sea necesario y
+eliminando lo que no aporte valor.
+| Por ello, y para quien le pueda interesar, he preparado dos posts que
+publicaré más adelante donde trataré los dos aspectos fundamentales de
+un entorno de desarrollo: la &lt;strong&gt;metodología&lt;/strong&gt;y las &lt;strong&gt;herramientas&lt;/strong&gt;.
+| Cómo no, espero que no dudéis en preguntar, comentar o aportar nuevas
+ideas a estos.
+| &lt;em&gt;Actualización:&lt;/em&gt;
+| Siguientes posts:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://www.binaridev.es/2011/12/entorno-de-desarrollo-de-software_31.html"&gt;Entorno de desarrollo de software mínimo (II) - Documentación y
+Metodología&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://www.binaridev.es/2012/05/entorno-de-desarrollo-de-software.html"&gt;Entorno de desarrollo de software mínimo (III) - Software y
+herramientas&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div class="line"&gt;&lt;em&gt;Foto: `marekj`_&lt;/em&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/p&gt;</summary><category term="http://schemas.google.com/blogger/2008/kind#post"></category><category term="ágil"></category><category term="gestión de proyectos"></category><category term="desarrollo"></category><category term="management"></category></entry><entry><title>Calidad como una característica más</title><link href="http://angel-llosa.com/calidad-como-una-caracteristica-mas.html" rel="alternate"></link><updated>2011-09-15T09:25:00+02:00</updated><author><name>Angel Llosá (noreply@blogger.com)</name></author><id>tag:angel-llosa.com,2011-09-15:calidad-como-una-caracteristica-mas.html</id><summary type="html">&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;A principios de semana empecé el libro &lt;a href="#id1"&gt;&lt;span class="problematic" id="id2"&gt;`&lt;/span&gt;&lt;/a&gt;Peopleware de Tom DeMarco y&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="system-message" id="id1"&gt;
+&lt;p class="system-message-title"&gt;System Message: WARNING/2 (&lt;tt class="docutils"&gt;/Users/anllogui/Dropbox/blogs/angel-llosa.com/content/calidad-como-una-caracteristica-mas.rst&lt;/tt&gt;, line 8); &lt;em&gt;&lt;a href="#id2"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+Inline interpreted text or phrase reference start-string without end-string.&lt;/div&gt;
+&lt;div class="system-message"&gt;
+&lt;p class="system-message-title"&gt;System Message: WARNING/2 (&lt;tt class="docutils"&gt;/Users/anllogui/Dropbox/blogs/angel-llosa.com/content/calidad-como-una-caracteristica-mas.rst&lt;/tt&gt;, line 9)&lt;/p&gt;
+Line block ends without a blank line.&lt;/div&gt;
+&lt;p&gt;Timothy Lister`_. Había leido muy buenas referencias de este libro sobre
+gestión de proyectos, y lo tenía en la lista desde hace tiempo. La
+verdad es que actualmente me tiene enganchado. Más adelante espero poder
+hacer un resumen en el blog.
+| Pero el objetivo del post, no es comentar el libro, sino un capítulo
+que viene relacionado con el post de &lt;a class="reference external" href="http://www.binaridev.es/2011/06/bajando-precios.html"&gt;Bajando Precios&lt;/a&gt; (que por cierto,
+se está convirtiendo en el post más popular del blog). Habla de una mala
+práctica bastante extendida, de poner hitos practicamente inalcanzables
+basándose en la &lt;a class="reference external" href="http://es.wikipedia.org/wiki/Ley_de_Parkinson"&gt;Ley de Parkinson&lt;/a&gt;, para, de esta manera, abaratar el
+desarrollo o mejorar los márgenes. También de cómo se ve perjudicada la
+&lt;strong&gt;calidad del producto&lt;/strong&gt;, ya que los desarrolladores no hacen lo mismo
+en menos tiempo, sino que con menos calidad. Pero se piensa erróneamente
+que de esta manera se aumenta la productividad, ya que se hace lo mismo
+en menos tiempo.
+| También comenta que, efectivamente, el mercado tampoco le da tanta
+importancia a la calidad del producto, ya que se ha ido acostumbrando
+tener cierto número de errores por desarrollo. De esta manera, se toma
+&lt;strong&gt;la calidad del producto como una característica más de éste&lt;/strong&gt;, y no
+como algo que debería ser intrínseco.
+| Pero este problema no existe solamente en el mundo del software. En
+otro tipo de industria también. Cuando nos compramos un coche, si
+pagamos por un Tata (por ejemplo) no esperamos tener la calidad de un
+Mercedes. Y existen mil ejemplos más de este tipo.
+| Sólo comentar finalmente que el libro se publicó en 1999, pero creo
+que no ha perdido actualidad.&lt;/p&gt;
+</summary><category term="http://schemas.google.com/blogger/2008/kind#post"></category><category term="gestión de proyectos"></category><category term="desarrollo"></category><category term="management"></category></entry><entry><title>hacer más de lo que te piden en un proyecto</title><link href="http://angel-llosa.com/hacer-mas-de-lo-que-te-piden-en-un-proyecto.html" rel="alternate"></link><updated>2011-05-31T08:07:00+02:00</updated><author><name>Angel Llosá (noreply@blogger.com)</name></author><id>tag:angel-llosa.com,2011-05-31:hacer-mas-de-lo-que-te-piden-en-un-proyecto.html</id><summary type="html">&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;Cuando te enfrentas a un primer proyecto con un cliente nuevo, una de&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="system-message"&gt;
+&lt;p class="system-message-title"&gt;System Message: WARNING/2 (&lt;tt class="docutils"&gt;/Users/anllogui/Dropbox/blogs/angel-llosa.com/content/hacer-mas-de-lo-que-te-piden-en-un-proyecto.rst&lt;/tt&gt;, line 9)&lt;/p&gt;
+Line block ends without a blank line.&lt;/div&gt;
+&lt;p&gt;las cosas que siempre se pasan por la cabeza, es: &amp;quot;Lo voy a deslumbrar&amp;quot;.
+Normalmente este tipo de pensamientos vienen impulsados por una voluntad
+de continuidad en la relación laboral con el cliente. Que vea que somos
+unos cracks. Pero, ¿es esta la mejor actitud?
+| Mi experiencia, la formación recibida en gestión de proyectos y mi
+sentido común me dicen todo lo contrario. Existen muchos motivos para no
+hacerlo. Entre ellos, yo me quedaría con estos dos:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;strong&gt;No existe la aplicación con 0 errores&lt;/strong&gt;. Lo único que puedes hacer
+es testearla hasta ir reduciendo estos para que tiendan a 0, pero
+nunca llegará. Por lo tanto, ¿vas a ir tonteando con cosas nuevas si
+puedes testear mejor lo que te han pedido? Si te sobra tiempo en un
+proyecto, hay miles de cosas mejores que hacer que ponerte a añadirle
+guindas: Documentar, refactorizar, test, etc. Porque, si el cliente
+te ha pedido ciertas funcionalidades, ¿no será mejor que funcionen
+bien? Él quiere lo que te ha pedido. Ésa es la prioridad.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;¿Cómo lo voy a sorprender?&lt;/strong&gt; Es tu primer proyecto, no lo conoces.
+No sabes lo que le gusta (es muy dificil saberlo a la primera). No
+sabes a qué le da más importancia. ¿Cómo vas a sorprenderle si no
+sabes qué hacer de más que no te haya pedido? Puedes montarle una
+interfaz con el uso de las últimas tecnologías, perder días en ello y
+que no le importe lo más mínimo, debido a un caracter pragmático.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Éstos son para mí los motivos más importantes por los que haría
+simplemente lo que me piden, pero lo haría bien. Y vosotros, ¿qué
+opinais? ¿Se os ocurren otros? ¿O pensais que hay que sorprenderle aún
+con los riesgos que conlleva?&lt;/p&gt;
+&lt;/p&gt;</summary><category term="http://schemas.google.com/blogger/2008/kind#post"></category><category term="gestión de proyectos"></category></entry><entry><title>la cultura de Facebook</title><link href="http://angel-llosa.com/la-cultura-de-facebook.html" rel="alternate"></link><updated>2011-04-13T10:38:00+02:00</updated><author><name>Angel Llosá (noreply@blogger.com)</name></author><id>tag:angel-llosa.com,2011-04-13:la-cultura-de-facebook.html</id><summary type="html">&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;Ya hablé en otro post sobre &lt;a class="reference external" href="http://www.binaridev.es/2011/02/los-4-secretos-de-facebook-para-escalar.html"&gt;los secretos de Facebook para escalar&lt;/a&gt;.&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="system-message"&gt;
+&lt;p class="system-message-title"&gt;System Message: WARNING/2 (&lt;tt class="docutils"&gt;/Users/anllogui/Dropbox/blogs/angel-llosa.com/content/la-cultura-de-facebook.rst&lt;/tt&gt;, line 9)&lt;/p&gt;
+Line block ends without a blank line.&lt;/div&gt;
+&lt;p&gt;Entre ellos se encontraba, lo que a mi modo de ver es el más importante:
+su cultura empresarial. Ésta se basaba en 3 puntos:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;strong&gt;Muévete rápido e innova&lt;/strong&gt;, no te preocupes en romper cosas.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Alcanzar gran impacto con equipos pequeños&lt;/strong&gt;. Se trabaja mejor,
+más&amp;nbsp;rápido&amp;nbsp;y hay mejor comunicación.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Se valiente e innova&lt;/strong&gt;. Un poco extensión del primer punto.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div class="line"&gt;Quizás, esta cultura viene de la estadounidense, donde el fracaso&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="system-message"&gt;
+&lt;p class="system-message-title"&gt;System Message: WARNING/2 (&lt;tt class="docutils"&gt;/Users/anllogui/Dropbox/blogs/angel-llosa.com/content/la-cultura-de-facebook.rst&lt;/tt&gt;, line 18)&lt;/p&gt;
+Line block ends without a blank line.&lt;/div&gt;
+&lt;p&gt;(según dicen) no se ve como tal, sino como algo por lo que pasas,
+aprendes y sigues adelante. Pero creo que a veces, nos dejamos
+deslumbrar un poco por el método yanqui y creemos que lo que se hace
+allí, aqui no se hace por cómo somos. Si llegase un desarrollador y,
+siguiendo estos 3 pasos tumbase un módulo de facebook, teniendo en
+cuenta las pérdidas que eso traería, creo que le caería una buena, si no
+lo ha hecho siguiendo el procedimiento que han de tener.
+| Yo creo que en España funciona de manera muy parecida. Nuestro
+problema es que nos vendemos peor. Hay una barbaridad de empresas
+nacionales que desarrollan un producto y funcionan así. Desde las nuevas
+empresas (o startups) que están saliendo, hasta las ya estabilizadas.
+| Igual en las más antígua se necesita más consenso a nivel de dirección
+para añadir cosas nuevas al producto, pero hay que tener en cuenta que
+en esa dirección suelen estar los que crearon el producto en sus
+inicios.
+| El problema es que lo que abunda en este pais en TI son las empresas
+de servicios. Y eso ya es otra historia. Y son igual aquí, que en EEUU
+que en China. Aunque creo que en una empresa de servicios no se opondría
+a que organizases un &lt;a class="reference external" href="http://en.wikipedia.org/wiki/Hackathon"&gt;hackaton&lt;/a&gt;un fin de semana para sacar un
+producto o tecnología nueva para vender.
+| Y vosotros, ¿que opinais?&lt;/p&gt;
+&lt;/p&gt;</summary><category term="http://schemas.google.com/blogger/2008/kind#post"></category><category term="desarrollo"></category><category term="facebook"></category></entry><entry><title>Scrum y XP desde las trincheras</title><link href="http://angel-llosa.com/scrum-y-xp-desde-las-trincheras.html" rel="alternate"></link><updated>2011-03-05T12:04:00+01:00</updated><author><name>Angel Llosá (noreply@blogger.com)</name></author><id>tag:angel-llosa.com,2011-03-05:scrum-y-xp-desde-las-trincheras.html</id><summary type="html">&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;El mes pasado me leí &lt;a href="#id1"&gt;&lt;span class="problematic" id="id2"&gt;`&lt;/span&gt;&lt;/a&gt;Scrum y XP desde las trincheras&amp;quot; de Henrik&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="system-message" id="id1"&gt;
+&lt;p class="system-message-title"&gt;System Message: WARNING/2 (&lt;tt class="docutils"&gt;/Users/anllogui/Dropbox/blogs/angel-llosa.com/content/scrum-y-xp-desde-las-trincheras.rst&lt;/tt&gt;, line 8); &lt;em&gt;&lt;a href="#id2"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+Inline interpreted text or phrase reference start-string without end-string.&lt;/div&gt;
+&lt;div class="system-message"&gt;
+&lt;p class="system-message-title"&gt;System Message: WARNING/2 (&lt;tt class="docutils"&gt;/Users/anllogui/Dropbox/blogs/angel-llosa.com/content/scrum-y-xp-desde-las-trincheras.rst&lt;/tt&gt;, line 9)&lt;/p&gt;
+Line block ends without a blank line.&lt;/div&gt;
+&lt;p&gt;Kniberg`_. Podeis descargar gratuítamente la edición en castellano
+traducida por &lt;a class="reference external" href="http://www.proyectalis.com/2008/02/26/scrum-y-xp-desde-las-trincheras/"&gt;Proyectalis&lt;/a&gt;.
+| No voy a explicar qué es scrum, ya que creo que se ha hablado bastante
+sobre ello en otros foros y seguro que lo explican mejor que un
+servidor. La idea de este post es hablar un poco sobre el libro y sus
+posibles aplicaciones.
+| &lt;strong&gt;El libro&lt;/strong&gt;
+| Creía que iba a ser nu poco pesado con demasiada teoría. Pero el autor
+va punto por punto de scrum, poniendo ejemplos de cómo los llevaron a
+cabo a nivel práctico, los problemas que han tenido y las soluciones que
+han encontrado.
+| Acaba siendo un gustazo leerlo debido a que es muy ameno, y en cada
+punto te ves intentando aplicarlo a tu caso en concreto (o por lo menos
+intentándolo). De ahí el siguiente punto:
+| &lt;strong&gt;Aplicaciones&lt;/strong&gt;
+| Llevo ya un tiempo dándole vueltas a esto. Al final, he llegado a la
+medio-conclusión que, en los casos que he conocido de primera mano, sólo
+se podría aplicar esta metodología ágil cuando vendes un producto, o
+cuando ofreces un servicio parecido al outsourcing, donde se contrata al
+equipo de desarrollo pero se co-lidera desde la empresa contratante.
+¿Por qué? De esta manera, puedes hacer frente a los cambios de
+estimaciones de coste, ya que están surgiendo internamente. No te las
+está imponiendo el proveedor.
+| Si lo que vendes son servicios, no existe por parte del cliente el
+compromiso en tomar decisiones en el desarrollo. Está comprando un
+coche, y quiere pagarte solo lo que le has dicho al princípio, ni un
+euro más.
+| Uno de los puntos importantes en scrum, es que cuando acabas una
+iteración, pueden cambiarte la pila de producto para la siguiente. De
+ahí que, si has realizado alguna estimación en coste, se te tuerce
+enseguida, ya que se eliminarán historias y se añadiran otras. Eso, hoy
+en día, es muy dificil que el cliente acepte (bueno, lo de eliminar
+cosas que sobran para que cueste menos seguro que sí que lo acepta).
+| Y esto nos lleva al problema de la aplicación de metodologías ágiles
+en España. Aquí, nos dedicamos en una alta proporción a la prestación de
+servicios. Se hacen desarrollos a medida, con estimaciones cerradas, ya
+sea para público como para privado. Por lo que cuando intentas aplicar
+scrum, y dices que puede que la estimación cambie, empiezan las malas
+caras.
+| ¿Y vosotros? ¿Habeis aplicado scrum u otra metodología ágil en el
+sector servicios? ¿Cómo? ¿O cómo pensais que se podría aplicar?
+| Igual esto da para otro post entero.&lt;/p&gt;
+</summary><category term="http://schemas.google.com/blogger/2008/kind#post"></category><category term="ágil"></category><category term="gestión de proyectos"></category><category term="scrum"></category></entry><entry><title>consejos para desarrollar en la nube</title><link href="http://angel-llosa.com/consejos-para-desarrollar-en-la-nube.html" rel="alternate"></link><updated>2011-02-15T11:01:00+01:00</updated><author><name>Angel Llosá</name></author><id>tag:angel-llosa.com,2011-02-15:consejos-para-desarrollar-en-la-nube.html</id><summary type="html">&lt;p&gt;La nube es un nuevo mundo de posibilidades, donde el hardware ha
+dejado de ser un problema ya que tenemos éste ilimitado. Por ello, la
+metodología de diseño de sofware está cambiando. Hoy podemos levantar la
+máquinas que queramos (si las podemos pagar) en cuestión de minutos si
+tenemos nuestro sistema saturado.&lt;/p&gt;
+&lt;p&gt;Pero para poder utilizar estas nuevas ventajas, hay ciertos paradigmas
+que han cambiado. &lt;a class="reference external" href="http://www.infoq.com/presentations/Evolving-Programming-for-the-Cloud"&gt;Randy Shoup, arquitecto de eBay, da un repaso en esta
+QCon&lt;/a&gt;, con las nuevas cosas que han ido aprendiendo en eBay
+desarrollando aplicaciones escalables. Como siempre, altamente
+recomendable verla entera. Ésta es cortita (35 minutos).&lt;/p&gt;
+&lt;p&gt;Los consejos que más me han gustado para programar en la nube son:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;strong&gt;Programar en capas y utilizar frameworks configurables&lt;/strong&gt;: de esta
+manera, es más fácil mover partes de la aplicación de un lado a otro.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Trabajar con servicios&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Key-value datamodel.&lt;/strong&gt; Bases de datos sencillas y sin joins.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Interpretación automática de logs&lt;/strong&gt;. Cuando se generen logs, nada
+de frases, sino logs que luego puedan ser cargados para su análisis.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Medir&lt;/strong&gt;. Medirlo todo, para poder detectar ineficiencias. Hay que
+tener en cuenta que las ineficiencias se multiplican en todas las
+instancias, lo que al final acaba siendo dinero perdido.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Son cosas que ya deberíamos estar utilizando, pero que cobran más
+importancia cuando tienes una aplicación ejecutándose en muchos
+servidores a la vez.&lt;/p&gt;
+&lt;p&gt;¿Añadiríais alguno?&lt;/p&gt;
+</summary><category term="post"></category><category term="escalar"></category><category term="cloud"></category></entry></feed>
