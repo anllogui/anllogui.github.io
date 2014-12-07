@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Angel Llosá</title><link href="http://angel-llosa.com/" rel="alternate"></link><link href="http://angel-llosa.com/feeds/desarrollo.atom.xml" rel="self"></link><id>http://angel-llosa.com/</id><updated>2012-05-12T15:08:00+02:00</updated><entry><title>Entorno de desarrollo de software mínimo (III) - Software y herramientas</title><link href="http://angel-llosa.com/entorno-de-desarrollo-de-software-minimo-iii-software-y-herramientas.html" rel="alternate"></link><updated>2012-05-12T15:08:00+02:00</updated><author><name>Angel Llosá</name></author><id>tag:angel-llosa.com,2012-05-12:entorno-de-desarrollo-de-software-minimo-iii-software-y-herramientas.html</id><summary type="html">&lt;p&gt;Continuando con la serie de posts &lt;a class="reference external" href="http://angel-llosa.com/entorno-de-desarrollo-de-software-minimo-i-introduccion.html"&gt;Entorno de desarrollo de software mínimo (I) - Introducción&lt;/a&gt;
+y &lt;a class="reference external" href="http://angel-llosa.com/entorno-de-desarrollo-de-software-minimo-ii-documentacion-y-metodologia.html"&gt;Entorno de desarrollo de software mínimo (II) - Documentación y Metodología&lt;/a&gt;,
+llegamos a la parte de &lt;strong&gt;herramientas&lt;/strong&gt;. Ya hemos visto la
+&lt;a class="reference external" href="http://angel-llosa.com/entorno-de-desarrollo-de-software-minimo-ii-documentacion-y-metodologia.html"&gt;documentación y metodología mínima&lt;/a&gt; que necesitamos para poder
+gestionar un proyecto. Ahora vamos a ver el mínimo conjunto
+de software o herramientas que vamos a necesitar para llevarlo a cabo.&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external" href="http://www.flickr.com/photos/pictfactory/2850874087/"&gt;&lt;img alt="Herramientas // Tools" src="http://farm4.staticflickr.com/3264/2850874087_54ea2445c7.jpg"/&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Como herramientas imprescindibles podríamos tener:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;strong&gt;IDE o editor productivo&lt;/strong&gt;: El &lt;a class="reference external" href="http://es.wikipedia.org/wiki/Entorno_de_desarrollo_integrado"&gt;IDE o Entorno de desarrollo
+integrado&lt;/a&gt;, una vez aprendido lo básico, aumenta la productividad
+cuando desarrollas. En el IDE puede estar integrado desde el
+autocompletado de código hasta la gestión de tareas o de versiones de
+código. También existen editores muy avanzados, como en el caso de
+&lt;a class="reference external" href="http://www.vim.org/"&gt;VIM&lt;/a&gt;, los cuales son igual de productivos que un IDE si el usuario
+es experto. Lo malo de estos es la curva de aprendizaje, que suele
+ser más alta. Es curioso que no he visto ningún arrepentido de haber
+aprendido a utilizar VIM, sino todo lo contrario.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Entorno de desarrollo y de integración&lt;/strong&gt;: Los entornos de
+desarrollo e integración suelen ser reproducciones del entorno en el
+que se va a instalar la app. Desde servidores, PC, móviles, etc.
+Según el tipo de aplicación que se esté desarrollando. Es importante
+tenerlos separados, ya que uno sirve para que un desarrollador pueda
+hacer pruebas unitarias sin molestar al resto del equipo y el de
+integración para (como bien dice la palabra) integrar su desarrollo
+en otros ya existentes.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Control de versiones de código&lt;/strong&gt;: Ha día de hoy, no me imagino
+ningún proyecto sin esta herramienta para controlar las versiones de
+código. Con este tipo de herramientas se puede controlar quién hace
+qué cambios y cuando, mezclar el código de manera más intuitiva y
+fácil y poder volver a versiones anteriores. Existen dos tipos
+principales, centralizados como &lt;a class="reference external" href="http://subversion.tigris.org/"&gt;SVN&lt;/a&gt; o distribuidos como &lt;a class="reference external" href="http://git-scm.com/"&gt;Git&lt;/a&gt; y
+&lt;a class="reference external" href="http://mercurial.selenic.com/"&gt;Mercurial&lt;/a&gt;. Aunque en el trabajo utilizo SVN, en proyectos
+personales o cuando no tengo acceso al servidor de subversion utilizo
+Mercurial. Una de las grandes ventajas de un repositorio distribuido
+es la facilidad de subir código de manera continua (commit por
+característica o bug) en local y luego sincronizar con el principal o
+con el de compañeros.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Gestor de tareas y bugs&lt;/strong&gt;: Otro elemento indispensable es tener un
+gestor de tareas y de bugs el cual sea fácil de actualizar y de
+acceder para todos los componentes del proyecto. Hoy en día existen
+mil alternativas, desde los instalables en un servidor propio a
+mantenidos por la propia empresa que los ha creado. Un ejemplo de
+ello es &lt;a class="reference external" href="http://www.atlassian.com/es/"&gt;Atalassian&lt;/a&gt; con Jira. &lt;a class="reference external" href="http://www.mantisbt.org/"&gt;MantisBT&lt;/a&gt; es una buena alternativa
+libre para instalar en una máquina propia.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Con estas herramientas, podemos tener un entorno más que aceptable para
+poder llevar a cabo un proyecto de desarrollo con éxito. Si además
+tenemos experiencia y disciplina utilizándolas, con una buena gestión el
+éxito está casi asegurado.&lt;/p&gt;
+&lt;p&gt;Y vosotros, ¿ Creéis que falta alguna más que sea imprescindible?&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Índice:&lt;/em&gt;&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://angel-llosa.com/entorno-de-desarrollo-de-software-minimo-i-introduccion.html"&gt;Entorno de desarrollo de software mínimo (I) - Introducción&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://angel-llosa.com/entorno-de-desarrollo-de-software-minimo-ii-documentacion-y-metodologia.html"&gt;Entorno de desarrollo de software mínimo (II) - Documentación y Metodología&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="{filename}013-entorno-de-desarrollo-de-software-minimo-iii-software-y-herramientas.rst"&gt;Entorno de desarrollo de software mínimo (III) - Software y herramientas&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Foto: &lt;a class="reference external" href="http://www.flickr.com/photos/pictfactory/2850874087/"&gt;PictFactory&lt;/a&gt;&lt;/p&gt;
+</summary><category term="gestión de proyectos"></category><category term="desarrollo"></category></entry><entry><title>Entorno de desarrollo de software mínimo (II) - Documentación y Metodología</title><link href="http://angel-llosa.com/entorno-de-desarrollo-de-software-minimo-ii-documentacion-y-metodologia.html" rel="alternate"></link><updated>2012-05-11T15:08:00+02:00</updated><author><name>Angel Llosá</name></author><id>tag:angel-llosa.com,2012-05-11:entorno-de-desarrollo-de-software-minimo-ii-documentacion-y-metodologia.html</id><summary type="html">&lt;p&gt;Siguiendo con el post de &lt;a class="reference external" href="http://angel-llosa.com/entorno-de-desarrollo-de-software-minimo-i-introduccion.html"&gt;Entorno de desarrollo de software mínimo (I) - Introducción&lt;/a&gt;,
+vamos a tratar la parte de metodología y documentación necesaria para
+poder desarrollar y entregar el proyecto y que este sea mantenible.&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external" href="http://www.flickr.com/photos/kevharb/3056726319/"&gt;&lt;img alt="Day 47/365 - Dead Tree Graveyard" src="http://farm4.staticflickr.com/3073/3056726319_6caa7c4bc1.jpg"/&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;En primer lugar vamos a ver la &lt;strong&gt;documentación&lt;/strong&gt; necesaria, que será
+parte de los entregables del proyecto. Para definir ésta, tengo en
+cuenta que el equipo que va a formar parte del proyecto son personas
+maduras y profesionales, no "&lt;a class="reference external" href="http://en.wikipedia.org/wiki/Code_monkey"&gt;code monkeys&lt;/a&gt; ". Lo mínimo para poder
+desarrollar un proyecto con un equipo así sería:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;strong&gt;Acuerdo de especificaciones&lt;/strong&gt;: En este documento, acordaremos con
+el cliente las especificaciones de la aplicación a implementar.
+Definiremos dos tipos de requisitos:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;strong&gt;Funcionales&lt;/strong&gt;: Estos definirán la funcionalidad de la aplicación.
+Es muy recomendable bajar al detalle de estos para poder eliminar
+futura documentación. Se ha de escribir para que un desarrollador
+pueda utilizarlos de guía para implementar la aplicación sin apenas
+intervención de la persona que los escribió. Luego esto no es
+posible, pero es necesario tener ese objetivo en mente. Lo perfecto
+sería poder poner los flujos de trabajo, textos, errores, etc.
+Implicando de esta manera al cliente en el análisis, podemos
+ahorrarnos algunos cambios en el futuro. Si definimos a este nivel,
+el cliente se hace una idea más concreta de cómo acabará la
+aplicación. Otra herramienta a utilizar a la hora de definir la
+aplicación y que nos ayuda para dilucidar el objetivo final de la
+aplicación son los &lt;em&gt;`wireframes`_&lt;/em&gt; o bocetos de la aplicación (si lo
+que tenemos entre manos es una aplicación con interfaz de usuario).
+Son muy fáciles (técnicamente) de hacer, ya que es como dibujar, pero
+ayuda a que nos surjan dudas o posibles carencias de la aplicación
+que muchas veces salen en la fase de desarrollo. Si nos aparecen en
+este estado del proyecto, es mucho menos costoso resolverlas.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Técnicos&lt;/strong&gt;: Son opcionales. Si el cliente tiene el suficiente nivel
+técnico y requiere de tecnología específica, se pone en este
+apartado.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;strong&gt;Estimación y Plan de proyecto&lt;/strong&gt;: Una vez tenemos el acuerdo con un
+nivel de detalle muy alto, podemos pasar a estimar el coste del
+proyecto y a planificar su implementación. Para la estimación,
+intentamos bajar a los posibles casos de uso de los requerimientos y
+estimamos cada uno. Bajando al detalle todo lo que podamos ayudamos a
+dejarnos lo mínimo posible sin estimar. Para el plan de proyecto
+podemos acudir a las herramientas de toda la vida para trabajar con
+&lt;a class="reference external" href="http://es.wikipedia.org/wiki/Diagrama_de_gantt"&gt;diagramas de Gantt&lt;/a&gt; o un tablero &lt;a class="reference external" href="http://en.wikipedia.org/wiki/Kanban"&gt;Kanban&lt;/a&gt; como se hace en
+&lt;a class="reference external" href="http://es.wikipedia.org/wiki/Scrum"&gt;Scrum&lt;/a&gt;. Con el diagrama de Gantt nos podemos hacer mejor una idea
+(y el cliente también, ya que es muy visual) del tiempo de entrega al
+que se nos puede ir el proyecto.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Plan de pruebas&lt;/strong&gt;: Siempre validado por el cliente. Ayuda a tener
+por escrito las salidas de la aplicación que estamos desarrollando.
+Si se puede hacer antes de empezar el desarrollo aportará más al
+proyecto, ya que al igual que en los &lt;em&gt;wireframes&lt;/em&gt;, pueden sacar a
+relucir dudas de la fase de análisis que solo surgirían en el
+desarrollo. También enfoca el desarrollo a pasar estas pruebas, que
+es lo mismo que desarrollar para que la aplicación tenga las salidas
+que espera el cliente. Sobre este tema podéis echar un vistazo a &lt;a class="reference external" href="http://es.wikipedia.org/wiki/Tdd"&gt;TDD
+(Test driven development)&lt;/a&gt;. También definiremos las pruebas de
+integración con otros sistemas.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Diseño de la base de datos&lt;/strong&gt;: La importancia de este documento, más
+que para los entregables finales para el futuro mantenimiento, la veo
+para unificar criterios en el desarrollo. Si existen en el equipo más
+de una persona (que suele ser lo usual), y dejamos que cada uno se
+defina las tablas que necesita, podemos tener duplicidades y
+nomenclaturas distintas por cada desarrollador. Al ser la base de
+datos la raíz de la aplicación, lo mejor es definir una primera
+versión inicial para unificar criterios y guiar el posterior
+desarrollo. Lo que no quita que este diseño pueda ser modificado de
+manera iterativa.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;La &lt;a class="reference external" href="http://es.wikipedia.org/wiki/Metodolog%C3%ADa_de_desarrollo_de_software"&gt;metodología&lt;/a&gt; a utilizar para realizar el proyecto, en caso
+de que fuese un proyecto pequeño, podemos utilizar el &lt;a class="reference external" href="http://es.wikipedia.org/wiki/Metodolog%C3%ADa_de_desarrollo_de_software#Modelo_en_cascada"&gt;modelo en
+cascada&lt;/a&gt; sin aumentar la complejidad del proyecto. Para ello lo
+recomendable sería que la duración del proyecto no superase los 2 meses
+y que el equipo no sea muy grande (5-10 personas). Pero si el proyecto
+dura más o tiene más gente implicada, lo mejor es pasar a un modelo
+iterativo, con entregas cada mes (a estilo &lt;a class="reference external" href="http://es.wikipedia.org/wiki/Scrum"&gt;Scrum&lt;/a&gt;) y reducir el tamaño
+del equipo recortando alcance para sucesivas iteraciones o crear dos
+subproyectos.&lt;/p&gt;
+&lt;p&gt;De esta manera podemos ir tomando el pulso del proyecto de manera
+conjunta con el cliente al menos una vez al mes (aunque siempre es mejor
+tener una comunicación fluida con este) y que tanto el equipo como el
+que va a utilizar la aplicación vayan viendo que se consiguen hitos, lo
+que siempre es un factor de motivación. También se facilita el uso de
+&lt;a class="reference external" href="http://en.wikipedia.org/wiki/Scrum_%28development%29#Daily_Scrum"&gt;reuniones diarias&lt;/a&gt; cortas con el equipo de desarrollo como en Scrum,
+ya que al ser poca gente se puede hacer en poco tiempo.&lt;/p&gt;
+&lt;p&gt;Con esto está cubierta la parte de metodología y documentación. En el
+siguiente post pasaremos al conjunto de herramientas mínimo que podemos
+utilizar.&lt;/p&gt;
+&lt;p&gt;Y como siempre, os animo a que comentéis que  os parece, si añadiríais
+algo más o quitaríais.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Índice:&lt;/em&gt;&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://angel-llosa.com/entorno-de-desarrollo-de-software-minimo-i-introduccion.html"&gt;Entorno de desarrollo de software mínimo (I) - Introducción&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="{filename}012-entorno-de-desarrollo-de-software-minimo-ii-documentacion-y-metodologia.rst"&gt;Entorno de desarrollo de software mínimo (II) - Documentación y Metodología&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="{filename}013-entorno-de-desarrollo-de-software-minimo-iii-software-y-herramientas.rst"&gt;Entorno de desarrollo de software mínimo (III) - Software y herramientas&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Imagen: &lt;a class="reference external" href="http://www.flickr.com/photos/kevharb/3056726319/"&gt;Kevin H.&lt;/a&gt;&lt;/p&gt;
+</summary><category term="ágil"></category><category term="gestión de proyectos"></category><category term="desarrollo"></category><category term="management"></category></entry><entry><title>Entorno de desarrollo de software mínimo (I) - Introducción</title><link href="http://angel-llosa.com/entorno-de-desarrollo-de-software-minimo-i-introduccion.html" rel="alternate"></link><updated>2012-05-08T15:07:00+02:00</updated><author><name>Angel Llosá</name></author><id>tag:angel-llosa.com,2012-05-08:entorno-de-desarrollo-de-software-minimo-i-introduccion.html</id><summary type="html">&lt;p&gt;Alguna vez nos hemos visto en la tesitura de implantar una metodología
+de desarrollo en sitios donde nunca se ha trabajado con ninguna. En esos
+momentos, para cumplir el objetivo de manera poco traumática para nadie
+(incluyéndonos a nosotros mismos) es necesario &lt;strong&gt;tener en cuenta a la
+gente que va a utilizar esta metodología&lt;/strong&gt;.&lt;/p&gt;
+&lt;div style="text-align: center;"&gt;&lt;p&gt;&lt;a class="reference external" href="http://www.flickr.com/photos/marekj/3196036311/"&gt;&lt;img alt="Reading now" src="http://farm4.staticflickr.com/3114/3196036311_462abc7678.jpg"/&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;&lt;p&gt;No es buena idea entrar a una empresa o un entorno de trabajo pensando
+que lo que vamos a implantar va a solucionar la vida de la gente porque
+con nosotros ha funcionado. De esta manera lo único que conseguimos es
+&lt;strong&gt;cerrarnos a cualquier tipo de feedback&lt;/strong&gt; y hacer caso omiso a su
+realidad.&lt;/p&gt;
+&lt;p&gt;Es un poco drástico empezar con metodologías muy pesadas como &lt;a class="reference external" href="http://es.wikipedia.org/wiki/RUP#Artefactos_xxx"&gt;RUP y
+sus artefactos&lt;/a&gt; o ágiles como &lt;a class="reference external" href="http://es.wikipedia.org/wiki/Scrum"&gt;Scrum&lt;/a&gt; en sitios donde no utilizaban
+ninguna. Para realizar este tipo de acciones se ha de dedicar mucho
+esfuerzo a tener la disciplina necesaria para poder llevarla a cabo.&lt;/p&gt;
+&lt;p&gt;Por eso es necesario contemplar un planteamiento más &lt;strong&gt;minimalista&lt;/strong&gt;,
+haciendo caso al &lt;a class="reference external" href="http://es.wikipedia.org/wiki/Lean_software_development#Eliminar_los_desperdicios"&gt;primer principio de "Lean software development"&lt;/a&gt;, e
+ir trabajándolo de manera iterativa. Primero implantamos
+una &lt;strong&gt;metodología mínima de desarrollo&lt;/strong&gt;, un conjunto de &lt;strong&gt;buenas
+prácticas&lt;/strong&gt; y vamos &lt;strong&gt;iterando&lt;/strong&gt; para ir adaptándola a las necesidades
+del cliente y vamos añadiendo lo que veamos que sea necesario y
+eliminando lo que no aporte valor.&lt;/p&gt;
+&lt;p&gt;Por ello, y para quien le pueda interesar, he preparado dos posts que
+publicaré más adelante donde trataré los dos aspectos fundamentales de
+un entorno de desarrollo: la &lt;strong&gt;metodología&lt;/strong&gt; y las &lt;strong&gt;herramientas&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Cómo no, espero que no dudéis en preguntar, comentar o aportar nuevas
+ideas a estos &lt;a class="reference external" href="{filename}012-entorno-de-desarrollo-de-software-minimo-ii-documentacion-y-metodologia.rst"&gt;Entorno de desarrollo de software mínimo (II) - Documentación y Metodología&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Índice:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference external" href="{filename}012-entorno-de-desarrollo-de-software-minimo-ii-documentacion-y-metodologia.rst"&gt;Entorno de desarrollo de software mínimo (II) - Documentación y Metodología&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="{filename}013-entorno-de-desarrollo-de-software-minimo-iii-software-y-herramientas.rst"&gt;Entorno de desarrollo de software mínimo (III) - Software y herramientas&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Foto: &lt;a class="reference external" href="http://www.flickr.com/photos/marekj/3196036311/"&gt;marekj&lt;/a&gt;&lt;/p&gt;
+</summary><category term="ágil"></category><category term="gestión de proyectos"></category><category term="desarrollo"></category><category term="management"></category></entry></feed>

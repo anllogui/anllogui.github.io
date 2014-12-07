@@ -1,5 +1,75 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Angel Llosá</title><link href="http://angel-llosa.com/" rel="alternate"></link><link href="http://angel-llosa.com/feeds/big-data.atom.xml" rel="self"></link><id>http://angel-llosa.com/</id><updated>2011-02-15T10:42:00+01:00</updated><entry><title>ejecutar un trabajo en hadoop (single-node)</title><link href="http://angel-llosa.com/ejecutar-un-trabajo-en-hadoop-single-node.html" rel="alternate"></link><updated>2011-02-15T10:42:00+01:00</updated><author><name>Angel Llosá</name></author><id>tag:angel-llosa.com,2011-02-15:ejecutar-un-trabajo-en-hadoop-single-node.html</id><summary type="html">&lt;p&gt;Ya vimos como &lt;a class="reference external" href="http://binaridev.es/2010/12/como-instalar-hadoop-en-ubuntu-modo-single-node/"&gt;instalar y configurar hadoop en nuestra máquina&lt;/a&gt;.
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Angel Llosá</title><link href="http://angel-llosa.com/" rel="alternate"></link><link href="http://angel-llosa.com/feeds/big-data.atom.xml" rel="self"></link><id>http://angel-llosa.com/</id><updated>2012-11-20T16:51:00+01:00</updated><entry><title>instalar Pig (de Hadoop) en ubuntu en modo multi-cluster</title><link href="http://angel-llosa.com/instalar-pig-de-hadoop-en-ubuntu-en-modo-multi-cluster.html" rel="alternate"></link><updated>2012-11-20T16:51:00+01:00</updated><author><name>Angel Llosá</name></author><id>tag:angel-llosa.com,2012-11-20:instalar-pig-de-hadoop-en-ubuntu-en-modo-multi-cluster.html</id><summary type="html">&lt;p&gt;&lt;strong&gt;Introducción&lt;/strong&gt;
+&lt;a class="reference external" href="http://pig.apache.org/"&gt;Apache Pig&lt;/a&gt; es una plataforma para análisis de datos que se ejecuta
+sobre &lt;a class="reference external" href="http://hadoop.apache.org/"&gt;Hadoop&lt;/a&gt;. Pig tiene un compilador con el cual genera secuencias
+de programas con MapReduce, los cuales se ejecutan de forma paralela
+sobre la infraestructura en la que estemos ejecutando Hadoop.&lt;/p&gt;
+&lt;p&gt;Para verlo más claro, tenemos el siguiente ejemplo escrito en &lt;a class="reference external" href="http://pig.apache.org/docs/r0.8.0/piglatin_ref1.html"&gt;Pig
+Latin&lt;/a&gt; y ejecutado sobre la consola &lt;a class="reference external" href="http://pig.apache.org/docs/r0.8.0/piglatin_ref2.html#run"&gt;grunt&lt;/a&gt;:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;grunt&amp;gt; &lt;span class="nv"&gt;A&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; load &lt;span class="s1"&gt;'passwd'&lt;/span&gt; using PigStorage&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;':'&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+grunt&amp;gt; &lt;span class="nv"&gt;B&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; foreach A generate &lt;span class="nv"&gt;$0&lt;/span&gt; as id&lt;span class="p"&gt;;&lt;/span&gt;
+grunt&amp;gt; dump B&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Ejecutando el código anterior por consola, lo que hacemos es:&lt;/p&gt;
+&lt;ol class="arabic simple"&gt;
+&lt;li&gt;Cargamos el fichero guardado llamado "passwd" (en este caso es un
+fichero típico de linux /etc/passwd) y cargamos su contenido en A,
+diferenciando los campos con el caracter ":" (PigStorage(':')).&lt;/li&gt;
+&lt;li&gt;Para cada línea de A, volcamos el primer campo en B y lo llamamos
+"id".&lt;/li&gt;
+&lt;li&gt;Mostramos por pantalla el resultado.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Es posible utilizar cualquier función de tratamiento de datos
+realizada por nosotros en java y empaquetada en un jar (siempre
+siguiendo las especificaciones, claro) y utilizarla como en este caso se
+ha utilizado &lt;em&gt;PigStorage&lt;/em&gt;. De esta manera, podemos diseñar cualquier
+tipo de tratamiento que no se utilice en Pig Latin.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Instalación&lt;/strong&gt;
+Se supone que ya hemos seguido los pasos de &lt;a class="reference external" href="http://www.michael-noll.com/tutorials/running-hadoop-on-ubuntu-linux-multi-node-cluster/"&gt;cómo instalar hadoop en
+Ubuntu (modo multi-node)&lt;/a&gt;. Una vez hecho esto nos descargaremos la
+última versión de &lt;a class="reference external" href="http://hadoop.apache.org/pig/releases.html"&gt;Pig desde la página de apache&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Lo descomprimiremos donde queramos (a partir de ahora &lt;em&gt;/path/pig&lt;/em&gt;) y
+añadiremos al path del usuario hadoop el directorio de binarios
+/path/pig/bin:
+&lt;tt class="docutils literal"&gt;export &lt;span class="pre"&gt;PATH=/&amp;lt;my-path-to-pig&amp;gt;/pig-n.n.n/bin:$PATH&lt;/span&gt;&lt;/tt&gt;&lt;/p&gt;
+&lt;p&gt;Una vez realizado esto, añadiremos las siguientes variables locales al
+fichero .bashrc necesarias para la ejecución de Pig. Entre ellas están
+las necesarias para que sepa donde está instalado hadoop:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nb"&gt;export &lt;/span&gt;&lt;span class="nv"&gt;HADOOP_HOME&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;/usr/local/hadoop
+&lt;span class="nb"&gt;export &lt;/span&gt;&lt;span class="nv"&gt;HADOOP_SLAVES&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="si"&gt;${&lt;/span&gt;&lt;span class="nv"&gt;HADOOP_HOME&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;/conf/slaves
+&lt;span class="nb"&gt;export &lt;/span&gt;&lt;span class="nv"&gt;HADOOP_CONF_DIR&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="si"&gt;${&lt;/span&gt;&lt;span class="nv"&gt;HADOOP_HOME&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;/conf
+&lt;span class="nb"&gt;export &lt;/span&gt;&lt;span class="nv"&gt;PATH&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;/path/pig/bin/:/usr/local/hadoop/bin/:&lt;span class="nv"&gt;$PATH&lt;/span&gt;
+&lt;span class="nb"&gt;export &lt;/span&gt;&lt;span class="nv"&gt;PIG_CLASSPATH&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;/usr/local/hadoop/conf
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Ejecución por consola&lt;/strong&gt;
+Existen 2 modos de ejecución, en modo local o mapreduce (cluster).
+Para ejecutar en modo local ejecutamos lo siguiente sobre la linea de
+comandos:&lt;/p&gt;
+&lt;p&gt;&lt;tt class="docutils literal"&gt;pig &lt;span class="pre"&gt;-x&lt;/span&gt; local&lt;/tt&gt;&lt;/p&gt;
+&lt;p&gt;Y para el modo distribuido:&lt;/p&gt;
+&lt;p&gt;&lt;tt class="docutils literal"&gt;pig&lt;/tt&gt;
+o
+&lt;tt class="docutils literal"&gt;pig &lt;span class="pre"&gt;-x&lt;/span&gt; mapreduce&lt;/tt&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Ejemplo&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Para ver un ejemplo de ejecución y comprobar que todo funciona
+correctamente, ejecutaremos lo siguiente sobre la consola grunt:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;grunt&amp;gt; &lt;span class="nv"&gt;A&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; load &lt;span class="s1"&gt;'passwd'&lt;/span&gt; using PigStorage&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;':'&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+grunt&amp;gt; &lt;span class="nv"&gt;B&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; foreach A generate &lt;span class="nv"&gt;$0&lt;/span&gt; as id&lt;span class="p"&gt;;&lt;/span&gt;
+grunt&amp;gt; dump B&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Ejecución por script&lt;/strong&gt;
+Para lanzar scripts sin la ayuda de la consola, guardaremos el código
+anterior en un fichero llamado (por ejemplo) &lt;strong&gt;id.pig&lt;/strong&gt;. Lo lanzaremos
+en modo local de la siguiente manera:
+&lt;tt class="docutils literal"&gt;pig &lt;span class="pre"&gt;-x&lt;/span&gt; local id.pig&lt;/tt&gt;&lt;/p&gt;
+&lt;p&gt;Y para el modo distribuido:
+&lt;tt class="docutils literal"&gt;pig id.pig&lt;/tt&gt;
+o
+&lt;tt class="docutils literal"&gt;pig &lt;span class="pre"&gt;-x&lt;/span&gt; mapreduce id.pig&lt;/tt&gt;&lt;/p&gt;
+&lt;p&gt;Y poco más. Para más información sobre Pig, podemos ir al &lt;a class="reference external" href="http://pig.apache.org/docs/r0.8.0/index.html"&gt;sitio
+oficial&lt;/a&gt; donde tenemos más información sobre el lenguaje &lt;a class="reference external" href="http://pig.apache.org/docs/r0.8.0/piglatin_ref1.html"&gt;Pig Latin&lt;/a&gt; o
+modos de &lt;a class="reference external" href="http://pig.apache.org/docs/r0.8.0/cookbook.html"&gt;optimizar la paralelización del código que desarrollemos&lt;/a&gt;.&lt;/p&gt;
+</summary><category term="tutorial hadoop"></category><category term="pig"></category><category term="Ubuntu"></category><category term="hadoop"></category></entry><entry><title>ejecutar un trabajo en hadoop (single-node)</title><link href="http://angel-llosa.com/ejecutar-un-trabajo-en-hadoop-single-node.html" rel="alternate"></link><updated>2011-02-15T10:42:00+01:00</updated><author><name>Angel Llosá</name></author><id>tag:angel-llosa.com,2011-02-15:ejecutar-un-trabajo-en-hadoop-single-node.html</id><summary type="html">&lt;p&gt;Ya vimos como &lt;a class="reference external" href="http://binaridev.es/2010/12/como-instalar-hadoop-en-ubuntu-modo-single-node/"&gt;instalar y configurar hadoop en nuestra máquina&lt;/a&gt;.
 Ahora toca ejecutar algo para ver cómo funciona. Para ello, vamos a
 probar uno de los &lt;a class="reference external" href="http://wiki.apache.org/hadoop/WordCount"&gt;ejemplos que vienen en hadoop&lt;/a&gt;, el cual nos calcula
 las veces que aparece una palabra en los textos que le pasamos.&lt;/p&gt;
@@ -13,9 +83,9 @@ las veces que aparece una palabra en los textos que le pasamos.&lt;/p&gt;
 &lt;tt class="docutils literal"&gt;/tmp/gutenberg&lt;/tt&gt;:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;hadoop@ubuntu:~&lt;span class="nv"&gt;$ &lt;/span&gt;ls -l /tmp/gutenberg/
 total 3592
--rw-r--r-- 1 hadoop hadoop 674425 2007-01-22 12:56 20417-8.txt
--rw-r--r-- 1 hadoop hadoop 1423808 2006-08-03 16:36 7ldvc10.txt
--rw-r--r-- 1 hadoop hadoop 1561677 2004-11-26 09:48 ulyss12.txt
+-rw-r--r-- &lt;span class="m"&gt;1&lt;/span&gt; hadoop hadoop &lt;span class="m"&gt;674425&lt;/span&gt; 2007-01-22 12:56 20417-8.txt
+-rw-r--r-- &lt;span class="m"&gt;1&lt;/span&gt; hadoop hadoop &lt;span class="m"&gt;1423808&lt;/span&gt; 2006-08-03 16:36 7ldvc10.txt
+-rw-r--r-- &lt;span class="m"&gt;1&lt;/span&gt; hadoop hadoop &lt;span class="m"&gt;1561677&lt;/span&gt; 2004-11-26 09:48 ulyss12.txt
 hadoop@ubuntu:~&lt;span class="err"&gt;$&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Si no teníamos arrancado hadoop, lo arrancamos
@@ -52,12 +122,12 @@ unas interfaces web para ello.&lt;/p&gt;
 &lt;/ul&gt;
 &lt;p&gt;Son un poco simples, pero sirven de ayuda para ver el estado de nuestros
 trabajos.&lt;/p&gt;
-&lt;/p&gt;</summary><category term="tutorial hadoop"></category><category term="cloud"></category><category term="Linux"></category><category term="Ubuntu"></category><category term="hadoop"></category></entry><entry><title>los 4 secretos de facebook para escalar</title><link href="http://angel-llosa.com/los-4-secretos-de-facebook-para-escalar.html" rel="alternate"></link><updated>2011-02-13T17:49:00+01:00</updated><author><name>Angel Llosá</name></author><id>tag:angel-llosa.com,2011-02-13:los-4-secretos-de-facebook-para-escalar.html</id><summary type="html">&lt;p&gt;Ya hablamos en este blog sobre &lt;a class="reference external" href="http://angel-llosa.com/el-software-detras-de-facebook.html"&gt;Facebook y el software que existe
-detrás&lt;/a&gt;. Todos conocemos sus&amp;nbsp;apabullantes&amp;nbsp;datos de de usuarios, páginas
+</summary><category term="tutorial hadoop"></category><category term="cloud"></category><category term="Linux"></category><category term="Ubuntu"></category><category term="hadoop"></category></entry><entry><title>los 4 secretos de facebook para escalar</title><link href="http://angel-llosa.com/los-4-secretos-de-facebook-para-escalar.html" rel="alternate"></link><updated>2011-02-13T17:49:00+01:00</updated><author><name>Angel Llosá</name></author><id>tag:angel-llosa.com,2011-02-13:los-4-secretos-de-facebook-para-escalar.html</id><summary type="html">&lt;p&gt;Ya hablamos en este blog sobre &lt;a class="reference external" href="http://angel-llosa.com/el-software-detras-de-facebook.html"&gt;Facebook y el software que existe
+detrás&lt;/a&gt;. Todos conocemos sus apabullantes datos de de usuarios, páginas
 vista, fotos, etc.&lt;/p&gt;
-&lt;p&gt;El directo de ingeniería de Facebook,&amp;nbsp;Aditya Agarwal,&amp;nbsp;dio&amp;nbsp;una
-conferencia con el tema &amp;quot;&lt;a class="reference external" href="http://www.infoq.com/presentations/Scale-at-Facebook"&gt;Escalar en Facebook&lt;/a&gt;&amp;quot;. &amp;nbsp;La presentación es
-muy recomendable aunque dure una hora y sea en inglés. &amp;nbsp;Mezcla
+&lt;p&gt;El directo de ingeniería de Facebook, Aditya Agarwal, dio una
+conferencia con el tema "&lt;a class="reference external" href="http://www.infoq.com/presentations/Scale-at-Facebook"&gt;Escalar en Facebook&lt;/a&gt;".  La presentación es
+muy recomendable aunque dure una hora y sea en inglés.  Mezcla
 arquitectura a nivel técnico y metodología.&lt;/p&gt;
 &lt;p&gt;Hace un buen repaso sobre la tecnología que están utilizando
 actualmente y cómo. En detalle lo que hablábamos en el post anterior:
@@ -65,7 +135,7 @@ actualmente y cómo. En detalle lo que hablábamos en el post anterior:
 &lt;div style="font-size: 14px; line-height: 25px;"&gt;&lt;p&gt;Una parte que me ha gustado mucho ha sido la de la cultura de empresa,
 la cual se basa en 3 puntos principales:&lt;/p&gt;
 &lt;/div&gt;&lt;ul class="simple"&gt;
-&lt;li&gt;&lt;strong&gt;Muévete&amp;nbsp;rápido e innova&lt;/strong&gt;, no te preocupes en romper cosas.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Muévete rápido e innova&lt;/strong&gt;, no te preocupes en romper cosas.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Alcanzar gran impacto con equipos pequeños&lt;/strong&gt;. Se trabaja mejor, más
 rapido y hay mejor comunicación.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Se valiente e innova&lt;/strong&gt;. Un poco extensión del primer punto.&lt;/li&gt;
@@ -86,7 +156,7 @@ que necesita.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Lo dicho, &lt;a class="reference external" href="http://www.infoq.com/presentations/Scale-at-Facebook"&gt;la conferencia no tiene desperdicio&lt;/a&gt;. 50 minutos de charla y
 10 de preguntas.&lt;/p&gt;
-&lt;/p&gt;</summary><category term="escalar"></category><category term="facebook"></category></entry><entry><title>el software detrás de Facebook</title><link href="http://angel-llosa.com/el-software-detras-de-facebook.html" rel="alternate"></link><updated>2011-02-13T11:58:00+01:00</updated><author><name>Angel Llosá</name></author><id>tag:angel-llosa.com,2011-02-13:el-software-detras-de-facebook.html</id><summary type="html">&lt;p&gt;Siempre he tenido curiosidad de Facebook. Te conectas y se carga todo
+</summary><category term="escalar"></category><category term="facebook"></category></entry><entry><title>el software detrás de Facebook</title><link href="http://angel-llosa.com/el-software-detras-de-facebook.html" rel="alternate"></link><updated>2011-02-13T11:58:00+01:00</updated><author><name>Angel Llosá</name></author><id>tag:angel-llosa.com,2011-02-13:el-software-detras-de-facebook.html</id><summary type="html">&lt;p&gt;Siempre he tenido curiosidad de Facebook. Te conectas y se carga todo
 en apenas segundos. A día de hoy, Facebook tiene 500 millones de
 usuarios activos. ¿Cómo pueden hacerlo para que vaya tan rápido?
 Buscando he encontrado que, para soportar esto, en Facebook han tenido
@@ -109,7 +179,7 @@ creando un compilador propio de PHP, linux con kernels parcheados por
 ellos mismos y llevando lógica de MySQL al propio servidor web.
 Además de esto, se ayuda de:
 &lt;strong&gt;Hadoop / Hive&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt="image0" src="http://farm5.static.flickr.com/4067/4712028518_ed2144f29c_o.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="image0" src="http://farm5.static.flickr.com/4067/4712028518_ed2144f29c_o.png"/&gt;&lt;/p&gt;
 &lt;p&gt;Cómo no, Hive sobre Hadoop está teniendo cada vez más peso
 en la arquitectura de Facebook. Al igual que Cassandra, son del proyecto
 Apache y son de código abierto. Se ejecutan sobre Java y se utilizan
@@ -132,7 +202,7 @@ que necesitaban.&lt;/p&gt;
 mejor rendimiento que en PHP nativo.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;BigPipe&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a class="reference external" href="http://www.facebook.com/notes/facebook-engineering/bigpipe-pipelining-web-pages-for-high-performance/389414033919"&gt;BigPipe&lt;/a&gt;es un servidor de páginas web que utiliza Facebook para
-servir cada página en secciones llamadas &amp;quot;pagelets&amp;quot; para optimizar el
+servir cada página en secciones llamadas "pagelets" para optimizar el
 rendimiento. De esta manera se puede obtener en paralelo varias partes
 de la misma página, aumentando la velocidad de carga. Si te fijas
 mientras se carga la página que estás solicitando, las diferentes
@@ -151,4 +221,4 @@ activa.&lt;/p&gt;
 &lt;li&gt;&lt;a class="reference external" href="http://www.infoq.com/presentations/Facebook-Moving-Fast-at-Scale"&gt;infoq.com&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class="reference external" href="http://www.facebook.com/notes.php?id=9445547199"&gt;Facebook&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/p&gt;</summary><category term="cloud"></category><category term="mysql"></category><category term="facebook"></category><category term="php"></category><category term="hadoop"></category></entry></feed>
+</summary><category term="cloud"></category><category term="mysql"></category><category term="facebook"></category><category term="php"></category><category term="hadoop"></category></entry></feed>
