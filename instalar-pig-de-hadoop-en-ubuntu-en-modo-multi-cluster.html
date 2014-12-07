@@ -2,7 +2,7 @@
 <html lang="es"
 >
 <head>
-    <title>instalar Pig (de Hadoop) en ubuntu en modo multi-cluster - Angel Llosá</title>
+    <title>instalar Pig (de Hadoop) en ubuntu en modo multi-cluster - Angel Llos&aacute;</title>
     <!-- Using the latest rendering mode for IE -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
@@ -39,7 +39,7 @@
                 <span class="icon-bar"></span>
             </button>
             <a href="/" class="navbar-brand">
-Angel Llosá            </a>
+Angel Llos&aacute;            </a>
         </div>
         <div class="collapse navbar-collapse navbar-ex1-collapse">
             <ul class="nav navbar-nav">
@@ -88,7 +88,7 @@ Angel Llosá            </a>
 <footer class="post-info">
     <span class="label label-default">Date</span>
     <span class="published">
-        <i class="fa fa-calendar"></i><time datetime="2012-11-20T16:51:00"> mar 20 noviembre 2012</time>
+        <i class="fa fa-calendar"></i><time datetime="2012-11-20T16:51:00+01:00"> mar 20 noviembre 2012</time>
     </span>
 
 
@@ -111,17 +111,17 @@ de programas con MapReduce, los cuales se ejecutan de forma paralela
 sobre la infraestructura en la que estemos ejecutando Hadoop.</p>
 <p>Para verlo más claro, tenemos el siguiente ejemplo escrito en <a class="reference external" href="http://pig.apache.org/docs/r0.8.0/piglatin_ref1.html">Pig
 Latin</a> y ejecutado sobre la consola <a class="reference external" href="http://pig.apache.org/docs/r0.8.0/piglatin_ref2.html#run">grunt</a>:</p>
-<div class="highlight"><pre>grunt&gt; <span class="nv">A</span> <span class="o">=</span> load <span class="s1">&#39;passwd&#39;</span> using PigStorage<span class="o">(</span><span class="s1">&#39;:&#39;</span><span class="o">)</span>;
-grunt&gt; <span class="nv">B</span> <span class="o">=</span> foreach A generate <span class="nv">$0</span> as id;
-grunt&gt; dump B;
+<div class="highlight"><pre>grunt&gt; <span class="nv">A</span> <span class="o">=</span> load <span class="s1">'passwd'</span> using PigStorage<span class="o">(</span><span class="s1">':'</span><span class="o">)</span><span class="p">;</span>
+grunt&gt; <span class="nv">B</span> <span class="o">=</span> foreach A generate <span class="nv">$0</span> as id<span class="p">;</span>
+grunt&gt; dump B<span class="p">;</span>
 </pre></div>
 <p>Ejecutando el código anterior por consola, lo que hacemos es:</p>
 <ol class="arabic simple">
-<li>Cargamos el fichero guardado llamado &quot;passwd&quot; (en este caso es un
+<li>Cargamos el fichero guardado llamado "passwd" (en este caso es un
 fichero típico de linux /etc/passwd) y cargamos su contenido en A,
-diferenciando los campos con el caracter &quot;:&quot; (PigStorage(':')).</li>
+diferenciando los campos con el caracter ":" (PigStorage(':')).</li>
 <li>Para cada línea de A, volcamos el primer campo en B y lo llamamos
-&quot;id&quot;.</li>
+"id".</li>
 <li>Mostramos por pantalla el resultado.</li>
 </ol>
 <p>Es posible utilizar cualquier función de tratamiento de datos
@@ -130,7 +130,7 @@ siguiendo las especificaciones, claro) y utilizarla como en este caso se
 ha utilizado <em>PigStorage</em>. De esta manera, podemos diseñar cualquier
 tipo de tratamiento que no se utilice en Pig Latin.</p>
 <p><strong>Instalación</strong>
-Se supone que ya hemos seguido los pasos de&nbsp;<a class="reference external" href="http://www.michael-noll.com/tutorials/running-hadoop-on-ubuntu-linux-multi-node-cluster/">cómo instalar hadoop en
+Se supone que ya hemos seguido los pasos de <a class="reference external" href="http://www.michael-noll.com/tutorials/running-hadoop-on-ubuntu-linux-multi-node-cluster/">cómo instalar hadoop en
 Ubuntu (modo multi-node)</a>. Una vez hecho esto nos descargaremos la
 última versión de <a class="reference external" href="http://hadoop.apache.org/pig/releases.html">Pig desde la página de apache</a>.</p>
 <p>Lo descomprimiremos donde queramos (a partir de ahora <em>/path/pig</em>) y
@@ -141,8 +141,8 @@ añadiremos al path del usuario hadoop el directorio de binarios
 fichero .bashrc necesarias para la ejecución de Pig. Entre ellas están
 las necesarias para que sepa donde está instalado hadoop:</p>
 <div class="highlight"><pre><span class="nb">export </span><span class="nv">HADOOP_HOME</span><span class="o">=</span>/usr/local/hadoop
-<span class="nb">export </span><span class="nv">HADOOP_SLAVES</span><span class="o">=</span><span class="k">${</span><span class="nv">HADOOP_HOME</span><span class="k">}</span>/conf/slaves
-<span class="nb">export </span><span class="nv">HADOOP_CONF_DIR</span><span class="o">=</span><span class="k">${</span><span class="nv">HADOOP_HOME</span><span class="k">}</span>/conf
+<span class="nb">export </span><span class="nv">HADOOP_SLAVES</span><span class="o">=</span><span class="si">${</span><span class="nv">HADOOP_HOME</span><span class="si">}</span>/conf/slaves
+<span class="nb">export </span><span class="nv">HADOOP_CONF_DIR</span><span class="o">=</span><span class="si">${</span><span class="nv">HADOOP_HOME</span><span class="si">}</span>/conf
 <span class="nb">export </span><span class="nv">PATH</span><span class="o">=</span>/path/pig/bin/:/usr/local/hadoop/bin/:<span class="nv">$PATH</span>
 <span class="nb">export </span><span class="nv">PIG_CLASSPATH</span><span class="o">=</span>/usr/local/hadoop/conf
 </pre></div>
@@ -158,9 +158,9 @@ o
 <p><strong>Ejemplo</strong></p>
 <p>Para ver un ejemplo de ejecución y comprobar que todo funciona
 correctamente, ejecutaremos lo siguiente sobre la consola grunt:</p>
-<div class="highlight"><pre>grunt&gt; <span class="nv">A</span> <span class="o">=</span> load <span class="s1">&#39;passwd&#39;</span> using PigStorage<span class="o">(</span><span class="s1">&#39;:&#39;</span><span class="o">)</span>;
-grunt&gt; <span class="nv">B</span> <span class="o">=</span> foreach A generate <span class="nv">$0</span> as id;
-grunt&gt; dump B;
+<div class="highlight"><pre>grunt&gt; <span class="nv">A</span> <span class="o">=</span> load <span class="s1">'passwd'</span> using PigStorage<span class="o">(</span><span class="s1">':'</span><span class="o">)</span><span class="p">;</span>
+grunt&gt; <span class="nv">B</span> <span class="o">=</span> foreach A generate <span class="nv">$0</span> as id<span class="p">;</span>
+grunt&gt; dump B<span class="p">;</span>
 </pre></div>
 <p><strong>Ejecución por script</strong>
 Para lanzar scripts sin la ayuda de la consola, guardaremos el código
@@ -174,9 +174,29 @@ o
 <p>Y poco más. Para más información sobre Pig, podemos ir al <a class="reference external" href="http://pig.apache.org/docs/r0.8.0/index.html">sitio
 oficial</a> donde tenemos más información sobre el lenguaje <a class="reference external" href="http://pig.apache.org/docs/r0.8.0/piglatin_ref1.html">Pig Latin</a> o
 modos de <a class="reference external" href="http://pig.apache.org/docs/r0.8.0/cookbook.html">optimizar la paralelización del código que desarrollemos</a>.</p>
-</p>
+
             </div>
             <!-- /.entry-content -->
+<section class="well" id="related-posts">
+    <h4>Related Posts:</h4>
+    <ul>
+        <li><a href="/ejecutar-un-trabajo-en-hadoop-single-node.html">ejecutar un trabajo en hadoop (single-node)</a></li>
+        <li><a href="/como-montar-equipos-de-cientificos-de-datos-data-scientist.html">Cómo montar equipos de científicos de datos (data scientist)</a></li>
+        <li><a href="/el-software-detras-de-facebook.html">el software detrás de Facebook</a></li>
+    </ul>
+</section>
+<section>
+    <p id="post-share-links">
+        Share on:
+        <a href="http://twitter.com/home?status=instalar%20Pig%20%28de%20Hadoop%29%20en%20ubuntu%20en%20modo%20multi-cluster%20 /instalar-pig-de-hadoop-en-ubuntu-en-modo-multi-cluster.html" target="_blank" title="Share on Twitter">Twitter</a>
+        ❄
+        <a href="http://www.facebook.com/sharer/sharer.php?s=100&p[url]=/instalar-pig-de-hadoop-en-ubuntu-en-modo-multi-cluster.html&p[images][0]=&p[title]=instalar%20Pig%20%28de%20Hadoop%29%20en%20ubuntu%20en%20modo%20multi-cluster%20&p[summary]=%3Cp%3E%3Cstrong%3EIntroducci%C3%B3n%3C/strong%3E%0A%3Ca%20class%3D%22reference%20external%22%20href%3D%22http%3A//pig.apache.org/%22%3EApache%20Pig%3C/a%3E%20es%20una%20plataforma%20para%20an%C3%A1lisis%20de%20datos%20que%20se%20ejecuta%0Asobre%20%3Ca%20class%3D%22reference%20external%22%20href%3D%22http%3A//hadoop.apache.org/%22%3EHadoop%3C/a%3E.%20Pig%20tiene%20un%20compilador%20con%20el%20cual%20genera%20secuencias%0Ade%20programas%20con%20MapReduce%2C%20los%20cuales%20se%20ejecutan%20de%20forma%20paralela%0Asobre%20la%20infraestructura%20en%20la%20que%20estemos%20ejecutando%20Hadoop.%3C/p%3E%0A%3Cp%3EPara%20verlo%20m%C3%A1s%20claro%2C%20tenemos%20el%20...%3C/p%3E" target="_blank" title="Share on Facebook">Facebook</a>
+        ❄
+        <a href="https://plus.google.com/share?url=/instalar-pig-de-hadoop-en-ubuntu-en-modo-multi-cluster.html" target="_blank" title="Share on Google Plus">Google+</a>
+        ❄
+        <a href="mailto:?subject=instalar%20Pig%20%28de%20Hadoop%29%20en%20ubuntu%20en%20modo%20multi-cluster%20&body=/instalar-pig-de-hadoop-en-ubuntu-en-modo-multi-cluster.html" target="_blank" title="Share via Email">Email</a>
+    </p>
+</section>
         </article>
     </section>
 
@@ -188,8 +208,8 @@ modos de <a class="reference external" href="http://pig.apache.org/docs/r0.8.0/c
         <ul class="list-group list-group-flush">
                 <li class="list-group-item"><h4><i class="fa fa-home fa-lg"></i><span class="icon-label">Social</span></h4>
                   <ul class="list-group" id="social">
-                    <li class="list-group-item"><a href="https://twitter.com/anllogui"><i class="fa fa-twitter-square fa-lg"></i> Twitter</a></li>
-                    <li class="list-group-item"><a href="https://linkedin.com/in/anllogui"><i class="fa fa-linkedin-square fa-lg"></i> Linkedin</a></li>
+                    <li class="list-group-item"><a href="https://twitter.com/anllogui"><i class="fa fa-twitter-square fa-lg"></i> twitter</a></li>
+                    <li class="list-group-item"><a href="https://linkedin.com/in/anllogui"><i class="fa fa-linkedin-square fa-lg"></i> linkedin</a></li>
                   </ul>
                 </li>
 
@@ -198,18 +218,13 @@ modos de <a class="reference external" href="http://pig.apache.org/docs/r0.8.0/c
                 <li class="list-group-item"><a href="/"><h4><i class="fa fa-tags fa-lg"></i><span class="icon-label">Tags</span></h4></a>
                     <ul class="list-group " id="tags">
                         <li class="list-group-item tag-1">
-                            <a href="/tag/desarrollo.html">
-                                desarrollo
-                            </a>
-                        </li>
-                        <li class="list-group-item tag-1">
                             <a href="/tag/gestion-de-proyectos.html">
                                 gestión de proyectos
                             </a>
                         </li>
-                        <li class="list-group-item tag-2">
-                            <a href="/tag/facebook.html">
-                                facebook
+                        <li class="list-group-item tag-1">
+                            <a href="/tag/desarrollo.html">
+                                desarrollo
                             </a>
                         </li>
                         <li class="list-group-item tag-2">
@@ -218,13 +233,13 @@ modos de <a class="reference external" href="http://pig.apache.org/docs/r0.8.0/c
                             </a>
                         </li>
                         <li class="list-group-item tag-2">
-                            <a href="/tag/management.html">
-                                management
+                            <a href="/tag/cloud.html">
+                                cloud
                             </a>
                         </li>
                         <li class="list-group-item tag-2">
-                            <a href="/tag/cloud.html">
-                                cloud
+                            <a href="/tag/management.html">
+                                management
                             </a>
                         </li>
                         <li class="list-group-item tag-2">
@@ -232,14 +247,14 @@ modos de <a class="reference external" href="http://pig.apache.org/docs/r0.8.0/c
                                 ágil
                             </a>
                         </li>
-                        <li class="list-group-item tag-3">
-                            <a href="/tag/tutorial-hadoop.html">
-                                tutorial hadoop
+                        <li class="list-group-item tag-2">
+                            <a href="/tag/facebook.html">
+                                facebook
                             </a>
                         </li>
                         <li class="list-group-item tag-3">
-                            <a href="/tag/pig.html">
-                                pig
+                            <a href="/tag/escalar.html">
+                                escalar
                             </a>
                         </li>
                         <li class="list-group-item tag-3">
@@ -253,8 +268,13 @@ modos de <a class="reference external" href="http://pig.apache.org/docs/r0.8.0/c
                             </a>
                         </li>
                         <li class="list-group-item tag-3">
-                            <a href="/tag/escalar.html">
-                                escalar
+                            <a href="/tag/tutorial-hadoop.html">
+                                tutorial hadoop
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-3">
+                            <a href="/tag/pig.html">
+                                pig
                             </a>
                         </li>
                         <li class="list-group-item tag-4">
@@ -263,23 +283,13 @@ modos de <a class="reference external" href="http://pig.apache.org/docs/r0.8.0/c
                             </a>
                         </li>
                         <li class="list-group-item tag-4">
-                            <a href="/tag/linux.html">
-                                Linux
-                            </a>
-                        </li>
-                        <li class="list-group-item tag-4">
-                            <a href="/tag/startup.html">
-                                startup
-                            </a>
-                        </li>
-                        <li class="list-group-item tag-4">
                             <a href="/tag/php.html">
                                 php
                             </a>
                         </li>
                         <li class="list-group-item tag-4">
-                            <a href="/tag/data-analysis.html">
-                                data analysis
+                            <a href="/tag/hive.html">
+                                hive
                             </a>
                         </li>
                         <li class="list-group-item tag-4">
@@ -288,13 +298,23 @@ modos de <a class="reference external" href="http://pig.apache.org/docs/r0.8.0/c
                             </a>
                         </li>
                         <li class="list-group-item tag-4">
-                            <a href="/tag/mysql.html">
-                                mysql
+                            <a href="/tag/startup.html">
+                                startup
                             </a>
                         </li>
                         <li class="list-group-item tag-4">
-                            <a href="/tag/hive.html">
-                                hive
+                            <a href="/tag/linux.html">
+                                Linux
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-4">
+                            <a href="/tag/data-analysis.html">
+                                data analysis
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-4">
+                            <a href="/tag/mysql.html">
+                                mysql
                             </a>
                         </li>
                         <li class="list-group-item tag-4">
@@ -344,7 +364,7 @@ modos de <a class="reference external" href="http://pig.apache.org/docs/r0.8.0/c
    <div class="container">
       <hr>
       <div class="row">
-         <div class="col-xs-10">&copy; 2013 Angel Llosá
+         <div class="col-xs-10">&copy; 2013 &Aacute;ngel Llos&aacute;
             &middot; Powered by <a href="https://github.com/DandyDev/pelican-bootstrap3" target="_blank">pelican-bootstrap3</a>,
             <a href="http://docs.getpelican.com/" target="_blank">Pelican</a>,
             <a href="http://getbootstrap.com" target="_blank">Bootstrap</a>         </div>
