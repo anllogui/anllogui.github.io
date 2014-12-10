@@ -190,9 +190,9 @@ de programas con MapReduce, los cuales se ejecutan de forma paralela
 sobre la infraestructura en la que estemos ejecutando Hadoop.&lt;/p&gt;
 &lt;p&gt;Para verlo más claro, tenemos el siguiente ejemplo escrito en &lt;a class="reference external" href="http://pig.apache.org/docs/r0.8.0/piglatin_ref1.html"&gt;Pig
 Latin&lt;/a&gt; y ejecutado sobre la consola &lt;a class="reference external" href="http://pig.apache.org/docs/r0.8.0/piglatin_ref2.html#run"&gt;grunt&lt;/a&gt;:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;grunt&amp;gt; &lt;span class="nv"&gt;A&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; load &lt;span class="s1"&gt;'passwd'&lt;/span&gt; using PigStorage&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;':'&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-grunt&amp;gt; &lt;span class="nv"&gt;B&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; foreach A generate &lt;span class="nv"&gt;$0&lt;/span&gt; as id&lt;span class="p"&gt;;&lt;/span&gt;
-grunt&amp;gt; dump B&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;grunt&amp;gt; &lt;span class="nv"&gt;A&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; load &lt;span class="s1"&gt;'passwd'&lt;/span&gt; using PigStorage&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;':'&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;;
+grunt&amp;gt; &lt;span class="nv"&gt;B&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; foreach A generate &lt;span class="nv"&gt;$0&lt;/span&gt; as id;
+grunt&amp;gt; dump B;
 &lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Ejecutando el código anterior por consola, lo que hacemos es:&lt;/p&gt;
 &lt;ol class="arabic simple"&gt;
@@ -220,8 +220,8 @@ añadiremos al path del usuario hadoop el directorio de binarios
 fichero .bashrc necesarias para la ejecución de Pig. Entre ellas están
 las necesarias para que sepa donde está instalado hadoop:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nb"&gt;export &lt;/span&gt;&lt;span class="nv"&gt;HADOOP_HOME&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;/usr/local/hadoop
-&lt;span class="nb"&gt;export &lt;/span&gt;&lt;span class="nv"&gt;HADOOP_SLAVES&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="si"&gt;${&lt;/span&gt;&lt;span class="nv"&gt;HADOOP_HOME&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;/conf/slaves
-&lt;span class="nb"&gt;export &lt;/span&gt;&lt;span class="nv"&gt;HADOOP_CONF_DIR&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="si"&gt;${&lt;/span&gt;&lt;span class="nv"&gt;HADOOP_HOME&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;/conf
+&lt;span class="nb"&gt;export &lt;/span&gt;&lt;span class="nv"&gt;HADOOP_SLAVES&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="k"&gt;${&lt;/span&gt;&lt;span class="nv"&gt;HADOOP_HOME&lt;/span&gt;&lt;span class="k"&gt;}&lt;/span&gt;/conf/slaves
+&lt;span class="nb"&gt;export &lt;/span&gt;&lt;span class="nv"&gt;HADOOP_CONF_DIR&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="k"&gt;${&lt;/span&gt;&lt;span class="nv"&gt;HADOOP_HOME&lt;/span&gt;&lt;span class="k"&gt;}&lt;/span&gt;/conf
 &lt;span class="nb"&gt;export &lt;/span&gt;&lt;span class="nv"&gt;PATH&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;/path/pig/bin/:/usr/local/hadoop/bin/:&lt;span class="nv"&gt;$PATH&lt;/span&gt;
 &lt;span class="nb"&gt;export &lt;/span&gt;&lt;span class="nv"&gt;PIG_CLASSPATH&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;/usr/local/hadoop/conf
 &lt;/pre&gt;&lt;/div&gt;
@@ -237,9 +237,9 @@ o
 &lt;p&gt;&lt;strong&gt;Ejemplo&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Para ver un ejemplo de ejecución y comprobar que todo funciona
 correctamente, ejecutaremos lo siguiente sobre la consola grunt:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;grunt&amp;gt; &lt;span class="nv"&gt;A&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; load &lt;span class="s1"&gt;'passwd'&lt;/span&gt; using PigStorage&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;':'&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-grunt&amp;gt; &lt;span class="nv"&gt;B&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; foreach A generate &lt;span class="nv"&gt;$0&lt;/span&gt; as id&lt;span class="p"&gt;;&lt;/span&gt;
-grunt&amp;gt; dump B&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;grunt&amp;gt; &lt;span class="nv"&gt;A&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; load &lt;span class="s1"&gt;'passwd'&lt;/span&gt; using PigStorage&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;':'&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;;
+grunt&amp;gt; &lt;span class="nv"&gt;B&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; foreach A generate &lt;span class="nv"&gt;$0&lt;/span&gt; as id;
+grunt&amp;gt; dump B;
 &lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;&lt;strong&gt;Ejecución por script&lt;/strong&gt;
 Para lanzar scripts sin la ayuda de la consola, guardaremos el código
@@ -711,9 +711,9 @@ las veces que aparece una palabra en los textos que le pasamos.&lt;/p&gt;
 &lt;tt class="docutils literal"&gt;/tmp/gutenberg&lt;/tt&gt;:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;hadoop@ubuntu:~&lt;span class="nv"&gt;$ &lt;/span&gt;ls -l /tmp/gutenberg/
 total 3592
--rw-r--r-- &lt;span class="m"&gt;1&lt;/span&gt; hadoop hadoop &lt;span class="m"&gt;674425&lt;/span&gt; 2007-01-22 12:56 20417-8.txt
--rw-r--r-- &lt;span class="m"&gt;1&lt;/span&gt; hadoop hadoop &lt;span class="m"&gt;1423808&lt;/span&gt; 2006-08-03 16:36 7ldvc10.txt
--rw-r--r-- &lt;span class="m"&gt;1&lt;/span&gt; hadoop hadoop &lt;span class="m"&gt;1561677&lt;/span&gt; 2004-11-26 09:48 ulyss12.txt
+-rw-r--r-- 1 hadoop hadoop 674425 2007-01-22 12:56 20417-8.txt
+-rw-r--r-- 1 hadoop hadoop 1423808 2006-08-03 16:36 7ldvc10.txt
+-rw-r--r-- 1 hadoop hadoop 1561677 2004-11-26 09:48 ulyss12.txt
 hadoop@ubuntu:~&lt;span class="err"&gt;$&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Si no teníamos arrancado hadoop, lo arrancamos
